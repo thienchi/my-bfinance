@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterDefault.master.cs" Inherits="dangdongcmm.cmm.MasterDefault" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="AjaxToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Content management modul (CMM), powered by DANGDONG</title>
+    <meta name="CODE_LANGUAGE" content="C#" />
+	<meta name="vs_defaultClientScript" content="JavaScript" />
+	<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" href="../cssscript/main.css" />
+    <link type="text/css" rel="stylesheet" href="../cssscript/form.css" />
+    <script type="text/javascript" src="../cssscript/jquery_lastest.js"></script>
+    <script type="text/javascript" src="../cssscript/common.js" ></script>
+    <script type="text/javascript" src="../cssscript/validata.js" ></script>
+    <script type="text/javascript" src="../cssscript/dformout.js" ></script>
+    <script type="text/javascript" src="../cssscript/dhtmlwindow.js"></script>
+    <script type="text/javascript" src="../cssscript/jquery.tools.min.js"></script>
+
+    <script type="text/javascript">
+    function onLoad() {
+       Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+    }
+    function EndRequestHandler(sender, args) {
+        initabs();
+    }
+    var LANG = '<%=LANG%>';
+    var tabsForm;
+    function initabs() {
+	    $("ul.tabs").tabs("div.panes > div.tformin");
+	    tabsForm = $("ul.tabs").data("tabs");
+    }
+    function gottabs(index) {
+	    $("ul.tabs").tabs("div.panes > div.tformin");
+	    tabsForm = $("ul.tabs").data("tabs");
+	    tabsForm.click(index);
+    }
+    </script>
+	
+</head>
+<body onload="onLoad()">
+    <form id="form1" runat="server">
+	<div class="FLOUT0" align="center">
+	    <div class="FLOUT0B" align="center">
+        <div class="FLOUT1">
+        
+            <div class="FLOUT1H">
+                <div id="logo">
+                
+                </div>
+                <div id="dyfrmloginfo">
+                    Xin chào, <b><ASP:LABEL id="lblLoginusername" runat="server">admin</ASP:LABEL></b> &nbsp;|&nbsp; <a href="changepassword.aspx">Đổi mật khẩu</a> &nbsp;|&nbsp; <a href="/cmm/logout.aspx">Thoát ra</a>
+                </div>
+            </div>
+            <div id="menu">
+                <div id="menumain"><ASP:LITERAL ID="ltrMenumain" runat="server"></ASP:LITERAL></div>
+                <script type="text/javascript">
+                $(document).ready(function() {
+                    var pagename = location.href.substring(location.href.lastIndexOf('/') + 1, location.href.indexOf('.aspx') + 5);
+                    var pagefull = location.href.substring(location.href.lastIndexOf('/') + 1);//, location.href.indexOf('.aspx') + 5
+                    //alert(page);return;
+                    var breadcrumbs = '';
+                    $('#menumain').find('a[href^="'+pagename+'"]').parents('li')
+                        .each(function(){
+                            href = $(this).find('a:eq(0)').attr('href');
+                            if(href == null || pagefull.indexOf(href) != -1){
+                                $(this).addClass('over');
+                                breadcrumbs = $(this).find('span.wrap:eq(0)').html() + (breadcrumbs == '' ? '' : (' > ' + breadcrumbs));
+                            }
+                        });
+                    $('#breadcrumbs').html(breadcrumbs);
+                });
+                </script>
+                <div class="langbar"><ASP:DROPDOWNLIST ID="ddlLang" runat="server" CssClass="control" AutoPostBack="true" OnSelectedIndexChanged="ddlLang_SelectedIndexChanged"></ASP:DROPDOWNLIST></div>
+            </div>
+            
+            <div class="FLOUT1B">
+                <div class="pagetitle"><div id="breadcrumbs"></div></div>
+                <AJAXTOOLKIT:TOOLKITSCRIPTMANAGER runat="server" ID="ScriptManager1">
+                    <SERVICES>
+                        <ASP:SERVICEREFERENCE Path="~/wservice/UtiMailService.asmx" />
+                    </SERVICES>
+                </AJAXTOOLKIT:TOOLKITSCRIPTMANAGER>
+			    <ASP:UPDATEPANEL ID="UpdatePanel1" runat="server">
+			        <ContentTemplate>
+			            <ASP:PANEL ID="pnlError" runat="server" CssClass="FLOUTNOTICE">
+			                <div style='float:right'>[<ASP:IMAGEBUTTON ID="cmdErrorClose" runat="server" OnClientClick="javascript:VALIDATA.Clearerror(); return false;" ImageUrl="../images/symclose.gif" AlternateText="Close" />]</div>
+			                <ASP:LABEL ID="lblError" runat="server"></ASP:LABEL>
+			                <ASP:LABEL ID="lblGoto" runat="server"></ASP:LABEL>
+			            </ASP:PANEL>
+			        </ContentTemplate>
+			    </ASP:UPDATEPANEL>
+                
+                <div class="wrapcontent">
+                    <ASP:CONTENTPLACEHOLDER ID="ContentPlaceHolder1" runat="server"></ASP:CONTENTPLACEHOLDER>
+                </div>
+            </div>
+            
+            <div class="FLOUT1F">
+            <div class="relative">
+                <div class="left" style="width:70%">
+                    Bạn có thể tìm thấy hướng dẫn sử dụng CMM <a href="">tại đây</a>.
+                    <br />
+                    <br />Nếu có bất kỳ thắc mắc nào, vui lòng liên hệ để được hỗ trợ... 
+                    <br />E-mail: <a href="mailto:cmm@dangdong.vn">cmm@dangdong.vn</a> | Yahoo! ID: <a href="ymsgr:SendIM?dangdongvn">dangdongvn</a> | Skype: <a href="skype:dangdong.vn?chat">dangdong.vn</a> | Điện thoại: +84 8 35049159 / +84 909 310524
+                </div>
+                <div class="righ" style="width:25%">
+                Bản quyền © 2011 <a href="http://dangdong.vn" target="_blank">DANGDONG</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

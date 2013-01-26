@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="D74D3E34-6163-4FB8-8072-91294EFF738D" ModuleId="dangdongcmm" />
+  <Module PersistentId="AFA073E1-4F2F-4470-984F-53333A2972C6" ModuleId="dangdongcmm.model" />
+  <Module PersistentId="CC580DE9-2C31-4CFA-8913-4841FB15F6F7" ModuleId="dangdongcmm.dal" />
+  <Module PersistentId="E690ED4E-5AB3-4994-B315-9263ECBF7913" ModuleId="dangdongcmm.utilities" />
+  <Module PersistentId="918DB24D-FBA3-482D-9574-A20DC6D99594" ModuleId="ConvertUrl" />
+</Modules>

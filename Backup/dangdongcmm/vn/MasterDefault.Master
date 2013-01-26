@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="dangdongcmm.MasterDefault" %>
+<%@ REGISTER Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="AjaxToolkit" %>
+<%@ REGISTER TagPrefix="UC" TagName="Menu" src="usercontrol/ucmenu.ascx" %>
+<%@ REGISTER TagPrefix="UC" TagName="Scontentview" src="usercontrol/ucscontentview.ascx" %>
+<%@ REGISTER TagPrefix="UC" TagName="Search" src="usercontrol/ucsearch.ascx" %>
+<%@ REGISTER TagPrefix="UC" TagName="Newsa" Src="usercontrol/ucnewsa.ascx" %>
+<%@ REGISTER TagPrefix="UC" TagName="Newsadesc" Src="usercontrol/ucnewsaright.ascx" %>
+<%@ REGISTER TagPrefix="UC" TagName="Focusn" Src="usercontrol/ucfocusn.ascx" %>
+<%@ REGISTER TagPrefix="UC" TagName="Newsc" src="usercontrol/ucnewsc.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head" runat="server">
+    <title id="meta_title" runat="server">bFinance - Từ điển thuật ngữ, Kiến thức, Kinh nghiệm Đầu tư Chứng khoán, Tài chính, Kinh tế Vĩ mô</title>
+    <meta name="CODE_LANGUAGE" content="C#" />
+	<meta name="vs_defaultClientScript" content="JavaScript" />
+	<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" id="meta_description" runat="server" content="Từ điển thuật ngữ - Kiến thức và Kinh nghiệm Phân tích chuyên sâu hàng đầu Việt Nam về Đầu tư Chứng khoán, Tài chính, Kinh tế Vĩ mô, Phân tích Ngành, Doanh nghiệp" />
+	<meta name="Keywords" id="meta_keywords" runat="server" content="Từ điển, Chứng khoán, Cổ phần, Cổ phiếu, Kinh tế, Tài chính, Kế toán, Kiểm toán, Đầu tư, Vĩ mô, Ngành, Doanh nghiệp, Công ty, Phân tích, Nhận định, Kiến thức, Kinh nghiệm, Bí quyết, Bài học, Thành công, Case Study, Tu dien, Chung khoan, Co phan, Co phieu, Kinh te, Tai chinh, Ke toan, Kiem toan, Dau tu, Vi mo, Nganh, Doanh nghiep, Cong ty, Phan tich, Nhan dinh, Kien thuc, Kinh nghiem, Bi quyet, Bai hoc, Thanh cong, Case Study, bfinance, finance Vietnam, vietfinance, vfinance" />
+	<meta name="robots" content="index,follow" />
+
+	<link type="text/css" rel="stylesheet" href="../cssscript/main.css" />
+	<link type="text/css" rel="stylesheet" href="../cssscript/menu.css" />
+	<link type="text/css" rel="stylesheet" href="../cssscript/form.css" />
+    <script type="text/javascript" src="../cssscript/jquery-1.6.1.min.js" ></script>
+    <script type="text/javascript" src="../cssscript/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="../cssscript/common.js" ></script>
+    <script type="text/javascript" src="../cssscript/dhtmlwindow.js" ></script>
+    
+    <script type="text/javascript">
+    function onLoad() {
+       Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+    }
+    function EndRequestHandler(sender, args) {
+    }
+    var LANG = '<%=LANG%>';
+    </script>
+
+</head>
+<body onload="onLoad()">
+    <form id="form1" runat="server">
+        <AJAXTOOLKIT:TOOLKITSCRIPTMANAGER runat="server" ID="ScriptManager1">
+            <SERVICES>
+                <ASP:SERVICEREFERENCE Path="~/wservice/UtiMailService.asmx" />
+            </SERVICES>
+        </AJAXTOOLKIT:TOOLKITSCRIPTMANAGER>
+        <ASP:UPDATEPANEL ID="UpdatePanel1" runat="server">
+            <CONTENTTEMPLATE></CONTENTTEMPLATE>
+        </ASP:UPDATEPANEL>
+		<div class="FLOUT0" align="center">
+		    <div class="FLOUT0B" align="center">
+		        <div class="FLOUT1">
+		            <div class="FLOUT1H">
+                        <div id="logo" onclick="location.href='home.aspx'"></div>
+                        <div class="searchbar"><UC:SEARCH ID="Search" runat="server" /></div>
+                        
+                        <div class="menubar">
+                            <div class="iconhome"><a href="home.aspx"><img src="../images/icon-home.png" alt="" border="0" /></a></div>
+                            <div id="menumain"><UC:MENU ID="Menu" runat="server" Code="MENUMAIN" /></div>
+                        </div>
+				    </div>
+                    
+                    <div class="FLOUT1B">
+                        <div class="Body2">
+                            <ASP:CONTENTPLACEHOLDER id="ContentPlaceHolder1" runat="server"></ASP:CONTENTPLACEHOLDER>
+                        </div>
+                        <div class="Righ2">  
+                            <div class="fieldseti">
+                                <div class="cname">Tiêu điểm</div>
+                                <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
+                            </div>
+                            <br />&nbsp;
+                            <div class="fieldseti">
+                                <div class="cname">Nổi bật</div>
+                                <UC:NEWSADESC ID="Newsdesc1" runat="server" Acode="'homeslide'" />
+                                <UC:NEWSADESC ID="Newsdesc2" runat="server" Acode="'home1'" />
+                                <UC:NEWSADESC ID="Newsdesc3" runat="server" Acode="'home2'" />
+                            </div>
+                            <div class="barthome4">
+                                <UC:FOCUSN ID="Focusn" runat="server" />
+                                <UC:NEWSC ID="Newsc" runat="server" Categorycode="'quote'" />
+                            </div>
+                        </div>
+		            </div>
+
+                    <div class="FLOUT1F">
+                        <UC:SCONTENTVIEW ID="Scontentview1" runat="server" Code="footer" />
+                    </div>
+		        </div>
+                <div style="clear:both"></div>
+		    </div>
+        </div>
+    </form>
+</body>
+</html>

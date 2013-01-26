@@ -1,0 +1,1368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="bfinanceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="bfinanceModelStoreContainer">
+          <EntitySet Name="dd_feedback" EntityType="bfinanceModel.Store.dd_feedback" store:Type="Tables" store:Schema="dbo" store:Name="dd_feedback">
+            <DefiningQuery>SELECT 
+      [dd_feedback].[id] AS [id], 
+      [dd_feedback].[name] AS [name], 
+      [dd_feedback].[description] AS [description], 
+      [dd_feedback].[sender_name] AS [sender_name], 
+      [dd_feedback].[sender_address] AS [sender_address], 
+      [dd_feedback].[sender_email] AS [sender_email], 
+      [dd_feedback].[sender_phone] AS [sender_phone], 
+      [dd_feedback].[status] AS [status], 
+      [dd_feedback].[markas] AS [markas], 
+      [dd_feedback].[iconex] AS [iconex], 
+      [dd_feedback].[timeupdate] AS [timeupdate], 
+      [dd_feedback].[pis] AS [pis], 
+      [dd_feedback].[pid] AS [pid], 
+      [dd_feedback].[depth] AS [depth], 
+      [dd_feedback].[viewcounter] AS [viewcounter], 
+      [dd_feedback].[forsearch] AS [forsearch]
+      FROM [dbo].[dd_feedback] AS [dd_feedback]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="dd_member" EntityType="bfinanceModel.Store.dd_member" store:Type="Tables" store:Schema="dbo" store:Name="dd_member">
+            <DefiningQuery>SELECT 
+      [dd_member].[id] AS [id], 
+      [dd_member].[username] AS [username], 
+      [dd_member].[password] AS [password], 
+      [dd_member].[firstname] AS [firstname], 
+      [dd_member].[lastname] AS [lastname], 
+      [dd_member].[email] AS [email], 
+      [dd_member].[phone] AS [phone], 
+      [dd_member].[pin] AS [pin], 
+      [dd_member].[status] AS [status], 
+      [dd_member].[markas] AS [markas], 
+      [dd_member].[timeupdate] AS [timeupdate], 
+      [dd_member].[logincache] AS [logincache], 
+      [dd_member].[loginfirst] AS [loginfirst], 
+      [dd_member].[forsearch] AS [forsearch], 
+      [dd_member].[autosave] AS [autosave], 
+      [dd_member].[temporarycode] AS [temporarycode], 
+      [dd_member].[filepreview] AS [filepreview], 
+      [dd_member].[grouptype] AS [grouptype], 
+      [dd_member].[ranking] AS [ranking], 
+      [dd_member].[vote] AS [vote], 
+      [dd_member].[ratingweight] AS [ratingweight], 
+      [dd_member].[messagesunread] AS [messagesunread], 
+      [dd_member].[messages] AS [messages]
+      FROM [dbo].[dd_member] AS [dd_member]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="dd_meprofile" EntityType="bfinanceModel.Store.dd_meprofile" store:Type="Tables" store:Schema="dbo" store:Name="dd_meprofile">
+            <DefiningQuery>SELECT 
+      [dd_meprofile].[id] AS [id], 
+      [dd_meprofile].[address] AS [address], 
+      [dd_meprofile].[phone] AS [phone], 
+      [dd_meprofile].[state] AS [state], 
+      [dd_meprofile].[zipcode] AS [zipcode], 
+      [dd_meprofile].[nationalid] AS [nationalid], 
+      [dd_meprofile].[cityid] AS [cityid], 
+      [dd_meprofile].[districtid] AS [districtid], 
+      [dd_meprofile].[about] AS [about], 
+      [dd_meprofile].[blog] AS [blog], 
+      [dd_meprofile].[homepage] AS [homepage], 
+      [dd_meprofile].[facebook] AS [facebook], 
+      [dd_meprofile].[twitter] AS [twitter], 
+      [dd_meprofile].[youtube] AS [youtube], 
+      [dd_meprofile].[flickr] AS [flickr], 
+      [dd_meprofile].[skype] AS [skype], 
+      [dd_meprofile].[yahoo] AS [yahoo], 
+      [dd_meprofile].[birthday] AS [birthday], 
+      [dd_meprofile].[profession] AS [profession]
+      FROM [dbo].[dd_meprofile] AS [dd_meprofile]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="dd_settingsite_restrictedpages" EntityType="bfinanceModel.Store.dd_settingsite_restrictedpages" store:Type="Tables" store:Schema="dbo" store:Name="dd_settingsite_restrictedpages">
+            <DefiningQuery>SELECT 
+      [dd_settingsite_restrictedpages].[id] AS [id], 
+      [dd_settingsite_restrictedpages].[name] AS [name], 
+      [dd_settingsite_restrictedpages].[query] AS [query], 
+      [dd_settingsite_restrictedpages].[pathandquery] AS [pathandquery]
+      FROM [dbo].[dd_settingsite_restrictedpages] AS [dd_settingsite_restrictedpages]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="dd_user" EntityType="bfinanceModel.Store.dd_user" store:Type="Tables" store:Schema="dbo" store:Name="dd_user">
+            <DefiningQuery>SELECT 
+      [dd_user].[id] AS [id], 
+      [dd_user].[username] AS [username], 
+      [dd_user].[password] AS [password], 
+      [dd_user].[name] AS [name], 
+      [dd_user].[email] AS [email], 
+      [dd_user].[status] AS [status], 
+      [dd_user].[markas] AS [markas], 
+      [dd_user].[timeupdate] AS [timeupdate], 
+      [dd_user].[pis] AS [pis], 
+      [dd_user].[pid] AS [pid], 
+      [dd_user].[depth] AS [depth], 
+      [dd_user].[logincache] AS [logincache], 
+      [dd_user].[loginfirst] AS [loginfirst], 
+      [dd_user].[forsearch] AS [forsearch]
+      FROM [dbo].[dd_user] AS [dd_user]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_category" EntityType="bfinanceModel.Store.vndd_category" store:Type="Tables" store:Schema="dbo" store:Name="vndd_category">
+            <DefiningQuery>SELECT 
+      [vndd_category].[id] AS [id], 
+      [vndd_category].[code] AS [code], 
+      [vndd_category].[name] AS [name], 
+      [vndd_category].[note] AS [note], 
+      [vndd_category].[filepreview] AS [filepreview], 
+      [vndd_category].[cid] AS [cid], 
+      [vndd_category].[orderd] AS [orderd], 
+      [vndd_category].[status] AS [status], 
+      [vndd_category].[markas] AS [markas], 
+      [vndd_category].[iconex] AS [iconex], 
+      [vndd_category].[timeupdate] AS [timeupdate], 
+      [vndd_category].[username] AS [username], 
+      [vndd_category].[pis] AS [pis], 
+      [vndd_category].[pid] AS [pid], 
+      [vndd_category].[depth] AS [depth], 
+      [vndd_category].[forsearch] AS [forsearch], 
+      [vndd_category].[url] AS [url], 
+      [vndd_category].[customizeid] AS [customizeid], 
+      [vndd_category].[alias] AS [alias]
+      FROM [dbo].[vndd_category] AS [vndd_category]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_categoryattr" EntityType="bfinanceModel.Store.vndd_categoryattr" store:Type="Tables" store:Schema="dbo" store:Name="vndd_categoryattr">
+            <DefiningQuery>SELECT 
+      [vndd_categoryattr].[id] AS [id], 
+      [vndd_categoryattr].[code] AS [code], 
+      [vndd_categoryattr].[name] AS [name], 
+      [vndd_categoryattr].[note] AS [note], 
+      [vndd_categoryattr].[filepreview] AS [filepreview], 
+      [vndd_categoryattr].[cid] AS [cid], 
+      [vndd_categoryattr].[orderd] AS [orderd], 
+      [vndd_categoryattr].[status] AS [status], 
+      [vndd_categoryattr].[markas] AS [markas], 
+      [vndd_categoryattr].[iconex] AS [iconex], 
+      [vndd_categoryattr].[timeupdate] AS [timeupdate], 
+      [vndd_categoryattr].[username] AS [username], 
+      [vndd_categoryattr].[pis] AS [pis], 
+      [vndd_categoryattr].[pid] AS [pid], 
+      [vndd_categoryattr].[depth] AS [depth], 
+      [vndd_categoryattr].[forsearch] AS [forsearch], 
+      [vndd_categoryattr].[url] AS [url]
+      FROM [dbo].[vndd_categoryattr] AS [vndd_categoryattr]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_categorytypeof" EntityType="bfinanceModel.Store.vndd_categorytypeof" store:Type="Tables" store:Schema="dbo" store:Name="vndd_categorytypeof">
+            <DefiningQuery>SELECT 
+      [vndd_categorytypeof].[id] AS [id], 
+      [vndd_categorytypeof].[code] AS [code], 
+      [vndd_categorytypeof].[name] AS [name], 
+      [vndd_categorytypeof].[note] AS [note], 
+      [vndd_categorytypeof].[status] AS [status], 
+      [vndd_categorytypeof].[markas] AS [markas], 
+      [vndd_categorytypeof].[timeupdate] AS [timeupdate], 
+      [vndd_categorytypeof].[username] AS [username], 
+      [vndd_categorytypeof].[forsearch] AS [forsearch]
+      FROM [dbo].[vndd_categorytypeof] AS [vndd_categorytypeof]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_fileattach" EntityType="bfinanceModel.Store.vndd_fileattach" store:Type="Tables" store:Schema="dbo" store:Name="vndd_fileattach">
+            <DefiningQuery>SELECT 
+      [vndd_fileattach].[id] AS [id], 
+      [vndd_fileattach].[name] AS [name], 
+      [vndd_fileattach].[path] AS [path], 
+      [vndd_fileattach].[note] AS [note], 
+      [vndd_fileattach].[sized] AS [sized], 
+      [vndd_fileattach].[typed] AS [typed], 
+      [vndd_fileattach].[orderd] AS [orderd], 
+      [vndd_fileattach].[status] AS [status], 
+      [vndd_fileattach].[markas] AS [markas], 
+      [vndd_fileattach].[iconex] AS [iconex], 
+      [vndd_fileattach].[timeupdate] AS [timeupdate], 
+      [vndd_fileattach].[username] AS [username], 
+      [vndd_fileattach].[belongto] AS [belongto], 
+      [vndd_fileattach].[iid] AS [iid]
+      FROM [dbo].[vndd_fileattach] AS [vndd_fileattach]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_menu" EntityType="bfinanceModel.Store.vndd_menu" store:Type="Tables" store:Schema="dbo" store:Name="vndd_menu">
+            <DefiningQuery>SELECT 
+      [vndd_menu].[id] AS [id], 
+      [vndd_menu].[code] AS [code], 
+      [vndd_menu].[name] AS [name], 
+      [vndd_menu].[note] AS [note], 
+      [vndd_menu].[navigateurl] AS [navigateurl], 
+      [vndd_menu].[tooltip] AS [tooltip], 
+      [vndd_menu].[attributes] AS [attributes], 
+      [vndd_menu].[visible] AS [visible], 
+      [vndd_menu].[cid] AS [cid], 
+      [vndd_menu].[orderd] AS [orderd], 
+      [vndd_menu].[status] AS [status], 
+      [vndd_menu].[markas] AS [markas], 
+      [vndd_menu].[iconex] AS [iconex], 
+      [vndd_menu].[timeupdate] AS [timeupdate], 
+      [vndd_menu].[username] AS [username], 
+      [vndd_menu].[pis] AS [pis], 
+      [vndd_menu].[pid] AS [pid], 
+      [vndd_menu].[depth] AS [depth], 
+      [vndd_menu].[cataloguetypeofid] AS [cataloguetypeofid], 
+      [vndd_menu].[catalogueid] AS [catalogueid], 
+      [vndd_menu].[insertcatalogue] AS [insertcatalogue], 
+      [vndd_menu].[forsearch] AS [forsearch], 
+      [vndd_menu].[noroot] AS [noroot], 
+      [vndd_menu].[applyattributeschild] AS [applyattributeschild]
+      FROM [dbo].[vndd_menu] AS [vndd_menu]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_menutypeof" EntityType="bfinanceModel.Store.vndd_menutypeof" store:Type="Tables" store:Schema="dbo" store:Name="vndd_menutypeof">
+            <DefiningQuery>SELECT 
+      [vndd_menutypeof].[id] AS [id], 
+      [vndd_menutypeof].[code] AS [code], 
+      [vndd_menutypeof].[name] AS [name], 
+      [vndd_menutypeof].[note] AS [note], 
+      [vndd_menutypeof].[path] AS [path], 
+      [vndd_menutypeof].[insertbreak] AS [insertbreak], 
+      [vndd_menutypeof].[status] AS [status], 
+      [vndd_menutypeof].[timeupdate] AS [timeupdate], 
+      [vndd_menutypeof].[username] AS [username], 
+      [vndd_menutypeof].[forsearch] AS [forsearch]
+      FROM [dbo].[vndd_menutypeof] AS [vndd_menutypeof]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_news" EntityType="bfinanceModel.Store.vndd_news" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vndd_product" EntityType="bfinanceModel.Store.vndd_product" store:Type="Tables" store:Schema="dbo" store:Name="vndd_product">
+            <DefiningQuery>SELECT 
+      [vndd_product].[id] AS [id], 
+      [vndd_product].[code] AS [code], 
+      [vndd_product].[name] AS [name], 
+      [vndd_product].[introduce] AS [introduce], 
+      [vndd_product].[description] AS [description], 
+      [vndd_product].[features] AS [features], 
+      [vndd_product].[filepreview] AS [filepreview], 
+      [vndd_product].[cid] AS [cid], 
+      [vndd_product].[cname] AS [cname], 
+      [vndd_product].[orderd] AS [orderd], 
+      [vndd_product].[status] AS [status], 
+      [vndd_product].[markas] AS [markas], 
+      [vndd_product].[iconex] AS [iconex], 
+      [vndd_product].[timecreate] AS [timecreate], 
+      [vndd_product].[timeupdate] AS [timeupdate], 
+      [vndd_product].[username] AS [username], 
+      [vndd_product].[viewcounter] AS [viewcounter], 
+      [vndd_product].[provider] AS [provider], 
+      [vndd_product].[advertise] AS [advertise], 
+      [vndd_product].[price] AS [price], 
+      [vndd_product].[pricealter] AS [pricealter], 
+      [vndd_product].[allowcomment] AS [allowcomment], 
+      [vndd_product].[forsearch] AS [forsearch], 
+      [vndd_product].[album] AS [album], 
+      [vndd_product].[relateditem] AS [relateditem]
+      FROM [dbo].[vndd_product] AS [vndd_product]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_staticcontent" EntityType="bfinanceModel.Store.vndd_staticcontent" store:Type="Tables" store:Schema="dbo" store:Name="vndd_staticcontent">
+            <DefiningQuery>SELECT 
+      [vndd_staticcontent].[id] AS [id], 
+      [vndd_staticcontent].[name] AS [name], 
+      [vndd_staticcontent].[filepath] AS [filepath], 
+      [vndd_staticcontent].[description] AS [description], 
+      [vndd_staticcontent].[status] AS [status], 
+      [vndd_staticcontent].[timeupdate] AS [timeupdate], 
+      [vndd_staticcontent].[username] AS [username], 
+      [vndd_staticcontent].[forsearch] AS [forsearch], 
+      [vndd_staticcontent].[code] AS [code], 
+      [vndd_staticcontent].[separatepage] AS [separatepage]
+      FROM [dbo].[vndd_staticcontent] AS [vndd_staticcontent]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_supportonline" EntityType="bfinanceModel.Store.vndd_supportonline" store:Type="Tables" store:Schema="dbo" store:Name="vndd_supportonline">
+            <DefiningQuery>SELECT 
+      [vndd_supportonline].[id] AS [id], 
+      [vndd_supportonline].[name] AS [name], 
+      [vndd_supportonline].[type] AS [type], 
+      [vndd_supportonline].[note] AS [note], 
+      [vndd_supportonline].[orderd] AS [orderd], 
+      [vndd_supportonline].[status] AS [status], 
+      [vndd_supportonline].[timeupdate] AS [timeupdate], 
+      [vndd_supportonline].[forsearch] AS [forsearch]
+      FROM [dbo].[vndd_supportonline] AS [vndd_supportonline]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vndd_symbol" EntityType="bfinanceModel.Store.vndd_symbol" store:Type="Tables" store:Schema="dbo" store:Name="vndd_symbol">
+            <DefiningQuery>SELECT 
+      [vndd_symbol].[id] AS [id], 
+      [vndd_symbol].[name] AS [name], 
+      [vndd_symbol].[path] AS [path], 
+      [vndd_symbol].[note] AS [note], 
+      [vndd_symbol].[sized] AS [sized], 
+      [vndd_symbol].[status] AS [status], 
+      [vndd_symbol].[orderd] AS [orderd], 
+      [vndd_symbol].[timeupdate] AS [timeupdate], 
+      [vndd_symbol].[username] AS [username], 
+      [vndd_symbol].[forsearch] AS [forsearch]
+      FROM [dbo].[vndd_symbol] AS [vndd_symbol]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_feedback' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="dd_feedback">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="description" Type="ntext" />
+          <Property Name="sender_name" Type="nvarchar" MaxLength="500" />
+          <Property Name="sender_address" Type="nvarchar" MaxLength="255" />
+          <Property Name="sender_email" Type="nvarchar" MaxLength="255" />
+          <Property Name="sender_phone" Type="nvarchar" MaxLength="255" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="pis" Type="int" />
+          <Property Name="pid" Type="int" />
+          <Property Name="depth" Type="int" />
+          <Property Name="viewcounter" Type="int" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_member' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="dd_member">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="password" Type="nvarchar" MaxLength="500" />
+          <Property Name="firstname" Type="nvarchar" MaxLength="500" />
+          <Property Name="lastname" Type="nvarchar" MaxLength="500" />
+          <Property Name="email" Type="nvarchar" MaxLength="500" />
+          <Property Name="phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="pin" Type="nvarchar" MaxLength="50" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="logincache" Type="int" />
+          <Property Name="loginfirst" Type="int" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+          <Property Name="autosave" Type="int" />
+          <Property Name="temporarycode" Type="nvarchar" MaxLength="500" />
+          <Property Name="filepreview" Type="nvarchar" MaxLength="500" />
+          <Property Name="grouptype" Type="int" />
+          <Property Name="ranking" Type="int" />
+          <Property Name="vote" Type="int" />
+          <Property Name="ratingweight" Type="int" />
+          <Property Name="messagesunread" Type="int" />
+          <Property Name="messages" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_meprofile' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="dd_meprofile">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="address" Type="nvarchar" MaxLength="500" />
+          <Property Name="phone" Type="nvarchar" MaxLength="255" />
+          <Property Name="state" Type="nvarchar" MaxLength="255" />
+          <Property Name="zipcode" Type="nvarchar" MaxLength="50" />
+          <Property Name="nationalid" Type="int" />
+          <Property Name="cityid" Type="int" />
+          <Property Name="districtid" Type="int" />
+          <Property Name="about" Type="nvarchar(max)" />
+          <Property Name="blog" Type="nvarchar" MaxLength="500" />
+          <Property Name="homepage" Type="nvarchar" MaxLength="500" />
+          <Property Name="facebook" Type="nvarchar" MaxLength="500" />
+          <Property Name="twitter" Type="nvarchar" MaxLength="500" />
+          <Property Name="youtube" Type="nvarchar" MaxLength="500" />
+          <Property Name="flickr" Type="nvarchar" MaxLength="500" />
+          <Property Name="skype" Type="nvarchar" MaxLength="500" />
+          <Property Name="yahoo" Type="nvarchar" MaxLength="500" />
+          <Property Name="birthday" Type="datetime" />
+          <Property Name="profession" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_settingsite_restrictedpages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="dd_settingsite_restrictedpages">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="1000" />
+          <Property Name="query" Type="nvarchar" MaxLength="1000" />
+          <Property Name="pathandquery" Type="nvarchar" MaxLength="2000" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_user' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="dd_user">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="username" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="password" Type="nvarchar" MaxLength="500" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="email" Type="nvarchar" MaxLength="500" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="pis" Type="int" />
+          <Property Name="pid" Type="int" />
+          <Property Name="depth" Type="int" />
+          <Property Name="logincache" Type="int" />
+          <Property Name="loginfirst" Type="int" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_category' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_category">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="nvarchar" MaxLength="50" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="note" Type="nvarchar(max)" />
+          <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+          <Property Name="cid" Type="int" />
+          <Property Name="orderd" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="pis" Type="int" />
+          <Property Name="pid" Type="int" />
+          <Property Name="depth" Type="int" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+          <Property Name="url" Type="nvarchar" MaxLength="255" />
+          <Property Name="customizeid" Type="int" />
+          <Property Name="alias" Type="nvarchar" MaxLength="600" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_categoryattr' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_categoryattr">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="nvarchar" MaxLength="50" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="note" Type="nvarchar(max)" />
+          <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+          <Property Name="cid" Type="int" />
+          <Property Name="orderd" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="pis" Type="int" />
+          <Property Name="pid" Type="int" />
+          <Property Name="depth" Type="int" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+          <Property Name="url" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_categorytypeof' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_categorytypeof">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="nvarchar" MaxLength="255" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="note" Type="nvarchar(max)" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_fileattach' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_fileattach">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="path" Type="nvarchar" MaxLength="500" />
+          <Property Name="note" Type="nvarchar" MaxLength="500" />
+          <Property Name="sized" Type="bigint" />
+          <Property Name="typed" Type="int" />
+          <Property Name="orderd" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="belongto" Type="int" />
+          <Property Name="iid" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_menu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_menu">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="nvarchar" MaxLength="50" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="note" Type="nvarchar" MaxLength="1000" />
+          <Property Name="navigateurl" Type="nvarchar" MaxLength="255" />
+          <Property Name="tooltip" Type="nvarchar" MaxLength="500" />
+          <Property Name="attributes" Type="nvarchar" MaxLength="500" />
+          <Property Name="visible" Type="int" />
+          <Property Name="cid" Type="int" />
+          <Property Name="orderd" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="pis" Type="int" />
+          <Property Name="pid" Type="int" />
+          <Property Name="depth" Type="int" />
+          <Property Name="cataloguetypeofid" Type="int" />
+          <Property Name="catalogueid" Type="int" />
+          <Property Name="insertcatalogue" Type="int" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+          <Property Name="noroot" Type="int" />
+          <Property Name="applyattributeschild" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_menutypeof' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_menutypeof">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="nvarchar" MaxLength="50" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="note" Type="nvarchar" MaxLength="1000" />
+          <Property Name="path" Type="nvarchar" MaxLength="255" />
+          <Property Name="insertbreak" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="vndd_news">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="nvarchar" MaxLength="50" />
+          <Property Name="name" Type="nvarchar" MaxLength="500" />
+          <Property Name="introduce" Type="nvarchar" />
+          <Property Name="description" Type="ntext" />
+          <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+          <Property Name="cid" Type="int" />
+          <Property Name="cname" Type="nvarchar" MaxLength="500" />
+          <Property Name="orderd" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+          <Property Name="timecreate" Type="datetime" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="allowcomment" Type="int" />
+          <Property Name="author" Type="nvarchar" MaxLength="500" />
+          <Property Name="timeexpire" Type="datetime" />
+          <Property Name="viewcounter" Type="int" />
+          <Property Name="tid" Type="int" />
+          <Property Name="tname" Type="nvarchar" MaxLength="500" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+          <Property Name="url" Type="nvarchar" MaxLength="255" />
+          <Property Name="relateditem" Type="nvarchar" MaxLength="50" />
+          <Property Name="tag" Type="nvarchar(max)" />
+          <Property Name="alias" Type="nvarchar" MaxLength="600" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_product">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="nvarchar" MaxLength="50" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="introduce" Type="nvarchar" />
+          <Property Name="description" Type="ntext" />
+          <Property Name="features" Type="ntext" />
+          <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+          <Property Name="cid" Type="int" />
+          <Property Name="cname" Type="nvarchar" MaxLength="500" />
+          <Property Name="orderd" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="markas" Type="int" />
+          <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+          <Property Name="timecreate" Type="datetime" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="viewcounter" Type="int" />
+          <Property Name="provider" Type="nvarchar" MaxLength="500" />
+          <Property Name="advertise" Type="nvarchar" MaxLength="500" />
+          <Property Name="price" Type="real" />
+          <Property Name="pricealter" Type="real" />
+          <Property Name="allowcomment" Type="int" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+          <Property Name="album" Type="int" />
+          <Property Name="relateditem" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_staticcontent' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_staticcontent">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="500" />
+          <Property Name="filepath" Type="nvarchar" MaxLength="500" />
+          <Property Name="description" Type="ntext" />
+          <Property Name="status" Type="int" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+          <Property Name="code" Type="nvarchar" MaxLength="50" />
+          <Property Name="separatepage" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_supportonline' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_supportonline">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="type" Type="int" />
+          <Property Name="note" Type="nvarchar(max)" />
+          <Property Name="orderd" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_symbol' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vndd_symbol">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="path" Type="nvarchar" MaxLength="500" />
+          <Property Name="note" Type="nvarchar" MaxLength="500" />
+          <Property Name="sized" Type="int" />
+          <Property Name="status" Type="int" />
+          <Property Name="orderd" Type="int" />
+          <Property Name="timeupdate" Type="datetime" />
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="forsearch" Type="nvarchar(max)" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="bfinanceModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="bfinanceEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="dd_feedback" EntityType="bfinanceModel.dd_feedback" />
+          <EntitySet Name="dd_member" EntityType="bfinanceModel.dd_member" />
+          <EntitySet Name="dd_meprofile" EntityType="bfinanceModel.dd_meprofile" />
+          <EntitySet Name="dd_settingsite_restrictedpages" EntityType="bfinanceModel.dd_settingsite_restrictedpages" />
+          <EntitySet Name="dd_user" EntityType="bfinanceModel.dd_user" />
+          <EntitySet Name="vndd_category" EntityType="bfinanceModel.vndd_category" />
+          <EntitySet Name="vndd_categoryattr" EntityType="bfinanceModel.vndd_categoryattr" />
+          <EntitySet Name="vndd_categorytypeof" EntityType="bfinanceModel.vndd_categorytypeof" />
+          <EntitySet Name="vndd_fileattach" EntityType="bfinanceModel.vndd_fileattach" />
+          <EntitySet Name="vndd_menu" EntityType="bfinanceModel.vndd_menu" />
+          <EntitySet Name="vndd_menutypeof" EntityType="bfinanceModel.vndd_menutypeof" />
+          <EntitySet Name="vndd_news" EntityType="bfinanceModel.vndd_news" />
+          <EntitySet Name="vndd_product" EntityType="bfinanceModel.vndd_product" />
+          <EntitySet Name="vndd_staticcontent" EntityType="bfinanceModel.vndd_staticcontent" />
+          <EntitySet Name="vndd_supportonline" EntityType="bfinanceModel.vndd_supportonline" />
+          <EntitySet Name="vndd_symbol" EntityType="bfinanceModel.vndd_symbol" />
+        </EntityContainer>
+        <EntityType Name="dd_feedback">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="sender_name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="sender_address" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="sender_email" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="sender_phone" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="pis" Type="Int32" />
+          <Property Name="pid" Type="Int32" />
+          <Property Name="depth" Type="Int32" />
+          <Property Name="viewcounter" Type="Int32" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="dd_member">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="username" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="password" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="firstname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="lastname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="pin" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="logincache" Type="Int32" />
+          <Property Name="loginfirst" Type="Int32" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="autosave" Type="Int32" />
+          <Property Name="temporarycode" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="filepreview" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="grouptype" Type="Int32" />
+          <Property Name="ranking" Type="Int32" />
+          <Property Name="vote" Type="Int32" />
+          <Property Name="ratingweight" Type="Int32" />
+          <Property Name="messagesunread" Type="Int32" />
+          <Property Name="messages" Type="Int32" />
+        </EntityType>
+        <EntityType Name="dd_meprofile">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="phone" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="state" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="zipcode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="nationalid" Type="Int32" />
+          <Property Name="cityid" Type="Int32" />
+          <Property Name="districtid" Type="Int32" />
+          <Property Name="about" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="blog" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="homepage" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="facebook" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="twitter" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="youtube" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="flickr" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="skype" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="yahoo" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="birthday" Type="DateTime" />
+          <Property Name="profession" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="dd_settingsite_restrictedpages">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="query" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="pathandquery" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="dd_user">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="username" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="username" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="password" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="pis" Type="Int32" />
+          <Property Name="pid" Type="Int32" />
+          <Property Name="depth" Type="Int32" />
+          <Property Name="logincache" Type="Int32" />
+          <Property Name="loginfirst" Type="Int32" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vndd_category">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="cid" Type="Int32" />
+          <Property Name="orderd" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="pis" Type="Int32" />
+          <Property Name="pid" Type="Int32" />
+          <Property Name="depth" Type="Int32" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="customizeid" Type="Int32" />
+          <Property Type="String" Name="alias" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vndd_categoryattr">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="cid" Type="Int32" />
+          <Property Name="orderd" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="pis" Type="Int32" />
+          <Property Name="pid" Type="Int32" />
+          <Property Name="depth" Type="Int32" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vndd_categorytypeof">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vndd_fileattach">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="path" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="note" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="sized" Type="Int64" />
+          <Property Name="typed" Type="Int32" />
+          <Property Name="orderd" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="belongto" Type="Int32" />
+          <Property Name="iid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="vndd_menu">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="note" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="navigateurl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="tooltip" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="attributes" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="visible" Type="Int32" />
+          <Property Name="cid" Type="Int32" />
+          <Property Name="orderd" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="pis" Type="Int32" />
+          <Property Name="pid" Type="Int32" />
+          <Property Name="depth" Type="Int32" />
+          <Property Name="cataloguetypeofid" Type="Int32" />
+          <Property Name="catalogueid" Type="Int32" />
+          <Property Name="insertcatalogue" Type="Int32" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="noroot" Type="Int32" />
+          <Property Name="applyattributeschild" Type="Int32" />
+        </EntityType>
+        <EntityType Name="vndd_menutypeof">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="note" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="path" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="insertbreak" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vndd_news">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="introduce" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="cid" Type="Int32" />
+          <Property Name="cname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="orderd" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="timecreate" Type="DateTime" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="allowcomment" Type="Int32" />
+          <Property Name="author" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="timeexpire" Type="DateTime" />
+          <Property Name="viewcounter" Type="Int32" />
+          <Property Name="tid" Type="Int32" />
+          <Property Name="tname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="relateditem" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="tag" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="alias" Type="String" MaxLength="600" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vndd_product">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="introduce" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="features" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="cid" Type="Int32" />
+          <Property Name="cname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="orderd" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="markas" Type="Int32" />
+          <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="timecreate" Type="DateTime" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="viewcounter" Type="Int32" />
+          <Property Name="provider" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="advertise" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="price" Type="Single" />
+          <Property Name="pricealter" Type="Single" />
+          <Property Name="allowcomment" Type="Int32" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="album" Type="Int32" />
+          <Property Name="relateditem" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vndd_staticcontent">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="filepath" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="separatepage" Type="Int32" />
+        </EntityType>
+        <EntityType Name="vndd_supportonline">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="type" Type="Int32" />
+          <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="orderd" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vndd_symbol">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="path" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="note" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="sized" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="orderd" Type="Int32" />
+          <Property Name="timeupdate" Type="DateTime" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="bfinanceModelStoreContainer" CdmEntityContainer="bfinanceEntities">
+          <EntitySetMapping Name="dd_feedback"><EntityTypeMapping TypeName="bfinanceModel.dd_feedback"><MappingFragment StoreEntitySet="dd_feedback">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="description" ColumnName="description" />
+            <ScalarProperty Name="sender_name" ColumnName="sender_name" />
+            <ScalarProperty Name="sender_address" ColumnName="sender_address" />
+            <ScalarProperty Name="sender_email" ColumnName="sender_email" />
+            <ScalarProperty Name="sender_phone" ColumnName="sender_phone" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="iconex" ColumnName="iconex" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="pis" ColumnName="pis" />
+            <ScalarProperty Name="pid" ColumnName="pid" />
+            <ScalarProperty Name="depth" ColumnName="depth" />
+            <ScalarProperty Name="viewcounter" ColumnName="viewcounter" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="dd_member"><EntityTypeMapping TypeName="bfinanceModel.dd_member"><MappingFragment StoreEntitySet="dd_member">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="password" ColumnName="password" />
+            <ScalarProperty Name="firstname" ColumnName="firstname" />
+            <ScalarProperty Name="lastname" ColumnName="lastname" />
+            <ScalarProperty Name="email" ColumnName="email" />
+            <ScalarProperty Name="phone" ColumnName="phone" />
+            <ScalarProperty Name="pin" ColumnName="pin" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="logincache" ColumnName="logincache" />
+            <ScalarProperty Name="loginfirst" ColumnName="loginfirst" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+            <ScalarProperty Name="autosave" ColumnName="autosave" />
+            <ScalarProperty Name="temporarycode" ColumnName="temporarycode" />
+            <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+            <ScalarProperty Name="grouptype" ColumnName="grouptype" />
+            <ScalarProperty Name="ranking" ColumnName="ranking" />
+            <ScalarProperty Name="vote" ColumnName="vote" />
+            <ScalarProperty Name="ratingweight" ColumnName="ratingweight" />
+            <ScalarProperty Name="messagesunread" ColumnName="messagesunread" />
+            <ScalarProperty Name="messages" ColumnName="messages" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="dd_meprofile"><EntityTypeMapping TypeName="bfinanceModel.dd_meprofile"><MappingFragment StoreEntitySet="dd_meprofile">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="address" ColumnName="address" />
+            <ScalarProperty Name="phone" ColumnName="phone" />
+            <ScalarProperty Name="state" ColumnName="state" />
+            <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+            <ScalarProperty Name="nationalid" ColumnName="nationalid" />
+            <ScalarProperty Name="cityid" ColumnName="cityid" />
+            <ScalarProperty Name="districtid" ColumnName="districtid" />
+            <ScalarProperty Name="about" ColumnName="about" />
+            <ScalarProperty Name="blog" ColumnName="blog" />
+            <ScalarProperty Name="homepage" ColumnName="homepage" />
+            <ScalarProperty Name="facebook" ColumnName="facebook" />
+            <ScalarProperty Name="twitter" ColumnName="twitter" />
+            <ScalarProperty Name="youtube" ColumnName="youtube" />
+            <ScalarProperty Name="flickr" ColumnName="flickr" />
+            <ScalarProperty Name="skype" ColumnName="skype" />
+            <ScalarProperty Name="yahoo" ColumnName="yahoo" />
+            <ScalarProperty Name="birthday" ColumnName="birthday" />
+            <ScalarProperty Name="profession" ColumnName="profession" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="dd_settingsite_restrictedpages"><EntityTypeMapping TypeName="bfinanceModel.dd_settingsite_restrictedpages"><MappingFragment StoreEntitySet="dd_settingsite_restrictedpages">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="query" ColumnName="query" />
+            <ScalarProperty Name="pathandquery" ColumnName="pathandquery" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="dd_user"><EntityTypeMapping TypeName="bfinanceModel.dd_user"><MappingFragment StoreEntitySet="dd_user">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="password" ColumnName="password" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="email" ColumnName="email" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="pis" ColumnName="pis" />
+            <ScalarProperty Name="pid" ColumnName="pid" />
+            <ScalarProperty Name="depth" ColumnName="depth" />
+            <ScalarProperty Name="logincache" ColumnName="logincache" />
+            <ScalarProperty Name="loginfirst" ColumnName="loginfirst" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_category"><EntityTypeMapping TypeName="bfinanceModel.vndd_category"><MappingFragment StoreEntitySet="vndd_category">
+            <ScalarProperty Name="alias" ColumnName="alias" />
+                <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="note" ColumnName="note" />
+            <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+            <ScalarProperty Name="cid" ColumnName="cid" />
+            <ScalarProperty Name="orderd" ColumnName="orderd" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="iconex" ColumnName="iconex" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="pis" ColumnName="pis" />
+            <ScalarProperty Name="pid" ColumnName="pid" />
+            <ScalarProperty Name="depth" ColumnName="depth" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+            <ScalarProperty Name="url" ColumnName="url" />
+            <ScalarProperty Name="customizeid" ColumnName="customizeid" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_categoryattr"><EntityTypeMapping TypeName="bfinanceModel.vndd_categoryattr"><MappingFragment StoreEntitySet="vndd_categoryattr">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="note" ColumnName="note" />
+            <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+            <ScalarProperty Name="cid" ColumnName="cid" />
+            <ScalarProperty Name="orderd" ColumnName="orderd" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="iconex" ColumnName="iconex" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="pis" ColumnName="pis" />
+            <ScalarProperty Name="pid" ColumnName="pid" />
+            <ScalarProperty Name="depth" ColumnName="depth" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+            <ScalarProperty Name="url" ColumnName="url" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_categorytypeof"><EntityTypeMapping TypeName="bfinanceModel.vndd_categorytypeof"><MappingFragment StoreEntitySet="vndd_categorytypeof">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="note" ColumnName="note" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_fileattach"><EntityTypeMapping TypeName="bfinanceModel.vndd_fileattach"><MappingFragment StoreEntitySet="vndd_fileattach">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="path" ColumnName="path" />
+            <ScalarProperty Name="note" ColumnName="note" />
+            <ScalarProperty Name="sized" ColumnName="sized" />
+            <ScalarProperty Name="typed" ColumnName="typed" />
+            <ScalarProperty Name="orderd" ColumnName="orderd" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="iconex" ColumnName="iconex" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="belongto" ColumnName="belongto" />
+            <ScalarProperty Name="iid" ColumnName="iid" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_menu"><EntityTypeMapping TypeName="bfinanceModel.vndd_menu"><MappingFragment StoreEntitySet="vndd_menu">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="note" ColumnName="note" />
+            <ScalarProperty Name="navigateurl" ColumnName="navigateurl" />
+            <ScalarProperty Name="tooltip" ColumnName="tooltip" />
+            <ScalarProperty Name="attributes" ColumnName="attributes" />
+            <ScalarProperty Name="visible" ColumnName="visible" />
+            <ScalarProperty Name="cid" ColumnName="cid" />
+            <ScalarProperty Name="orderd" ColumnName="orderd" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="iconex" ColumnName="iconex" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="pis" ColumnName="pis" />
+            <ScalarProperty Name="pid" ColumnName="pid" />
+            <ScalarProperty Name="depth" ColumnName="depth" />
+            <ScalarProperty Name="cataloguetypeofid" ColumnName="cataloguetypeofid" />
+            <ScalarProperty Name="catalogueid" ColumnName="catalogueid" />
+            <ScalarProperty Name="insertcatalogue" ColumnName="insertcatalogue" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+            <ScalarProperty Name="noroot" ColumnName="noroot" />
+            <ScalarProperty Name="applyattributeschild" ColumnName="applyattributeschild" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_menutypeof"><EntityTypeMapping TypeName="bfinanceModel.vndd_menutypeof"><MappingFragment StoreEntitySet="vndd_menutypeof">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="note" ColumnName="note" />
+            <ScalarProperty Name="path" ColumnName="path" />
+            <ScalarProperty Name="insertbreak" ColumnName="insertbreak" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_news"><EntityTypeMapping TypeName="bfinanceModel.vndd_news"><MappingFragment StoreEntitySet="vndd_news">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="introduce" ColumnName="introduce" />
+            <ScalarProperty Name="description" ColumnName="description" />
+            <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+            <ScalarProperty Name="cid" ColumnName="cid" />
+            <ScalarProperty Name="cname" ColumnName="cname" />
+            <ScalarProperty Name="orderd" ColumnName="orderd" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="iconex" ColumnName="iconex" />
+            <ScalarProperty Name="timecreate" ColumnName="timecreate" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="allowcomment" ColumnName="allowcomment" />
+            <ScalarProperty Name="author" ColumnName="author" />
+            <ScalarProperty Name="timeexpire" ColumnName="timeexpire" />
+            <ScalarProperty Name="viewcounter" ColumnName="viewcounter" />
+            <ScalarProperty Name="tid" ColumnName="tid" />
+            <ScalarProperty Name="tname" ColumnName="tname" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+            <ScalarProperty Name="url" ColumnName="url" />
+            <ScalarProperty Name="relateditem" ColumnName="relateditem" />
+            <ScalarProperty Name="tag" ColumnName="tag" />
+            <ScalarProperty Name="alias" ColumnName="alias" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_product"><EntityTypeMapping TypeName="bfinanceModel.vndd_product"><MappingFragment StoreEntitySet="vndd_product">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="introduce" ColumnName="introduce" />
+            <ScalarProperty Name="description" ColumnName="description" />
+            <ScalarProperty Name="features" ColumnName="features" />
+            <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+            <ScalarProperty Name="cid" ColumnName="cid" />
+            <ScalarProperty Name="cname" ColumnName="cname" />
+            <ScalarProperty Name="orderd" ColumnName="orderd" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="markas" ColumnName="markas" />
+            <ScalarProperty Name="iconex" ColumnName="iconex" />
+            <ScalarProperty Name="timecreate" ColumnName="timecreate" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="viewcounter" ColumnName="viewcounter" />
+            <ScalarProperty Name="provider" ColumnName="provider" />
+            <ScalarProperty Name="advertise" ColumnName="advertise" />
+            <ScalarProperty Name="price" ColumnName="price" />
+            <ScalarProperty Name="pricealter" ColumnName="pricealter" />
+            <ScalarProperty Name="allowcomment" ColumnName="allowcomment" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+            <ScalarProperty Name="album" ColumnName="album" />
+            <ScalarProperty Name="relateditem" ColumnName="relateditem" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_staticcontent"><EntityTypeMapping TypeName="bfinanceModel.vndd_staticcontent"><MappingFragment StoreEntitySet="vndd_staticcontent">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="filepath" ColumnName="filepath" />
+            <ScalarProperty Name="description" ColumnName="description" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+            <ScalarProperty Name="code" ColumnName="code" />
+            <ScalarProperty Name="separatepage" ColumnName="separatepage" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_supportonline"><EntityTypeMapping TypeName="bfinanceModel.vndd_supportonline"><MappingFragment StoreEntitySet="vndd_supportonline">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="type" ColumnName="type" />
+            <ScalarProperty Name="note" ColumnName="note" />
+            <ScalarProperty Name="orderd" ColumnName="orderd" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vndd_symbol"><EntityTypeMapping TypeName="bfinanceModel.vndd_symbol"><MappingFragment StoreEntitySet="vndd_symbol">
+            <ScalarProperty Name="id" ColumnName="id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="path" ColumnName="path" />
+            <ScalarProperty Name="note" ColumnName="note" />
+            <ScalarProperty Name="sized" ColumnName="sized" />
+            <ScalarProperty Name="status" ColumnName="status" />
+            <ScalarProperty Name="orderd" ColumnName="orderd" />
+            <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1" ZoomLevel="30">
+        <EntityTypeShape EntityType="bfinanceModel.dd_feedback" Width="1.5" PointX="0.75" PointY="0.75" Height="4.0956022135416656" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.dd_member" Width="1.5" PointX="2.75" PointY="0.75" Height="5.4417122395833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.dd_meprofile" Width="1.5" PointX="4.75" PointY="0.75" Height="4.6725065104166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.dd_settingsite_restrictedpages" Width="1.5" PointX="6.75" PointY="0.75" Height="1.7879850260416657" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.dd_user" Width="1.5" PointX="6.75" PointY="3.75" Height="3.7109993489583335" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_category" Width="1.5" PointX="0.75" PointY="7.75" Height="4.480205078125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_categoryattr" Width="1.5" PointX="2.75" PointY="7.75" Height="4.2879036458333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_categorytypeof" Width="1.5" PointX="8.75" PointY="0.75" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_fileattach" Width="1.5" PointX="8.75" PointY="4.75" Height="3.7109993489583317" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_menu" Width="1.5" PointX="4.75" PointY="8.75" Height="5.6340136718750031" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_menutypeof" Width="1.5" PointX="6.75" PointY="9.75" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_news" Width="1.5" PointX="8.75" PointY="9.75" Height="6.0186165364583317" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_product" Width="1.5" PointX="10.75" PointY="0.75" Height="5.8263151041666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_staticcontent" Width="1.5" PointX="10.75" PointY="7.75" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_supportonline" Width="1.5" PointX="10.75" PointY="11.75" Height="2.5571907552083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="bfinanceModel.vndd_symbol" Width="1.5" PointX="12.75" PointY="0.75" Height="2.9417936197916674" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

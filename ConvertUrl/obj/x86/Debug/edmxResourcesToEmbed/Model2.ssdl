@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bfinanceModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="bfinanceModel1StoreContainer">
+    <EntitySet Name="vndd_category" EntityType="bfinanceModel1.Store.vndd_category" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="vndd_category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="note" Type="nvarchar(max)" />
+    <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+    <Property Name="cid" Type="int" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="pis" Type="int" />
+    <Property Name="pid" Type="int" />
+    <Property Name="depth" Type="int" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+    <Property Name="url" Type="nvarchar" MaxLength="255" />
+    <Property Name="customizeid" Type="int" />
+    <Property Name="alias" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+</Schema>

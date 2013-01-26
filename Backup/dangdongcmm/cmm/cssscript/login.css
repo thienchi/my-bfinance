@@ -1,0 +1,160 @@
+
+BODY {
+	font:normal 12px Arial, Tahoma; color: #333;
+	margin:10px 10px;
+	background:url(../images/bg_body.gif);
+}
+
+#FLOUT0 {
+	width: 100%; 
+}
+#FLOUT0B {
+	width: 100%; vertical-align: middle;
+}
+#FLOUT1 {
+	width: 580px; margin-top:100px; padding:10px;
+	text-align: left;
+	background-color: #fff; border:1px solid #ccc;
+}
+#FLOUT1B {
+	width: 100%;
+}
+#FLOUT1H {
+	width: 100%; height: 80px; 
+}
+#FLOUT1F {
+	height: 50px; 
+}
+
+.FLOUTNOTICE {
+    font:normal 12px Arial, Tahoma; 
+    padding: 10px; padding-left: 15px; width: 100%;
+}
+.FLOUTNOTICE .default {
+    color: #000000;
+}
+.FLOUTNOTICE .completed {
+    color: #0b55c4;
+}
+.FLOUTNOTICE .warning {
+    color: #d98a02;
+}
+.FLOUTNOTICE .error {
+    color: #c61444;
+}
+
+.copyright {
+	border-top: 3px solid #dfdfdf; padding: 5px;
+	font:normal 10px Verdana, Arial; color: #333;
+}
+.copyright a {
+	color: #0b55c4; font-weight: normal; text-decoration: none;
+}
+.copyright a:hover {
+	text-decoration: underline;
+}
+
+
+.dgray-no-bottom {
+	width:100%;
+	border: 1px solid #dfdfdf; background-color: #efefef; 
+	margin:0; border-bottom: 5px solid #9f1010;
+	height: 40px;
+	font:bold 20px Arial, Verdana, Tahoma; color:#9f1010;
+}
+
+a.website {
+    font:bold 14px Arial, Verdana, Tahoma; color: #0b55c4;
+}
+a.website:hover {
+}
+
+
+
+.drag-handle{ /*Overwrite default drag handle bar background color with below*/
+background-color: #fff;
+}
+
+#interVeil{ /*CSS for veil that covers entire page while modal window is visible*/
+position: absolute;
+background: black url(../images/progress.gif) no-repeat center; background-attachment:fixed;
+width: 10px;
+left: 0;
+top: 0;
+z-index: 100;
+visibility: hidden;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=75);
+opacity: 0.75;
+text-align:center; cursor:wait;
+}
+
+
+/* for form */
+.tformin {
+    position:relative; float:left; width:100%;
+}
+.tformincom {
+    width:350px;
+}
+.tformin .require {
+    color:#f26522;
+}
+
+.rowhor {
+    position:relative; float:left; width:100%;
+    margin-top:10px; text-align:left;
+}
+.rowhor input[type='text'], input[type='password'] {
+    font:normal 12px Arial, Tahoma, Verdana; color:#333;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 10px #EEEEEE inset;
+    padding:5px 4px; height:16px;
+    width:97%;
+}
+.rowhor select {
+    font:normal 12px Arial, Tahoma, Verdana; color:#333;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee inset;
+    padding:5px 4px;
+    width:100%;
+}
+.rowhor .button {
+    font:bold 13px Arial, Tahoma, Verdana; color:#111;
+    padding:3px 4px; min-width:100px;
+    cursor:pointer;
+}
+.rowhor .title {
+    position:relative; float:left; width:25%; text-align:right; padding-right:15px;
+    margin:5px 0;
+}
+.rowhor .note {
+    position:relative; float:left;
+    margin:5px 5px;
+    color:#555; font-size:11px; font-style:italic;
+}
+.rowhor fieldset {
+    font:normal 12px Arial, Tahoma, Verdana; color:#111;
+    margin-top: 5px; padding:0;
+    border-width:1px 0 0 0; border-top:1px solid #ccc;
+}
+.rowhor fieldset legend {
+    font:bold 11px Arial, Tahoma, Verdana; color:#111;
+    padding-right: 5px; margin-bottom:10px;
+}
+.rowhor fieldset div {
+    padding: 5px;
+}
+
+.rowhor .boxctrll {
+    position:relative; float:left; width:70%;
+}
+.rowhor .boxctrlm {
+    position:relative; float:left; width:55%;
+}
+.rowhor .boxctrlc {
+    position:relative; float:left; width:35%;
+}
+.rowhor .boxctrls {
+    position:relative; float:left; width:15%;
+}
+/* for form */

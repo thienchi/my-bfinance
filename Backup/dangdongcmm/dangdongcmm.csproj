@@ -1,0 +1,1324 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D74D3E34-6163-4FB8-8072-91294EFF738D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dangdongcmm</RootNamespace>
+    <AssemblyName>dangdongcmm</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.18540, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelPackage, Version=1.0.0.1, Culture=neutral, PublicKeyToken=f8bb63aa9d6969e8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\ExcelPackage.dll</HintPath>
+    </Reference>
+    <Reference Include="FreetextBox, Version=3.2.4.41247, Culture=neutral, PublicKeyToken=5962a4e684a48b87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\FreetextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.3.9.1, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="RssToolkit, Version=1.0.0.1, Culture=neutral, PublicKeyToken=02e47a85b237026a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\RssToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\GenericComparer.cs" />
+    <Compile Include="App_Code\GenericList.cs" />
+    <Compile Include="App_Code\cmm\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\cmm\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\cmm\CCommon.cs">
+    </Compile>
+    <Compile Include="App_Code\CCommon.cs" />
+    <Compile Include="App_Code\CartHandler.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\RLLoadHandler.ashx.cs">
+      <DependentUpon>RLLoadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\FPRemoveHandler.ashx.cs">
+      <DependentUpon>FPRemoveHandler.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cmm\FPUploadHandler.ashx.cs">
+      <DependentUpon>FPUploadHandler.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cmm\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\RNLoadHandler.ashx.cs">
+      <DependentUpon>RNLoadHandler.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cmm\RPLoadHandler.ashx.cs">
+      <DependentUpon>RPLoadHandler.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\categoryl.aspx.cs">
+      <DependentUpon>categoryl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\categoryl.aspx.designer.cs">
+      <DependentUpon>categoryl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\categorytypeofl.aspx.cs">
+      <DependentUpon>categorytypeofl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\categorytypeofl.aspx.designer.cs">
+      <DependentUpon>categorytypeofl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\categorytypeofu.aspx.cs">
+      <DependentUpon>categorytypeofu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\categorytypeofu.aspx.designer.cs">
+      <DependentUpon>categorytypeofu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\categoryu.aspx.cs">
+      <DependentUpon>categoryu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\categoryu.aspx.designer.cs">
+      <DependentUpon>categoryu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\changepassword.aspx.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\changepassword.aspx.designer.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\commentl.aspx.cs">
+      <DependentUpon>commentl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\commentl.aspx.designer.cs">
+      <DependentUpon>commentl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\commentu.aspx.cs">
+      <DependentUpon>commentu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\commentu.aspx.designer.cs">
+      <DependentUpon>commentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\categoryattrl.aspx.cs">
+      <DependentUpon>categoryattrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\categoryattrl.aspx.designer.cs">
+      <DependentUpon>categoryattrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\categoryattru.aspx.cs">
+      <DependentUpon>categoryattru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\categoryattru.aspx.designer.cs">
+      <DependentUpon>categoryattru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\bannerl.aspx.cs">
+      <DependentUpon>bannerl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\bannerl.aspx.designer.cs">
+      <DependentUpon>bannerl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\banneru.aspx.cs">
+      <DependentUpon>banneru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\banneru.aspx.designer.cs">
+      <DependentUpon>banneru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\videol.aspx.cs">
+      <DependentUpon>videol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\videol.aspx.designer.cs">
+      <DependentUpon>videol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\videou.aspx.cs">
+      <DependentUpon>videou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\videou.aspx.designer.cs">
+      <DependentUpon>videou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\managerupload.aspx.cs">
+      <DependentUpon>managerupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\managerupload.aspx.designer.cs">
+      <DependentUpon>managerupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\report_lib.aspx.cs">
+      <DependentUpon>report_lib.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\report_lib.aspx.designer.cs">
+      <DependentUpon>report_lib.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\librariesu.aspx.cs">
+      <DependentUpon>librariesu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\librariesu.aspx.designer.cs">
+      <DependentUpon>librariesu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\librariesl.aspx.cs">
+      <DependentUpon>librariesl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\librariesl.aspx.designer.cs">
+      <DependentUpon>librariesl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\feedbackl.aspx.cs">
+      <DependentUpon>feedbackl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\feedbackl.aspx.designer.cs">
+      <DependentUpon>feedbackl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\MasterDefault.Master.cs">
+      <DependentUpon>MasterDefault.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\MasterDefault.Master.designer.cs">
+      <DependentUpon>MasterDefault.Master</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\memberl.aspx.cs">
+      <DependentUpon>memberl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\memberl.aspx.designer.cs">
+      <DependentUpon>memberl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\memberu.aspx.cs">
+      <DependentUpon>memberu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\memberu.aspx.designer.cs">
+      <DependentUpon>memberu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\menul.aspx.cs">
+      <DependentUpon>menul.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\menul.aspx.designer.cs">
+      <DependentUpon>menul.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\menutypeofl.aspx.cs">
+      <DependentUpon>menutypeofl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\menutypeofl.aspx.designer.cs">
+      <DependentUpon>menutypeofl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\menutypeofu.aspx.cs">
+      <DependentUpon>menutypeofu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\menutypeofu.aspx.designer.cs">
+      <DependentUpon>menutypeofu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\menuu.aspx.cs">
+      <DependentUpon>menuu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\menuu.aspx.designer.cs">
+      <DependentUpon>menuu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\newsl.aspx.cs">
+      <DependentUpon>newsl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\newsl.aspx.designer.cs">
+      <DependentUpon>newsl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\newsu.aspx.cs">
+      <DependentUpon>newsu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\newsu.aspx.designer.cs">
+      <DependentUpon>newsu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\productl.aspx.cs">
+      <DependentUpon>productl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\productl.aspx.designer.cs">
+      <DependentUpon>productl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\productu.aspx.cs">
+      <DependentUpon>productu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\productu.aspx.designer.cs">
+      <DependentUpon>productu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\rssquery.aspx.cs">
+      <DependentUpon>rssquery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\rssquery.aspx.designer.cs">
+      <DependentUpon>rssquery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\rssresourcel.aspx.cs">
+      <DependentUpon>rssresourcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\rssresourcel.aspx.designer.cs">
+      <DependentUpon>rssresourcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\rssresourceu.aspx.cs">
+      <DependentUpon>rssresourceu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\rssresourceu.aspx.designer.cs">
+      <DependentUpon>rssresourceu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\settingsite_email.aspx.cs">
+      <DependentUpon>settingsite_email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\settingsite_email.aspx.designer.cs">
+      <DependentUpon>settingsite_email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\settingsite_restrictedpages.aspx.cs">
+      <DependentUpon>settingsite_restrictedpages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\settingsite_restrictedpages.aspx.designer.cs">
+      <DependentUpon>settingsite_restrictedpages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\staticcontentl.aspx.cs">
+      <DependentUpon>staticcontentl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\staticcontentl.aspx.designer.cs">
+      <DependentUpon>staticcontentl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\staticcontentu.aspx.cs">
+      <DependentUpon>staticcontentu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\staticcontentu.aspx.designer.cs">
+      <DependentUpon>staticcontentu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\supportonlinel.aspx.cs">
+      <DependentUpon>supportonlinel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\supportonlinel.aspx.designer.cs">
+      <DependentUpon>supportonlinel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\supportonlineu.aspx.cs">
+      <DependentUpon>supportonlineu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\supportonlineu.aspx.designer.cs">
+      <DependentUpon>supportonlineu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\symboll.aspx.cs">
+      <DependentUpon>symboll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\symboll.aspx.designer.cs">
+      <DependentUpon>symboll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\symbolu.aspx.cs">
+      <DependentUpon>symbolu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\symbolu.aspx.designer.cs">
+      <DependentUpon>symbolu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucfilebanner.ascx.cs">
+      <DependentUpon>ucfilebanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucfilebanner.ascx.designer.cs">
+      <DependentUpon>ucfilebanner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\uccategoryattr.ascx.cs">
+      <DependentUpon>uccategoryattr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\uccategoryattr.ascx.designer.cs">
+      <DependentUpon>uccategoryattr.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\uccategorymulti.ascx.cs">
+      <DependentUpon>uccategorymulti.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\uccategorymulti.ascx.designer.cs">
+      <DependentUpon>uccategorymulti.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucrelatedlibraries.ascx.cs">
+      <DependentUpon>ucrelatedlibraries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucrelatedlibraries.ascx.designer.cs">
+      <DependentUpon>ucrelatedlibraries.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucaccesscounter.ascx.cs">
+      <DependentUpon>ucaccesscounter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucaccesscounter.ascx.designer.cs">
+      <DependentUpon>ucaccesscounter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucassigntouser.ascx.cs">
+      <DependentUpon>ucassigntouser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucassigntouser.ascx.designer.cs">
+      <DependentUpon>ucassigntouser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucdisplaysetting.ascx.cs">
+      <DependentUpon>ucdisplaysetting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucdisplaysetting.ascx.designer.cs">
+      <DependentUpon>ucdisplaysetting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucfileattach.ascx.cs">
+      <DependentUpon>ucfileattach.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucfileattach.ascx.designer.cs">
+      <DependentUpon>ucfileattach.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucfilepreview.ascx.cs">
+      <DependentUpon>ucfilepreview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucfilepreview.ascx.designer.cs">
+      <DependentUpon>ucfilepreview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucpager.ascx.cs">
+      <DependentUpon>ucpager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucpager.ascx.designer.cs">
+      <DependentUpon>ucpager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucrelatednews.ascx.cs">
+      <DependentUpon>ucrelatednews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucrelatednews.ascx.designer.cs">
+      <DependentUpon>ucrelatednews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucrelatedproduct.ascx.cs">
+      <DependentUpon>ucrelatedproduct.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucrelatedproduct.ascx.designer.cs">
+      <DependentUpon>ucrelatedproduct.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucsetupattribute.ascx.cs">
+      <DependentUpon>ucsetupattribute.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucsetupattribute.ascx.designer.cs">
+      <DependentUpon>ucsetupattribute.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucsetupmember.ascx.cs">
+      <DependentUpon>ucsetupmember.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucsetupmember.ascx.designer.cs">
+      <DependentUpon>ucsetupmember.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucsymbol.ascx.cs">
+      <DependentUpon>ucsymbol.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usercontrol\ucsymbol.ascx.designer.cs">
+      <DependentUpon>ucsymbol.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usergroupl.aspx.cs">
+      <DependentUpon>usergroupl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usergroupl.aspx.designer.cs">
+      <DependentUpon>usergroupl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\usergroupu.aspx.cs">
+      <DependentUpon>usergroupu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\usergroupu.aspx.designer.cs">
+      <DependentUpon>usergroupu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\userl.aspx.cs">
+      <DependentUpon>userl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\userl.aspx.designer.cs">
+      <DependentUpon>userl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\useru.aspx.cs">
+      <DependentUpon>useru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\useru.aspx.designer.cs">
+      <DependentUpon>useru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\waittingdelete.aspx.cs">
+      <DependentUpon>waittingdelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\waittingdelete.aspx.designer.cs">
+      <DependentUpon>waittingdelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmm\vn\waittingupdate.aspx.cs">
+      <DependentUpon>waittingupdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmm\vn\waittingupdate.aspx.designer.cs">
+      <DependentUpon>waittingupdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\cmm\GenericList.cs" />
+    <Compile Include="FPRemoveHandler.ashx.cs">
+      <DependentUpon>FPRemoveHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="FPUploadHandler.ashx.cs">
+      <DependentUpon>FPUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vn\confirmation.aspx.cs">
+      <DependentUpon>confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\confirmation.aspx.designer.cs">
+      <DependentUpon>confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\dictionary.aspx.cs">
+      <DependentUpon>dictionary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\dictionary.aspx.designer.cs">
+      <DependentUpon>dictionary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsc.ascx.cs">
+      <DependentUpon>ucnewsc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsc.ascx.designer.cs">
+      <DependentUpon>ucnewsc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\M_password.aspx.cs">
+      <DependentUpon>M_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\M_password.aspx.designer.cs">
+      <DependentUpon>M_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\M_profile.aspx.cs">
+      <DependentUpon>M_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\M_profile.aspx.designer.cs">
+      <DependentUpon>M_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\M_profileedit.aspx.cs">
+      <DependentUpon>M_profileedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\M_profileedit.aspx.designer.cs">
+      <DependentUpon>M_profileedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\MasterDefault.Master.cs">
+      <DependentUpon>MasterDefault.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\MasterDefault.Master.designer.cs">
+      <DependentUpon>MasterDefault.Master</DependentUpon>
+    </Compile>
+    <Compile Include="vn\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\scontentview.aspx.cs">
+      <DependentUpon>scontentview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\scontentview.aspx.designer.cs">
+      <DependentUpon>scontentview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucfocusn.ascx.cs">
+      <DependentUpon>ucfocusn.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucfocusn.ascx.designer.cs">
+      <DependentUpon>ucfocusn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\uclogin.ascx.cs">
+      <DependentUpon>uclogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\uclogin.ascx.designer.cs">
+      <DependentUpon>uclogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucloginfo.ascx.cs">
+      <DependentUpon>ucloginfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucloginfo.ascx.designer.cs">
+      <DependentUpon>ucloginfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsa.ascx.cs">
+      <DependentUpon>ucnewsa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsa.ascx.designer.cs">
+      <DependentUpon>ucnewsa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucmenu.ascx.cs">
+      <DependentUpon>ucmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucmenu.ascx.designer.cs">
+      <DependentUpon>ucmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsrelated.ascx.cs">
+      <DependentUpon>ucnewsrelated.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsrelated.ascx.designer.cs">
+      <DependentUpon>ucnewsrelated.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucaccesscounter.ascx.cs">
+      <DependentUpon>ucaccesscounter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucaccesscounter.ascx.designer.cs">
+      <DependentUpon>ucaccesscounter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\uccataloguebrowse.ascx.cs">
+      <DependentUpon>uccataloguebrowse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\uccataloguebrowse.ascx.designer.cs">
+      <DependentUpon>uccataloguebrowse.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\uccataloguemenu.ascx.cs">
+      <DependentUpon>uccataloguemenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\uccataloguemenu.ascx.designer.cs">
+      <DependentUpon>uccataloguemenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\uccomment.ascx.cs">
+      <DependentUpon>uccomment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\uccomment.ascx.designer.cs">
+      <DependentUpon>uccomment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\uccommentf.ascx.cs">
+      <DependentUpon>uccommentf.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\uccommentf.ascx.designer.cs">
+      <DependentUpon>uccommentf.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\uchomen.ascx.cs">
+      <DependentUpon>uchomen.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\uchomen.ascx.designer.cs">
+      <DependentUpon>uchomen.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsf.ascx.cs">
+      <DependentUpon>ucnewsf.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsf.ascx.designer.cs">
+      <DependentUpon>ucnewsf.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsh.ascx.cs">
+      <DependentUpon>ucnewsh.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsh.ascx.designer.cs">
+      <DependentUpon>ucnewsh.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsin.ascx.cs">
+      <DependentUpon>ucnewsin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsin.ascx.designer.cs">
+      <DependentUpon>ucnewsin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsl.ascx.cs">
+      <DependentUpon>ucnewsl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewsl.ascx.designer.cs">
+      <DependentUpon>ucnewsl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewst.ascx.cs">
+      <DependentUpon>ucnewst.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucnewst.ascx.designer.cs">
+      <DependentUpon>ucnewst.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucpager.ascx.cs">
+      <DependentUpon>ucpager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucpager.ascx.designer.cs">
+      <DependentUpon>ucpager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucscontentview.ascx.cs">
+      <DependentUpon>ucscontentview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucscontentview.ascx.designer.cs">
+      <DependentUpon>ucscontentview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucsearch.ascx.cs">
+      <DependentUpon>ucsearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vn\usercontrol\ucsearch.ascx.designer.cs">
+      <DependentUpon>ucsearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="wservice\UtiMailService.asmx.cs">
+      <DependentUpon>UtiMailService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="commup\20110805\634481594352187721.jpeg" />
+    <Content Include="commup\20110805\634481595212646936.jpeg" />
+    <Content Include="commup\20110805\634481595802190656.jpg" />
+    <Content Include="commup\20110805\634481596089137068.jpeg" />
+    <Content Include="commup\20110805\634481596414755693.jpg" />
+    <Content Include="commup\20110805\634481596732613873.jpg" />
+    <Content Include="commup\20110805\634481597096454684.jpg" />
+    <Content Include="commup\20110805\634481597515898675.jpeg" />
+    <Content Include="commup\20110805\634481597820136076.jpg" />
+    <Content Include="commup\20110805\634481598210768419.jpg" />
+    <Content Include="commup\20110805\634481598805942461.jpg" />
+    <Content Include="commup\20110805\634481599095809040.jpg" />
+    <Content Include="commup\20110805\634481599384335543.gif" />
+    <Content Include="commup\20110805\634481599702223725.jpg" />
+    <Content Include="commup\20110805\634481600027532332.jpg" />
+    <Content Include="commup\20110805\634481600323709272.jpg" />
+    <Content Include="commup\20110805\634481600752873819.gif" />
+    <Content Include="commup\20110805\634481600752873819.jpg" />
+    <Content Include="commup\20110805\634481601080092535.jpg" />
+    <Content Include="commup\20110805\634481601376769504.jpg" />
+    <Content Include="commup\20110805\634481601780052570.jpg" />
+    <Content Include="commup\20110805\634481602139163110.gif" />
+    <Content Include="commup\20110805\634481602436070092.jpg" />
+    <Content Include="commup\20110805\634481602971040691.jpg" />
+    <Content Include="commup\20110805\634481603304619770.jpg" />
+    <Content Include="commup\20110805\634481603673460867.jpg" />
+    <Content Include="commup\20110805\634481603951176751.jpg" />
+    <Content Include="commup\20110805\634481604526459656.jpg" />
+    <Content Include="commup\20110805\634481604821976558.jpg" />
+    <Content Include="commup\20110805\634481605490234781.jpg" />
+    <Content Include="commup\20110805\634481606529164204.jpeg" />
+    <Content Include="commup\symbol\633674609955770000.gif" />
+    <Content Include="commup\symbol\633674612302300000.gif" />
+    <Content Include="commup\symbol\633674612506030000.gif" />
+    <Content Include="commup\symbol\633897361870828246.gif" />
+    <Content Include="commup\symbol\633988218683232676.gif" />
+    <Content Include="commup\symbol\633988218838512676.gif" />
+    <Content Include="commup\symbol\633988219243532676.gif" />
+    <Content Include="Global.asax" />
+    <Content Include="images\arrowr1.gif" />
+    <Content Include="images\arrowrh1.gif" />
+    <Content Include="images\bgfbottom2.jpg" />
+    <Content Include="images\bgfheader2.jpg" />
+    <Content Include="images\bgfmiddle2.jpg" />
+    <Content Include="images\breadcrumbs.gif" />
+    <Content Include="images\bullet.gif" />
+    <Content Include="images\cmdreadmore.png" />
+    <Content Include="images\collapse.gif" />
+    <Content Include="images\document-bg.png" />
+    <Content Include="images\document-bg2.png" />
+    <Content Include="images\dot.gif" />
+    <Content Include="images\footer-bg.jpg" />
+    <Content Include="images\icon_comment.gif" />
+    <Content Include="images\linev.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\menu-bg.png" />
+    <Content Include="images\menubreak1.gif" />
+    <Content Include="images\menubreak1.png" />
+    <Content Include="images\menuitemh-bg.png" />
+    <Content Include="images\newshboxtitbg.png" />
+    <Content Include="images\newshreadmorebg.png" />
+    <Content Include="images\search-button.gif" />
+    <Content Include="images\search-button.png" />
+    <Content Include="images\separator1.gif" />
+    <Content Include="images\tabs_ul_bg.gif" />
+    <Content Include="vn\contactus.aspx" />
+    <Content Include="ExternalRewrite.config" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dangdongcmm.dal\dangdongcmm.dal.csproj">
+      <Project>{CC580DE9-2C31-4CFA-8913-4841FB15F6F7}</Project>
+      <Name>dangdongcmm.dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dangdongcmm.model\dangdongcmm.model.csproj">
+      <Project>{AFA073E1-4F2F-4470-984F-53333A2972C6}</Project>
+      <Name>dangdongcmm.model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dangdongcmm.utilities\dangdongcmm.utilities.csproj">
+      <Project>{E690ED4E-5AB3-4994-B315-9263ECBF7913}</Project>
+      <Name>dangdongcmm.utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vn\MasterDefault.Master" />
+    <Content Include="vn\home.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vn\MasterHome.Master" />
+    <Content Include="vn\news.aspx" />
+    <Content Include="vn\scontentview.aspx" />
+    <Content Include="vn\search.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cssscript\common.js" />
+    <Content Include="cssscript\jquery-1.6.1.min.js" />
+    <Content Include="cssscript\jquery.tools.min.js" />
+    <Content Include="cssscript\main.css" />
+    <Content Include="cssscript\validata.js" />
+    <Content Include="images\bodycontentbg.png" />
+    <Content Include="images\bodycontentf.png" />
+    <Content Include="images\icon-home.png" />
+    <Content Include="vn\confirmation.aspx" />
+    <Content Include="vn\usercontrol\ucaccesscounter.ascx" />
+    <Content Include="vn\usercontrol\uccataloguebrowse.ascx" />
+    <Content Include="vn\usercontrol\uccataloguemenu.ascx" />
+    <Content Include="vn\usercontrol\uccomment.ascx" />
+    <Content Include="vn\usercontrol\uccommentf.ascx" />
+    <Content Include="vn\usercontrol\uchomen.ascx" />
+    <Content Include="vn\usercontrol\ucnewsf.ascx" />
+    <Content Include="vn\usercontrol\ucnewsh.ascx" />
+    <Content Include="vn\usercontrol\ucnewsin.ascx" />
+    <Content Include="vn\usercontrol\ucnewsl.ascx" />
+    <Content Include="vn\usercontrol\ucnewst.ascx" />
+    <Content Include="vn\usercontrol\ucsearch.ascx" />
+    <Content Include="wservice\UtiMailService.asmx" />
+    <Content Include="xhtml\Definephrase.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cssscript\dhtmlwindow.js" />
+    <Content Include="cssscript\form.css" />
+    <Content Include="cssscript\menu.css" />
+    <Content Include="default.aspx" />
+    <Content Include="vn\usercontrol\ucnewsrelated.ascx" />
+    <Content Include="vn\usercontrol\ucnewsfright.ascx" />
+    <Content Include="xhtml\vn\MailToServer.Comment.htm" />
+    <Content Include="xhtml\vn\MailToServer.Feedback.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cmm\cssscript\common.js" />
+    <Content Include="cmm\cssscript\dformout.js" />
+    <Content Include="cmm\cssscript\dhtmlwindow.js" />
+    <Content Include="cmm\cssscript\form.css" />
+    <Content Include="cmm\cssscript\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="cmm\cssscript\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="cmm\cssscript\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="cmm\cssscript\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="cmm\cssscript\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="cmm\cssscript\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="cmm\cssscript\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="cmm\cssscript\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="cmm\cssscript\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="cmm\cssscript\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="cmm\cssscript\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="cmm\cssscript\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="cmm\cssscript\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="cmm\cssscript\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="cmm\cssscript\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="cmm\cssscript\jquery.tools.min.js" />
+    <Content Include="cmm\cssscript\jquery.ui.core.js" />
+    <Content Include="cmm\cssscript\jquery.ui.css" />
+    <Content Include="cmm\cssscript\jquery.ui.datepicker.js" />
+    <Content Include="cmm\cssscript\jquery.ui.widget.js" />
+    <Content Include="cmm\cssscript\jquery.upload-1.0.2.js" />
+    <Content Include="cmm\cssscript\jquery.upload-1.0.2.min.js" />
+    <Content Include="cmm\cssscript\jquery_lastest.js" />
+    <Content Include="cmm\cssscript\login.css" />
+    <Content Include="cmm\cssscript\main.css" />
+    <Content Include="cmm\cssscript\swfobject.js" />
+    <Content Include="cmm\cssscript\validata.js" />
+    <Content Include="cmm\FPRemoveHandler.ashx" />
+    <Content Include="cmm\FPUploadHandler.ashx" />
+    <Content Include="cmm\images\appbackgroundchecked.png" />
+    <Content Include="cmm\images\apprunner.png" />
+    <Content Include="cmm\images\avatar-def.gif" />
+    <Content Include="cmm\images\bg_body.gif" />
+    <Content Include="cmm\images\blog-16x16.png" />
+    <Content Include="cmm\images\breadcrumbs.gif" />
+    <Content Include="cmm\images\btn_bg.gif" />
+    <Content Include="cmm\images\btn_on_bg.gif" />
+    <Content Include="cmm\images\btn_over_bg.gif" />
+    <Content Include="cmm\images\calendar.gif" />
+    <Content Include="cmm\images\cmdcancelsm2.png" />
+    <Content Include="cmm\images\cmdsubmitsm2.png" />
+    <Content Include="cmm\images\dot.gif" />
+    <Content Include="cmm\images\dpout1_corbl.gif" />
+    <Content Include="cmm\images\dpout1_corbr.gif" />
+    <Content Include="cmm\images\dpout1_cortl.gif" />
+    <Content Include="cmm\images\dpout1_cortr.gif" />
+    <Content Include="cmm\images\dt-arrow-dn.png" />
+    <Content Include="cmm\images\dt-arrow-up.png" />
+    <Content Include="cmm\images\facebook-16x16.png" />
+    <Content Include="cmm\images\flickr-16x16.png" />
+    <Content Include="cmm\images\folder_open.gif" />
+    <Content Include="cmm\images\footer_bg.gif" />
+    <Content Include="cmm\images\header_top_bg.gif" />
+    <Content Include="cmm\images\home-16x16.png" />
+    <Content Include="cmm\images\icon_focus.gif" />
+    <Content Include="cmm\images\icon_folder.gif" />
+    <Content Include="cmm\images\icon_home.gif" />
+    <Content Include="cmm\images\icon_newmessage.gif" />
+    <Content Include="cmm\images\icon_none.gif" />
+    <Content Include="cmm\images\info.png" />
+    <Content Include="cmm\images\logo.gif" />
+    <Content Include="cmm\images\menumain\arrowr1.gif" />
+    <Content Include="cmm\images\menumain\arrowr2.gif" />
+    <Content Include="cmm\images\menumain\arrowr3.gif" />
+    <Content Include="cmm\images\menumain\arrowr4.gif" />
+    <Content Include="cmm\images\menumain\arrowr5.gif" />
+    <Content Include="cmm\images\menumain\arrowr6.gif" />
+    <Content Include="cmm\images\menumain\arrowrh1.gif" />
+    <Content Include="cmm\images\menumain\arrowrh2.gif" />
+    <Content Include="cmm\images\menumain\arrowrh3.gif" />
+    <Content Include="cmm\images\menumain\arrowrh4.gif" />
+    <Content Include="cmm\images\menumain\arrowrh5.gif" />
+    <Content Include="cmm\images\menumain\arrowrh6.gif" />
+    <Content Include="cmm\images\menumain\arrowrs1.gif" />
+    <Content Include="cmm\images\menumain\dot.gif" />
+    <Content Include="cmm\images\menumain\menubreak1.gif" />
+    <Content Include="cmm\images\menumain\menubreak11.gif" />
+    <Content Include="cmm\images\menumain\menubreak2.gif" />
+    <Content Include="cmm\images\menumain\menu_item1_bg.gif" />
+    <Content Include="cmm\images\menu_bar_bg.gif" />
+    <Content Include="cmm\images\nav1_bg.gif" />
+    <Content Include="cmm\images\n_bg_head.png" />
+    <Content Include="cmm\images\progress.gif" />
+    <Content Include="cmm\images\rankingbg.png" />
+    <Content Include="cmm\images\skype-16x16.png" />
+    <Content Include="cmm\images\status-assigned-off.png" />
+    <Content Include="cmm\images\status-assigned-on.png" />
+    <Content Include="cmm\images\status-closed-off.png" />
+    <Content Include="cmm\images\status-closed-on.png" />
+    <Content Include="cmm\images\status-complete-off.png" />
+    <Content Include="cmm\images\status-complete-on.png" />
+    <Content Include="cmm\images\status-posted-off.png" />
+    <Content Include="cmm\images\status-posted-on.png" />
+    <Content Include="cmm\images\symclose.gif" />
+    <Content Include="cmm\images\symsearch.gif" />
+    <Content Include="cmm\images\tabs_ul_bg.gif" />
+    <Content Include="cmm\images\twitter-16x16.png" />
+    <Content Include="cmm\images\yahoo-16x16.png" />
+    <Content Include="cmm\images\youtube-16x16.png" />
+    <Content Include="cmm\login.aspx" />
+    <Content Include="cmm\logout.aspx" />
+    <Content Include="cmm\RNLoadHandler.ashx" />
+    <Content Include="cmm\RPLoadHandler.ashx" />
+    <Content Include="cmm\xhtml\Definephrase.xml" />
+    <Content Include="customErrors.htm" />
+    <Content Include="rc.htm" />
+    <Content Include="vn\usercontrol\ucmenu.ascx" />
+    <Content Include="vn\usercontrol\ucpager.ascx" />
+    <Content Include="vn\usercontrol\ucscontentview.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cmm\vn\categoryl.aspx" />
+    <Content Include="cmm\vn\categorytypeofl.aspx" />
+    <Content Include="cmm\vn\categorytypeofu.aspx" />
+    <Content Include="cmm\vn\categoryu.aspx" />
+    <Content Include="cmm\vn\changepassword.aspx" />
+    <Content Include="cmm\vn\commentl.aspx" />
+    <Content Include="cmm\vn\commentu.aspx" />
+    <Content Include="cmm\vn\librariesu.aspx" />
+    <Content Include="cmm\vn\librariesl.aspx" />
+    <Content Include="cmm\vn\dashboard.aspx" />
+    <Content Include="cmm\vn\feedbackl.aspx" />
+    <Content Include="cmm\vn\MasterDefault.Master" />
+    <Content Include="cmm\vn\memberl.aspx" />
+    <Content Include="cmm\vn\memberu.aspx" />
+    <Content Include="cmm\vn\menul.aspx" />
+    <Content Include="cmm\vn\menutypeofl.aspx" />
+    <Content Include="cmm\vn\menutypeofu.aspx" />
+    <Content Include="cmm\vn\menuu.aspx" />
+    <Content Include="cmm\vn\newsl.aspx" />
+    <Content Include="cmm\vn\newsu.aspx" />
+    <Content Include="cmm\vn\productl.aspx" />
+    <Content Include="cmm\vn\productu.aspx" />
+    <Content Include="cmm\vn\rssquery.aspx" />
+    <Content Include="cmm\vn\rssresourcel.aspx" />
+    <Content Include="cmm\vn\rssresourceu.aspx" />
+    <Content Include="cmm\vn\settingsite_email.aspx" />
+    <Content Include="cmm\vn\settingsite_restrictedpages.aspx" />
+    <Content Include="cmm\vn\staticcontentl.aspx" />
+    <Content Include="cmm\vn\staticcontentu.aspx" />
+    <Content Include="cmm\vn\supportonlinel.aspx" />
+    <Content Include="cmm\vn\supportonlineu.aspx" />
+    <Content Include="cmm\vn\symboll.aspx" />
+    <Content Include="cmm\vn\symbolu.aspx" />
+    <Content Include="cmm\vn\usercontrol\ucrelatedlibraries.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucaccesscounter.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucassigntouser.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucdisplaysetting.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucfileattach.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucfilepreview.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucpager.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucrelatednews.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucrelatedproduct.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucsetupattribute.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucsetupmember.ascx" />
+    <Content Include="cmm\vn\usercontrol\ucsymbol.ascx" />
+    <Content Include="cmm\vn\usergroupl.aspx" />
+    <Content Include="cmm\vn\usergroupu.aspx" />
+    <Content Include="cmm\vn\userl.aspx" />
+    <Content Include="cmm\vn\useru.aspx" />
+    <Content Include="cmm\vn\waittingdelete.aspx" />
+    <Content Include="cmm\vn\waittingupdate.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cmm\RLLoadHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FPRemoveHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cmm\vn\categoryattrl.aspx" />
+    <Content Include="cmm\vn\categoryattru.aspx" />
+    <Content Include="cmm\vn\bannerl.aspx" />
+    <Content Include="cmm\vn\banneru.aspx" />
+    <Content Include="cmm\vn\videol.aspx" />
+    <Content Include="cmm\vn\videou.aspx" />
+    <Content Include="cmm\vn\managerupload.aspx" />
+    <Content Include="cmm\vn\report_lib.aspx" />
+    <Content Include="cmm\vn\usercontrol\ucfilebanner.ascx" />
+    <Content Include="cmm\vn\usercontrol\uccategoryattr.ascx" />
+    <Content Include="cmm\vn\usercontrol\uccategorymulti.ascx" />
+    <Content Include="commup\1.jpg" />
+    <Content Include="commup\10.jpg" />
+    <Content Include="commup\11.jpg" />
+    <Content Include="commup\12.jpg" />
+    <Content Include="commup\13.jpg" />
+    <Content Include="commup\14.jpg" />
+    <Content Include="commup\2.jpg" />
+    <Content Include="commup\3.jpg" />
+    <Content Include="commup\4.jpg" />
+    <Content Include="commup\5.jpg" />
+    <Content Include="commup\6.jpg" />
+    <Content Include="commup\7.jpg" />
+    <Content Include="commup\8.jpg" />
+    <Content Include="commup\9.jpg" />
+    <Content Include="commup\captcha\Mjc3NA==.png" />
+    <Content Include="commup\captcha\MjE3Ng==.png" />
+    <Content Include="commup\captcha\MjE3NQ==.png" />
+    <Content Include="commup\captcha\MjkxMA==.png" />
+    <Content Include="commup\captcha\MjQ3Ng==.png" />
+    <Content Include="commup\captcha\MTcxMA==.png" />
+    <Content Include="commup\captcha\MTE0Ng==.png" />
+    <Content Include="commup\captcha\MTEzMw==.png" />
+    <Content Include="commup\captcha\MTg5MQ==.png" />
+    <Content Include="commup\captcha\MTI3NA==.png" />
+    <Content Include="commup\captcha\MTk0Mg==.png" />
+    <Content Include="commup\captcha\MTkwMA==.png" />
+    <Content Include="commup\captcha\MTkxMg==.png" />
+    <Content Include="commup\captcha\MTMyMQ==.png" />
+    <Content Include="commup\captcha\MTQ0NQ==.png" />
+    <Content Include="commup\captcha\MTY2MQ==.png" />
+    <Content Include="commup\captcha\MzA3Ng==.png" />
+    <Content Include="commup\captcha\MzAwNw==.png" />
+    <Content Include="commup\captcha\MzIxNQ==.png" />
+    <Content Include="commup\captcha\MzM0OA==.png" />
+    <Content Include="commup\captcha\MzQ3NA==.png" />
+    <Content Include="commup\captcha\MzUzOA==.png" />
+    <Content Include="commup\captcha\NDA3Nw==.png" />
+    <Content Include="commup\captcha\NDAyOQ==.png" />
+    <Content Include="commup\captcha\NDE5OA==.png" />
+    <Content Include="commup\captcha\Njk5OA==.png" />
+    <Content Include="commup\captcha\NjY1OA==.png" />
+    <Content Include="commup\captcha\NTAwNQ==.png" />
+    <Content Include="commup\captcha\NTAxNA==.png" />
+    <Content Include="commup\captcha\NTAyOA==.png" />
+    <Content Include="commup\captcha\NTAzOA==.png" />
+    <Content Include="commup\captcha\NTg2MQ==.png" />
+    <Content Include="commup\captcha\NTg4Mg==.png" />
+    <Content Include="commup\captcha\NTgwNA==.png" />
+    <Content Include="commup\captcha\NTI3MA==.png" />
+    <Content Include="commup\captcha\NTIwNw==.png" />
+    <Content Include="commup\captcha\NTIxMA==.png" />
+    <Content Include="commup\captcha\NTIxMQ==.png" />
+    <Content Include="commup\captcha\NTU2OA==.png" />
+    <Content Include="commup\captcha\NzA1OQ==.png" />
+    <Content Include="commup\captcha\Nzc0Mg==.png" />
+    <Content Include="commup\captcha\NzcyMg==.png" />
+    <Content Include="commup\captcha\NzczMw==.png" />
+    <Content Include="commup\captcha\Nzg0Mw==.png" />
+    <Content Include="commup\captcha\ODE5OA==.png" />
+    <Content Include="commup\captcha\ODExMw==.png" />
+    <Content Include="commup\captcha\ODQyNA==.png" />
+    <Content Include="commup\captcha\ODU5Ng==.png" />
+    <Content Include="commup\captcha\ODUzOQ==.png" />
+    <Content Include="commup\captcha\OTgyNg==.png" />
+    <Content Include="commup\captcha\OTY2Mg==.png" />
+    <Content Include="commup\Lego2.jpg" />
+    <Content Include="commup\no_image.gif" />
+    <Content Include="commup\upload\10.jpg" />
+    <Content Include="commup\upload\11.jpg" />
+    <Content Include="commup\upload\2.jpg" />
+    <Content Include="commup\upload\634622460739531250.jpg" />
+    <Content Include="commup\upload\634622472072343750.jpg" />
+    <Content Include="commup\upload\634652894759687500.jpg" />
+    <Content Include="commup\upload\634652895135937500.jpg" />
+    <Content Include="commup\upload\634700409048441250.jpg" />
+    <Content Include="commup\upload\634700410003753750.jpg" />
+    <Content Include="commup\upload\634702116385632500.jpg" />
+    <Content Include="commup\upload\634702117327038750.jpg" />
+    <Content Include="commup\upload\634702117487976250.jpg" />
+    <Content Include="commup\upload\634702119159538750.jpg" />
+    <Content Include="commup\upload\634702123817195000.jpg" />
+    <Content Include="commup\upload\634702125157195000.jpg" />
+    <Content Include="commup\upload\634841235744997500.jpg" />
+    <Content Include="commup\upload\634846420788903750.jpg" />
+    <Content Include="commup\upload\634849832153480000.jpg" />
+    <Content Include="commup\upload\634877520216563750.png" />
+    <Content Include="commup\upload\bank 2.jpg" />
+    <Content Include="commup\upload\Bank_Ngan hang.jpg" />
+    <Content Include="commup\upload\BRIC_and_CIVETS.jpg" />
+    <Content Include="commup\upload\building[1].jpg" />
+    <Content Include="commup\upload\camel 1.jpg" />
+    <Content Include="commup\upload\CAMEL.jpg" />
+    <Content Include="commup\upload\CAMELS trong quan tri ngan hang la gi.jpg" />
+    <Content Include="commup\upload\Chu ky kinh te_Business cycle.jpg" />
+    <Content Include="commup\upload\Chu ky kinh te_Business cylce.jpg" />
+    <Content Include="commup\upload\Chu ky tang truong nganh_Industry cycle.jpg" />
+    <Content Include="commup\upload\Co phieu quuy_Stock_buybacks_repurchase 2.jpg" />
+    <Content Include="commup\upload\Co phieu quuy_Stock_buybacks_repurchase.jpg" />
+    <Content Include="commup\upload\CocaCola Zero.jpg" />
+    <Content Include="commup\upload\Doi song cua dong tien 2.jpg" />
+    <Content Include="commup\upload\Doi song cua dong tien.jpg" />
+    <Content Include="commup\upload\Doi tac chien luoc_Nham lan.jpg" />
+    <Content Include="commup\upload\Fitch-Ratings.jpg" />
+    <Content Include="commup\upload\Giao dich ky quy_Margin Call.gif" />
+    <Content Include="commup\upload\Inside Job.jpg" />
+    <Content Include="commup\upload\Kodak that bai.jpg" />
+    <Content Include="commup\upload\large_kimberly_kay.hoang.jpeg" />
+    <Content Include="commup\upload\lego.jpg" />
+    <Content Include="commup\upload\Lego.png" />
+    <Content Include="commup\upload\Low cost airlines_hang khong gia re.jpg" />
+    <Content Include="commup\upload\Moodys.jpg" />
+    <Content Include="commup\upload\Nha dau tu ca nhan_Retail investor.jpg" />
+    <Content Include="commup\upload\Nha dau tu to chuc_Institutional investor_flatform.jpg" />
+    <Content Include="commup\upload\Parking lot_Bai dau xe.jpg" />
+    <Content Include="commup\upload\Phan tich Nganh kinh te Van tai bien.jpg" />
+    <Content Include="commup\upload\S&amp;P, Moodys va Fitch.jpg" />
+    <Content Include="commup\upload\Trung nguyen.jpg" />
+    <Content Include="commup\upload\war-economy.jpg" />
+    <Content Include="commup\upload\warren-buffett-richest-man-in-america.jpg" />
+    <Content Include="commup\upload\warren_buffett.jpg" />
+    <Content Include="commup\upload\warren_buffett_2.jpg" />
+    <Content Include="FPUploadHandler.ashx" />
+    <Content Include="vn\dictionary.aspx" />
+    <Content Include="vn\usercontrol\ucdictionaryc.ascx" />
+    <Content Include="vn\usercontrol\ucdictionarymenu.ascx" />
+    <Content Include="vn\usercontrol\ucnewsadesc.ascx" />
+    <Content Include="vn\usercontrol\ucnewsahome.ascx" />
+    <Content Include="vn\usercontrol\ucnewsaright.ascx" />
+    <Content Include="vn\usercontrol\ucnewsc.ascx" />
+    <Content Include="vn\usercontrol\ucsearchdic.ascx" />
+    <Content Include="vn\login.aspx" />
+    <Content Include="vn\M_password.aspx" />
+    <Content Include="vn\M_profile.aspx" />
+    <Content Include="vn\M_profileedit.aspx" />
+    <Content Include="vn\register.aspx" />
+    <Content Include="vn\usercontrol\ucfocusn.ascx" />
+    <Content Include="vn\usercontrol\uclogin.ascx" />
+    <Content Include="vn\usercontrol\ucloginfo.ascx" />
+    <Content Include="vn\usercontrol\ucnewsa.ascx" />
+    <Content Include="xhtml\vn\MailToUser.Order.htm" />
+    <Content Include="xhtml\vn\MailToServer.Order.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="commup\manual\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4160</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

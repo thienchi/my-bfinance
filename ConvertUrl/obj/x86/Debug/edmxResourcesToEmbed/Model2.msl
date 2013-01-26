@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bfinanceModel1StoreContainer" CdmEntityContainer="bfinanceEntities2">
+    <EntitySetMapping Name="vndd_category">
+      <EntityTypeMapping TypeName="bfinanceModel1.vndd_category">
+        <MappingFragment StoreEntitySet="vndd_category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="iconex" ColumnName="iconex" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pis" ColumnName="pis" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="customizeid" ColumnName="customizeid" />
+          <ScalarProperty Name="alias" ColumnName="alias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

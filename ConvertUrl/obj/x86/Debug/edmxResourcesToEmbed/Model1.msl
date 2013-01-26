@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bfinanceModelStoreContainer" CdmEntityContainer="bfinanceEntities">
+    <EntitySetMapping Name="dd_feedback">
+      <EntityTypeMapping TypeName="bfinanceModel.dd_feedback">
+        <MappingFragment StoreEntitySet="dd_feedback">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="sender_name" ColumnName="sender_name" />
+          <ScalarProperty Name="sender_address" ColumnName="sender_address" />
+          <ScalarProperty Name="sender_email" ColumnName="sender_email" />
+          <ScalarProperty Name="sender_phone" ColumnName="sender_phone" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="iconex" ColumnName="iconex" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="pis" ColumnName="pis" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="viewcounter" ColumnName="viewcounter" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dd_member">
+      <EntityTypeMapping TypeName="bfinanceModel.dd_member">
+        <MappingFragment StoreEntitySet="dd_member">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="pin" ColumnName="pin" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="logincache" ColumnName="logincache" />
+          <ScalarProperty Name="loginfirst" ColumnName="loginfirst" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          <ScalarProperty Name="autosave" ColumnName="autosave" />
+          <ScalarProperty Name="temporarycode" ColumnName="temporarycode" />
+          <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+          <ScalarProperty Name="grouptype" ColumnName="grouptype" />
+          <ScalarProperty Name="ranking" ColumnName="ranking" />
+          <ScalarProperty Name="vote" ColumnName="vote" />
+          <ScalarProperty Name="ratingweight" ColumnName="ratingweight" />
+          <ScalarProperty Name="messagesunread" ColumnName="messagesunread" />
+          <ScalarProperty Name="messages" ColumnName="messages" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dd_meprofile">
+      <EntityTypeMapping TypeName="bfinanceModel.dd_meprofile">
+        <MappingFragment StoreEntitySet="dd_meprofile">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="nationalid" ColumnName="nationalid" />
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="districtid" ColumnName="districtid" />
+          <ScalarProperty Name="about" ColumnName="about" />
+          <ScalarProperty Name="blog" ColumnName="blog" />
+          <ScalarProperty Name="homepage" ColumnName="homepage" />
+          <ScalarProperty Name="facebook" ColumnName="facebook" />
+          <ScalarProperty Name="twitter" ColumnName="twitter" />
+          <ScalarProperty Name="youtube" ColumnName="youtube" />
+          <ScalarProperty Name="flickr" ColumnName="flickr" />
+          <ScalarProperty Name="skype" ColumnName="skype" />
+          <ScalarProperty Name="yahoo" ColumnName="yahoo" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="profession" ColumnName="profession" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dd_settingsite_restrictedpages">
+      <EntityTypeMapping TypeName="bfinanceModel.dd_settingsite_restrictedpages">
+        <MappingFragment StoreEntitySet="dd_settingsite_restrictedpages">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="query" ColumnName="query" />
+          <ScalarProperty Name="pathandquery" ColumnName="pathandquery" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dd_user">
+      <EntityTypeMapping TypeName="bfinanceModel.dd_user">
+        <MappingFragment StoreEntitySet="dd_user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="pis" ColumnName="pis" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="logincache" ColumnName="logincache" />
+          <ScalarProperty Name="loginfirst" ColumnName="loginfirst" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_category">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_category">
+        <MappingFragment StoreEntitySet="vndd_category">
+          <ScalarProperty Name="alias" ColumnName="alias" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="iconex" ColumnName="iconex" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pis" ColumnName="pis" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="customizeid" ColumnName="customizeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_categoryattr">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_categoryattr">
+        <MappingFragment StoreEntitySet="vndd_categoryattr">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="iconex" ColumnName="iconex" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pis" ColumnName="pis" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_categorytypeof">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_categorytypeof">
+        <MappingFragment StoreEntitySet="vndd_categorytypeof">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_fileattach">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_fileattach">
+        <MappingFragment StoreEntitySet="vndd_fileattach">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="sized" ColumnName="sized" />
+          <ScalarProperty Name="typed" ColumnName="typed" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="iconex" ColumnName="iconex" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="belongto" ColumnName="belongto" />
+          <ScalarProperty Name="iid" ColumnName="iid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_menu">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_menu">
+        <MappingFragment StoreEntitySet="vndd_menu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="navigateurl" ColumnName="navigateurl" />
+          <ScalarProperty Name="tooltip" ColumnName="tooltip" />
+          <ScalarProperty Name="attributes" ColumnName="attributes" />
+          <ScalarProperty Name="visible" ColumnName="visible" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="iconex" ColumnName="iconex" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pis" ColumnName="pis" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="depth" ColumnName="depth" />
+          <ScalarProperty Name="cataloguetypeofid" ColumnName="cataloguetypeofid" />
+          <ScalarProperty Name="catalogueid" ColumnName="catalogueid" />
+          <ScalarProperty Name="insertcatalogue" ColumnName="insertcatalogue" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          <ScalarProperty Name="noroot" ColumnName="noroot" />
+          <ScalarProperty Name="applyattributeschild" ColumnName="applyattributeschild" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_menutypeof">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_menutypeof">
+        <MappingFragment StoreEntitySet="vndd_menutypeof">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="insertbreak" ColumnName="insertbreak" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_news">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_news">
+        <MappingFragment StoreEntitySet="vndd_news">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="introduce" ColumnName="introduce" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="cname" ColumnName="cname" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="iconex" ColumnName="iconex" />
+          <ScalarProperty Name="timecreate" ColumnName="timecreate" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="allowcomment" ColumnName="allowcomment" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="timeexpire" ColumnName="timeexpire" />
+          <ScalarProperty Name="viewcounter" ColumnName="viewcounter" />
+          <ScalarProperty Name="tid" ColumnName="tid" />
+          <ScalarProperty Name="tname" ColumnName="tname" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="relateditem" ColumnName="relateditem" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+          <ScalarProperty Name="alias" ColumnName="alias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_product">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_product">
+        <MappingFragment StoreEntitySet="vndd_product">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="introduce" ColumnName="introduce" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="features" ColumnName="features" />
+          <ScalarProperty Name="filepreview" ColumnName="filepreview" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="cname" ColumnName="cname" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="markas" ColumnName="markas" />
+          <ScalarProperty Name="iconex" ColumnName="iconex" />
+          <ScalarProperty Name="timecreate" ColumnName="timecreate" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="viewcounter" ColumnName="viewcounter" />
+          <ScalarProperty Name="provider" ColumnName="provider" />
+          <ScalarProperty Name="advertise" ColumnName="advertise" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="pricealter" ColumnName="pricealter" />
+          <ScalarProperty Name="allowcomment" ColumnName="allowcomment" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          <ScalarProperty Name="album" ColumnName="album" />
+          <ScalarProperty Name="relateditem" ColumnName="relateditem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_staticcontent">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_staticcontent">
+        <MappingFragment StoreEntitySet="vndd_staticcontent">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="filepath" ColumnName="filepath" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="separatepage" ColumnName="separatepage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_supportonline">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_supportonline">
+        <MappingFragment StoreEntitySet="vndd_supportonline">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vndd_symbol">
+      <EntityTypeMapping TypeName="bfinanceModel.vndd_symbol">
+        <MappingFragment StoreEntitySet="vndd_symbol">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="sized" ColumnName="sized" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="orderd" ColumnName="orderd" />
+          <ScalarProperty Name="timeupdate" ColumnName="timeupdate" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="forsearch" ColumnName="forsearch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

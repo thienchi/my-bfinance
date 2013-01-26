@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript" src="script/common.js" ></script>
+</head>
+<body onload="DoWU();">
+
+<form id="aspnetForm" name="aspnetForm" action='http://vncfc.com/WebServices/AdministrationService.asmx/WattingUpdate_Accept' method="POST">
+    <input type="hidden" name="LANG" id="LANG">
+    <input type="hidden" name="belongto" id="belongto">
+    <input type="hidden" name="iid" id="iid">
+</form>
+<script language="javascript">
+function DoWU(){
+    CC_Getelement('LANG').value = getQuerystring('LANG');
+    CC_Getelement('belongto').value = getQuerystring('belongto');
+    CC_Getelement('iid').value = getQuerystring('iid');
+    var action = getQuerystring('action', 'accept');
+    var theform = CC_Getform();
+    if(action=='decline') 
+        theform.action = 'http://vncfc.com/WebServices/AdministrationService.asmx/WattingUpdate_Decline';
+    theform.submit();
+}
+
+function getQuerystring(key, default_){
+  if (default_==null) default_=""; 
+  key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
+  var qs = regex.exec(window.location.href);
+  if(qs == null)
+    return default_;
+  else
+    return qs[1];
+} 
+
+</script>
+</body>
+</html>
