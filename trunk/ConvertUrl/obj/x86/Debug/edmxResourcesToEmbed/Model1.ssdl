@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bfinanceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="bfinanceModelStoreContainer">
+    <EntitySet Name="dd_feedback" EntityType="bfinanceModel.Store.dd_feedback" store:Type="Tables" store:Schema="dbo" store:Name="dd_feedback">
+      <DefiningQuery>SELECT 
+      [dd_feedback].[id] AS [id], 
+      [dd_feedback].[name] AS [name], 
+      [dd_feedback].[description] AS [description], 
+      [dd_feedback].[sender_name] AS [sender_name], 
+      [dd_feedback].[sender_address] AS [sender_address], 
+      [dd_feedback].[sender_email] AS [sender_email], 
+      [dd_feedback].[sender_phone] AS [sender_phone], 
+      [dd_feedback].[status] AS [status], 
+      [dd_feedback].[markas] AS [markas], 
+      [dd_feedback].[iconex] AS [iconex], 
+      [dd_feedback].[timeupdate] AS [timeupdate], 
+      [dd_feedback].[pis] AS [pis], 
+      [dd_feedback].[pid] AS [pid], 
+      [dd_feedback].[depth] AS [depth], 
+      [dd_feedback].[viewcounter] AS [viewcounter], 
+      [dd_feedback].[forsearch] AS [forsearch]
+      FROM [dbo].[dd_feedback] AS [dd_feedback]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dd_member" EntityType="bfinanceModel.Store.dd_member" store:Type="Tables" store:Schema="dbo" store:Name="dd_member">
+      <DefiningQuery>SELECT 
+      [dd_member].[id] AS [id], 
+      [dd_member].[username] AS [username], 
+      [dd_member].[password] AS [password], 
+      [dd_member].[firstname] AS [firstname], 
+      [dd_member].[lastname] AS [lastname], 
+      [dd_member].[email] AS [email], 
+      [dd_member].[phone] AS [phone], 
+      [dd_member].[pin] AS [pin], 
+      [dd_member].[status] AS [status], 
+      [dd_member].[markas] AS [markas], 
+      [dd_member].[timeupdate] AS [timeupdate], 
+      [dd_member].[logincache] AS [logincache], 
+      [dd_member].[loginfirst] AS [loginfirst], 
+      [dd_member].[forsearch] AS [forsearch], 
+      [dd_member].[autosave] AS [autosave], 
+      [dd_member].[temporarycode] AS [temporarycode], 
+      [dd_member].[filepreview] AS [filepreview], 
+      [dd_member].[grouptype] AS [grouptype], 
+      [dd_member].[ranking] AS [ranking], 
+      [dd_member].[vote] AS [vote], 
+      [dd_member].[ratingweight] AS [ratingweight], 
+      [dd_member].[messagesunread] AS [messagesunread], 
+      [dd_member].[messages] AS [messages]
+      FROM [dbo].[dd_member] AS [dd_member]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dd_meprofile" EntityType="bfinanceModel.Store.dd_meprofile" store:Type="Tables" store:Schema="dbo" store:Name="dd_meprofile">
+      <DefiningQuery>SELECT 
+      [dd_meprofile].[id] AS [id], 
+      [dd_meprofile].[address] AS [address], 
+      [dd_meprofile].[phone] AS [phone], 
+      [dd_meprofile].[state] AS [state], 
+      [dd_meprofile].[zipcode] AS [zipcode], 
+      [dd_meprofile].[nationalid] AS [nationalid], 
+      [dd_meprofile].[cityid] AS [cityid], 
+      [dd_meprofile].[districtid] AS [districtid], 
+      [dd_meprofile].[about] AS [about], 
+      [dd_meprofile].[blog] AS [blog], 
+      [dd_meprofile].[homepage] AS [homepage], 
+      [dd_meprofile].[facebook] AS [facebook], 
+      [dd_meprofile].[twitter] AS [twitter], 
+      [dd_meprofile].[youtube] AS [youtube], 
+      [dd_meprofile].[flickr] AS [flickr], 
+      [dd_meprofile].[skype] AS [skype], 
+      [dd_meprofile].[yahoo] AS [yahoo], 
+      [dd_meprofile].[birthday] AS [birthday], 
+      [dd_meprofile].[profession] AS [profession]
+      FROM [dbo].[dd_meprofile] AS [dd_meprofile]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dd_settingsite_restrictedpages" EntityType="bfinanceModel.Store.dd_settingsite_restrictedpages" store:Type="Tables" store:Schema="dbo" store:Name="dd_settingsite_restrictedpages">
+      <DefiningQuery>SELECT 
+      [dd_settingsite_restrictedpages].[id] AS [id], 
+      [dd_settingsite_restrictedpages].[name] AS [name], 
+      [dd_settingsite_restrictedpages].[query] AS [query], 
+      [dd_settingsite_restrictedpages].[pathandquery] AS [pathandquery]
+      FROM [dbo].[dd_settingsite_restrictedpages] AS [dd_settingsite_restrictedpages]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dd_user" EntityType="bfinanceModel.Store.dd_user" store:Type="Tables" store:Schema="dbo" store:Name="dd_user">
+      <DefiningQuery>SELECT 
+      [dd_user].[id] AS [id], 
+      [dd_user].[username] AS [username], 
+      [dd_user].[password] AS [password], 
+      [dd_user].[name] AS [name], 
+      [dd_user].[email] AS [email], 
+      [dd_user].[status] AS [status], 
+      [dd_user].[markas] AS [markas], 
+      [dd_user].[timeupdate] AS [timeupdate], 
+      [dd_user].[pis] AS [pis], 
+      [dd_user].[pid] AS [pid], 
+      [dd_user].[depth] AS [depth], 
+      [dd_user].[logincache] AS [logincache], 
+      [dd_user].[loginfirst] AS [loginfirst], 
+      [dd_user].[forsearch] AS [forsearch]
+      FROM [dbo].[dd_user] AS [dd_user]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_category" EntityType="bfinanceModel.Store.vndd_category" store:Type="Tables" store:Schema="dbo" store:Name="vndd_category">
+      <DefiningQuery>SELECT 
+      [vndd_category].[id] AS [id], 
+      [vndd_category].[code] AS [code], 
+      [vndd_category].[name] AS [name], 
+      [vndd_category].[note] AS [note], 
+      [vndd_category].[filepreview] AS [filepreview], 
+      [vndd_category].[cid] AS [cid], 
+      [vndd_category].[orderd] AS [orderd], 
+      [vndd_category].[status] AS [status], 
+      [vndd_category].[markas] AS [markas], 
+      [vndd_category].[iconex] AS [iconex], 
+      [vndd_category].[timeupdate] AS [timeupdate], 
+      [vndd_category].[username] AS [username], 
+      [vndd_category].[pis] AS [pis], 
+      [vndd_category].[pid] AS [pid], 
+      [vndd_category].[depth] AS [depth], 
+      [vndd_category].[forsearch] AS [forsearch], 
+      [vndd_category].[url] AS [url], 
+      [vndd_category].[customizeid] AS [customizeid], 
+      [vndd_category].[alias] AS [alias]
+      FROM [dbo].[vndd_category] AS [vndd_category]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_categoryattr" EntityType="bfinanceModel.Store.vndd_categoryattr" store:Type="Tables" store:Schema="dbo" store:Name="vndd_categoryattr">
+      <DefiningQuery>SELECT 
+      [vndd_categoryattr].[id] AS [id], 
+      [vndd_categoryattr].[code] AS [code], 
+      [vndd_categoryattr].[name] AS [name], 
+      [vndd_categoryattr].[note] AS [note], 
+      [vndd_categoryattr].[filepreview] AS [filepreview], 
+      [vndd_categoryattr].[cid] AS [cid], 
+      [vndd_categoryattr].[orderd] AS [orderd], 
+      [vndd_categoryattr].[status] AS [status], 
+      [vndd_categoryattr].[markas] AS [markas], 
+      [vndd_categoryattr].[iconex] AS [iconex], 
+      [vndd_categoryattr].[timeupdate] AS [timeupdate], 
+      [vndd_categoryattr].[username] AS [username], 
+      [vndd_categoryattr].[pis] AS [pis], 
+      [vndd_categoryattr].[pid] AS [pid], 
+      [vndd_categoryattr].[depth] AS [depth], 
+      [vndd_categoryattr].[forsearch] AS [forsearch], 
+      [vndd_categoryattr].[url] AS [url]
+      FROM [dbo].[vndd_categoryattr] AS [vndd_categoryattr]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_categorytypeof" EntityType="bfinanceModel.Store.vndd_categorytypeof" store:Type="Tables" store:Schema="dbo" store:Name="vndd_categorytypeof">
+      <DefiningQuery>SELECT 
+      [vndd_categorytypeof].[id] AS [id], 
+      [vndd_categorytypeof].[code] AS [code], 
+      [vndd_categorytypeof].[name] AS [name], 
+      [vndd_categorytypeof].[note] AS [note], 
+      [vndd_categorytypeof].[status] AS [status], 
+      [vndd_categorytypeof].[markas] AS [markas], 
+      [vndd_categorytypeof].[timeupdate] AS [timeupdate], 
+      [vndd_categorytypeof].[username] AS [username], 
+      [vndd_categorytypeof].[forsearch] AS [forsearch]
+      FROM [dbo].[vndd_categorytypeof] AS [vndd_categorytypeof]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_fileattach" EntityType="bfinanceModel.Store.vndd_fileattach" store:Type="Tables" store:Schema="dbo" store:Name="vndd_fileattach">
+      <DefiningQuery>SELECT 
+      [vndd_fileattach].[id] AS [id], 
+      [vndd_fileattach].[name] AS [name], 
+      [vndd_fileattach].[path] AS [path], 
+      [vndd_fileattach].[note] AS [note], 
+      [vndd_fileattach].[sized] AS [sized], 
+      [vndd_fileattach].[typed] AS [typed], 
+      [vndd_fileattach].[orderd] AS [orderd], 
+      [vndd_fileattach].[status] AS [status], 
+      [vndd_fileattach].[markas] AS [markas], 
+      [vndd_fileattach].[iconex] AS [iconex], 
+      [vndd_fileattach].[timeupdate] AS [timeupdate], 
+      [vndd_fileattach].[username] AS [username], 
+      [vndd_fileattach].[belongto] AS [belongto], 
+      [vndd_fileattach].[iid] AS [iid]
+      FROM [dbo].[vndd_fileattach] AS [vndd_fileattach]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_menu" EntityType="bfinanceModel.Store.vndd_menu" store:Type="Tables" store:Schema="dbo" store:Name="vndd_menu">
+      <DefiningQuery>SELECT 
+      [vndd_menu].[id] AS [id], 
+      [vndd_menu].[code] AS [code], 
+      [vndd_menu].[name] AS [name], 
+      [vndd_menu].[note] AS [note], 
+      [vndd_menu].[navigateurl] AS [navigateurl], 
+      [vndd_menu].[tooltip] AS [tooltip], 
+      [vndd_menu].[attributes] AS [attributes], 
+      [vndd_menu].[visible] AS [visible], 
+      [vndd_menu].[cid] AS [cid], 
+      [vndd_menu].[orderd] AS [orderd], 
+      [vndd_menu].[status] AS [status], 
+      [vndd_menu].[markas] AS [markas], 
+      [vndd_menu].[iconex] AS [iconex], 
+      [vndd_menu].[timeupdate] AS [timeupdate], 
+      [vndd_menu].[username] AS [username], 
+      [vndd_menu].[pis] AS [pis], 
+      [vndd_menu].[pid] AS [pid], 
+      [vndd_menu].[depth] AS [depth], 
+      [vndd_menu].[cataloguetypeofid] AS [cataloguetypeofid], 
+      [vndd_menu].[catalogueid] AS [catalogueid], 
+      [vndd_menu].[insertcatalogue] AS [insertcatalogue], 
+      [vndd_menu].[forsearch] AS [forsearch], 
+      [vndd_menu].[noroot] AS [noroot], 
+      [vndd_menu].[applyattributeschild] AS [applyattributeschild]
+      FROM [dbo].[vndd_menu] AS [vndd_menu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_menutypeof" EntityType="bfinanceModel.Store.vndd_menutypeof" store:Type="Tables" store:Schema="dbo" store:Name="vndd_menutypeof">
+      <DefiningQuery>SELECT 
+      [vndd_menutypeof].[id] AS [id], 
+      [vndd_menutypeof].[code] AS [code], 
+      [vndd_menutypeof].[name] AS [name], 
+      [vndd_menutypeof].[note] AS [note], 
+      [vndd_menutypeof].[path] AS [path], 
+      [vndd_menutypeof].[insertbreak] AS [insertbreak], 
+      [vndd_menutypeof].[status] AS [status], 
+      [vndd_menutypeof].[timeupdate] AS [timeupdate], 
+      [vndd_menutypeof].[username] AS [username], 
+      [vndd_menutypeof].[forsearch] AS [forsearch]
+      FROM [dbo].[vndd_menutypeof] AS [vndd_menutypeof]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_news" EntityType="bfinanceModel.Store.vndd_news" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vndd_product" EntityType="bfinanceModel.Store.vndd_product" store:Type="Tables" store:Schema="dbo" store:Name="vndd_product">
+      <DefiningQuery>SELECT 
+      [vndd_product].[id] AS [id], 
+      [vndd_product].[code] AS [code], 
+      [vndd_product].[name] AS [name], 
+      [vndd_product].[introduce] AS [introduce], 
+      [vndd_product].[description] AS [description], 
+      [vndd_product].[features] AS [features], 
+      [vndd_product].[filepreview] AS [filepreview], 
+      [vndd_product].[cid] AS [cid], 
+      [vndd_product].[cname] AS [cname], 
+      [vndd_product].[orderd] AS [orderd], 
+      [vndd_product].[status] AS [status], 
+      [vndd_product].[markas] AS [markas], 
+      [vndd_product].[iconex] AS [iconex], 
+      [vndd_product].[timecreate] AS [timecreate], 
+      [vndd_product].[timeupdate] AS [timeupdate], 
+      [vndd_product].[username] AS [username], 
+      [vndd_product].[viewcounter] AS [viewcounter], 
+      [vndd_product].[provider] AS [provider], 
+      [vndd_product].[advertise] AS [advertise], 
+      [vndd_product].[price] AS [price], 
+      [vndd_product].[pricealter] AS [pricealter], 
+      [vndd_product].[allowcomment] AS [allowcomment], 
+      [vndd_product].[forsearch] AS [forsearch], 
+      [vndd_product].[album] AS [album], 
+      [vndd_product].[relateditem] AS [relateditem]
+      FROM [dbo].[vndd_product] AS [vndd_product]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_staticcontent" EntityType="bfinanceModel.Store.vndd_staticcontent" store:Type="Tables" store:Schema="dbo" store:Name="vndd_staticcontent">
+      <DefiningQuery>SELECT 
+      [vndd_staticcontent].[id] AS [id], 
+      [vndd_staticcontent].[name] AS [name], 
+      [vndd_staticcontent].[filepath] AS [filepath], 
+      [vndd_staticcontent].[description] AS [description], 
+      [vndd_staticcontent].[status] AS [status], 
+      [vndd_staticcontent].[timeupdate] AS [timeupdate], 
+      [vndd_staticcontent].[username] AS [username], 
+      [vndd_staticcontent].[forsearch] AS [forsearch], 
+      [vndd_staticcontent].[code] AS [code], 
+      [vndd_staticcontent].[separatepage] AS [separatepage]
+      FROM [dbo].[vndd_staticcontent] AS [vndd_staticcontent]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_supportonline" EntityType="bfinanceModel.Store.vndd_supportonline" store:Type="Tables" store:Schema="dbo" store:Name="vndd_supportonline">
+      <DefiningQuery>SELECT 
+      [vndd_supportonline].[id] AS [id], 
+      [vndd_supportonline].[name] AS [name], 
+      [vndd_supportonline].[type] AS [type], 
+      [vndd_supportonline].[note] AS [note], 
+      [vndd_supportonline].[orderd] AS [orderd], 
+      [vndd_supportonline].[status] AS [status], 
+      [vndd_supportonline].[timeupdate] AS [timeupdate], 
+      [vndd_supportonline].[forsearch] AS [forsearch]
+      FROM [dbo].[vndd_supportonline] AS [vndd_supportonline]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vndd_symbol" EntityType="bfinanceModel.Store.vndd_symbol" store:Type="Tables" store:Schema="dbo" store:Name="vndd_symbol">
+      <DefiningQuery>SELECT 
+      [vndd_symbol].[id] AS [id], 
+      [vndd_symbol].[name] AS [name], 
+      [vndd_symbol].[path] AS [path], 
+      [vndd_symbol].[note] AS [note], 
+      [vndd_symbol].[sized] AS [sized], 
+      [vndd_symbol].[status] AS [status], 
+      [vndd_symbol].[orderd] AS [orderd], 
+      [vndd_symbol].[timeupdate] AS [timeupdate], 
+      [vndd_symbol].[username] AS [username], 
+      [vndd_symbol].[forsearch] AS [forsearch]
+      FROM [dbo].[vndd_symbol] AS [vndd_symbol]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_feedback' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dd_feedback">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="sender_name" Type="nvarchar" MaxLength="500" />
+    <Property Name="sender_address" Type="nvarchar" MaxLength="255" />
+    <Property Name="sender_email" Type="nvarchar" MaxLength="255" />
+    <Property Name="sender_phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="pis" Type="int" />
+    <Property Name="pid" Type="int" />
+    <Property Name="depth" Type="int" />
+    <Property Name="viewcounter" Type="int" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_member' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dd_member">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="password" Type="nvarchar" MaxLength="500" />
+    <Property Name="firstname" Type="nvarchar" MaxLength="500" />
+    <Property Name="lastname" Type="nvarchar" MaxLength="500" />
+    <Property Name="email" Type="nvarchar" MaxLength="500" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="pin" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="logincache" Type="int" />
+    <Property Name="loginfirst" Type="int" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+    <Property Name="autosave" Type="int" />
+    <Property Name="temporarycode" Type="nvarchar" MaxLength="500" />
+    <Property Name="filepreview" Type="nvarchar" MaxLength="500" />
+    <Property Name="grouptype" Type="int" />
+    <Property Name="ranking" Type="int" />
+    <Property Name="vote" Type="int" />
+    <Property Name="ratingweight" Type="int" />
+    <Property Name="messagesunread" Type="int" />
+    <Property Name="messages" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_meprofile' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dd_meprofile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="500" />
+    <Property Name="phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="state" Type="nvarchar" MaxLength="255" />
+    <Property Name="zipcode" Type="nvarchar" MaxLength="50" />
+    <Property Name="nationalid" Type="int" />
+    <Property Name="cityid" Type="int" />
+    <Property Name="districtid" Type="int" />
+    <Property Name="about" Type="nvarchar(max)" />
+    <Property Name="blog" Type="nvarchar" MaxLength="500" />
+    <Property Name="homepage" Type="nvarchar" MaxLength="500" />
+    <Property Name="facebook" Type="nvarchar" MaxLength="500" />
+    <Property Name="twitter" Type="nvarchar" MaxLength="500" />
+    <Property Name="youtube" Type="nvarchar" MaxLength="500" />
+    <Property Name="flickr" Type="nvarchar" MaxLength="500" />
+    <Property Name="skype" Type="nvarchar" MaxLength="500" />
+    <Property Name="yahoo" Type="nvarchar" MaxLength="500" />
+    <Property Name="birthday" Type="datetime" />
+    <Property Name="profession" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_settingsite_restrictedpages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dd_settingsite_restrictedpages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="1000" />
+    <Property Name="query" Type="nvarchar" MaxLength="1000" />
+    <Property Name="pathandquery" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.dd_user' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dd_user">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="password" Type="nvarchar" MaxLength="500" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="email" Type="nvarchar" MaxLength="500" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="pis" Type="int" />
+    <Property Name="pid" Type="int" />
+    <Property Name="depth" Type="int" />
+    <Property Name="logincache" Type="int" />
+    <Property Name="loginfirst" Type="int" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_category' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_category">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="note" Type="nvarchar(max)" />
+    <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+    <Property Name="cid" Type="int" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="pis" Type="int" />
+    <Property Name="pid" Type="int" />
+    <Property Name="depth" Type="int" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+    <Property Name="url" Type="nvarchar" MaxLength="255" />
+    <Property Name="customizeid" Type="int" />
+    <Property Name="alias" Type="nvarchar" MaxLength="600" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_categoryattr' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_categoryattr">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="note" Type="nvarchar(max)" />
+    <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+    <Property Name="cid" Type="int" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="pis" Type="int" />
+    <Property Name="pid" Type="int" />
+    <Property Name="depth" Type="int" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+    <Property Name="url" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_categorytypeof' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_categorytypeof">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="255" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="note" Type="nvarchar(max)" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_fileattach' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_fileattach">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="path" Type="nvarchar" MaxLength="500" />
+    <Property Name="note" Type="nvarchar" MaxLength="500" />
+    <Property Name="sized" Type="bigint" />
+    <Property Name="typed" Type="int" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="belongto" Type="int" />
+    <Property Name="iid" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_menu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_menu">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="note" Type="nvarchar" MaxLength="1000" />
+    <Property Name="navigateurl" Type="nvarchar" MaxLength="255" />
+    <Property Name="tooltip" Type="nvarchar" MaxLength="500" />
+    <Property Name="attributes" Type="nvarchar" MaxLength="500" />
+    <Property Name="visible" Type="int" />
+    <Property Name="cid" Type="int" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="pis" Type="int" />
+    <Property Name="pid" Type="int" />
+    <Property Name="depth" Type="int" />
+    <Property Name="cataloguetypeofid" Type="int" />
+    <Property Name="catalogueid" Type="int" />
+    <Property Name="insertcatalogue" Type="int" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+    <Property Name="noroot" Type="int" />
+    <Property Name="applyattributeschild" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_menutypeof' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_menutypeof">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="note" Type="nvarchar" MaxLength="1000" />
+    <Property Name="path" Type="nvarchar" MaxLength="255" />
+    <Property Name="insertbreak" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="vndd_news">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="500" />
+    <Property Name="introduce" Type="nvarchar" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+    <Property Name="cid" Type="int" />
+    <Property Name="cname" Type="nvarchar" MaxLength="500" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+    <Property Name="timecreate" Type="datetime" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="allowcomment" Type="int" />
+    <Property Name="author" Type="nvarchar" MaxLength="500" />
+    <Property Name="timeexpire" Type="datetime" />
+    <Property Name="viewcounter" Type="int" />
+    <Property Name="tid" Type="int" />
+    <Property Name="tname" Type="nvarchar" MaxLength="500" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+    <Property Name="url" Type="nvarchar" MaxLength="255" />
+    <Property Name="relateditem" Type="nvarchar" MaxLength="50" />
+    <Property Name="tag" Type="nvarchar(max)" />
+    <Property Name="alias" Type="nvarchar" MaxLength="600" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_product">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="introduce" Type="nvarchar" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="features" Type="ntext" />
+    <Property Name="filepreview" Type="nvarchar" MaxLength="255" />
+    <Property Name="cid" Type="int" />
+    <Property Name="cname" Type="nvarchar" MaxLength="500" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="markas" Type="int" />
+    <Property Name="iconex" Type="nvarchar" MaxLength="255" />
+    <Property Name="timecreate" Type="datetime" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="viewcounter" Type="int" />
+    <Property Name="provider" Type="nvarchar" MaxLength="500" />
+    <Property Name="advertise" Type="nvarchar" MaxLength="500" />
+    <Property Name="price" Type="real" />
+    <Property Name="pricealter" Type="real" />
+    <Property Name="allowcomment" Type="int" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+    <Property Name="album" Type="int" />
+    <Property Name="relateditem" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_staticcontent' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_staticcontent">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="500" />
+    <Property Name="filepath" Type="nvarchar" MaxLength="500" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="status" Type="int" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+    <Property Name="code" Type="nvarchar" MaxLength="50" />
+    <Property Name="separatepage" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_supportonline' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_supportonline">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="type" Type="int" />
+    <Property Name="note" Type="nvarchar(max)" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'bfinance_web.dbo.vndd_symbol' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vndd_symbol">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="path" Type="nvarchar" MaxLength="500" />
+    <Property Name="note" Type="nvarchar" MaxLength="500" />
+    <Property Name="sized" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="orderd" Type="int" />
+    <Property Name="timeupdate" Type="datetime" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="forsearch" Type="nvarchar(max)" />
+  </EntityType>
+</Schema>

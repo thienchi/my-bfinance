@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="bfinance" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=THIENCHI-PC;Initial Catalog=bfinance;Persist Security Info=True;User ID=sa;MultipleActiveResultSets=True" SettingsObjectName="ConvertUrl.Properties.Settings" SettingsPropertyName="bfinanceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.vndd_category" Member="vndd_category2s">
+    <Type Name="vndd_category2">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="filepreview" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="cid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="orderd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="markas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="iconex" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="timeupdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="depth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="forsearch" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="url" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="customizeid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="alias" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

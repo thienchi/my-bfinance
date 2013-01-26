@@ -1,0 +1,203 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:dangdongcmm.news">
+      <Item value="pnlCategory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="CFunctions`0" priority="6" />
+      <Item value="Name" priority="1" />
+      <Item value="Eval`0" priority="1" />
+      <Item value="bfinanceEntities2`0" priority="0" />
+      <Item value="vndd_category`0" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="new" priority="2" />
+      <Item value="DataClasses1DataContext`0" priority="0" />
+      <Item value="ent" priority="0" />
+      <Item value="ent2" priority="0" />
+      <Item value="string" priority="5" />
+      <Item value="navigateurl" priority="0" />
+      <Item value="urldef" priority="0" />
+      <Item value="subject" priority="0" />
+      <Item value="alias" priority="2" />
+      <Item value="CCategory`0" priority="1" />
+      <Item value="CCategory" priority="1" />
+      <Item value="DAL" priority="1" />
+      <Item value="cid" priority="1" />
+      <Item value="int" priority="0" />
+      <Item value="CategoryInfo`0" priority="2" />
+      <Item value="SQL_GETIFO" priority="1" />
+      <Item value="TABLENAME" priority="0" />
+      <Item value="dal" priority="0" />
+      <Item value="if" priority="2" />
+      <Item value="cate" priority="4" />
+      <Item value="cat" priority="0" />
+      <Item value="this" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="HttpContext`0" priority="0" />
+      <Item value="return" priority="3" />
+      <Item value="searchin" priority="0" />
+      <Item value="txtKeywords" priority="1" />
+      <Item value="link" priority="0" />
+      <Item value="keyword" priority="6" />
+      <Item value="Cname" priority="3" />
+      <Item value="#endregion" priority="1" />
+      <Item value="SQL" priority="1" />
+      <Item value="info" priority="1" />
+      <Item value="kq" priority="0" />
+      <Item value="UpdateAliasInfo`0" priority="0" />
+      <Item value="NewsInfo`0" priority="0" />
+      <Item value="CNews`0" priority="0" />
+      <Item value="MessageBox`0" priority="0" />
+      <Item value="content" priority="0" />
+      <Item value="ContentPlaceHolder4" priority="0" />
+      <Item value="server" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@dangdongcmm.utilities.CFunctions">
+      <Item value="install_urlname`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConvertUrl.bfinanceEntities">
+      <Item value="vndd_category" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConvertUrl.bfinanceEntities2">
+      <Item value="vndd_category" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConvertUrl.DataClasses1DataContext">
+      <Item value="vndd_categories" priority="0" />
+      <Item value="SubmitChanges`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Linq.Table`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConvertUrl.vndd_category">
+      <Item value="alias" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:dangdongcmm.model.CategoryInfo">
+      <Item value="Cid" priority="1" />
+      <Item value="Pid" priority="0" />
+      <Item value="Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:dangdongcmm.dal.CCategory">
+      <Item value="GetCategoryInfo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Replace`0" priority="9" />
+      <Item value="Length" priority="1" />
+      <Item value="Substring`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponse">
+      <Item value="Redirect`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@dangdongcmm.utilities.Queryparam">
+      <Item value="Iid" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.TextBox">
+      <Item value="Text" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:dangdongcmm.model.NewsInfo">
+      <Item value="Name" priority="0" />
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:com.harmony.SqlHelper.SqlHelper">
+      <Item value="executeNonQuery`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:dangdongcmm.dal.CNews">
+      <Item value="UpdateAliasInfo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.Content">
+      <Item value="ContentPlaceHolderID" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="CC580DE9-2C31-4CFA-8913-4841FB15F6F7/f:CDAL.cs" caret="472439" fromTop="6" />
+      <File id="918DB24D-FBA3-482D-9574-A20DC6D99594/f:App.Config" caret="119" fromTop="3" />
+      <File id="918DB24D-FBA3-482D-9574-A20DC6D99594/f:Form1.cs" caret="802" fromTop="10" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx.designer.cs" caret="226" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/f:Global.asax.cs" caret="0" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:wservice/f:UtiMailService.asmx.cs" caret="17047" fromTop="326" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:cssscript/f:menu.css" caret="2380" fromTop="18" />
+      <File id="E690ED4E-5AB3-4994-B315-9263ECBF7913/f:CFunctions.cs" caret="53697" fromTop="6" />
+      <File id="E690ED4E-5AB3-4994-B315-9263ECBF7913/f:CConstants.cs" caret="4517" fromTop="6" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:cmm/d:cssscript/f:form.css" caret="2181" fromTop="23" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news.aspx.cs" caret="2014" fromTop="21" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:cmm/d:cssscript/f:main.css" caret="11794" fromTop="9" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:cssscript/f:main.css" caret="10516" fromTop="27" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/f:Web.config" caret="7388" fromTop="14" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterHome.Master" caret="0" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news.aspx" caret="1607" fromTop="10" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:ucscontentview.ascx" caret="0" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master.cs" caret="1741" fromTop="62" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx.cs" caret="1562" fromTop="45" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:ucfocusn.ascx" caret="0" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:uchomen.ascx" caret="0" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:ucnewsadesc.ascx" caret="0" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:ucnewsa.ascx" caret="0" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:ucnewsc.ascx" caret="0" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:ucnewsh.ascx" caret="103" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:ucnewsh.ascx.cs" caret="486" fromTop="3" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:home.aspx" caret="0" fromTop="0" />
+      <File id="AFA073E1-4F2F-4470-984F-53333A2972C6/f:Info.cs" caret="1528" fromTop="11" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx" caret="3883" fromTop="55" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master" caret="2963" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="918DB24D-FBA3-482D-9574-A20DC6D99594/f:Form1.cs" caret="1306" fromTop="30" />
+      <File id="918DB24D-FBA3-482D-9574-A20DC6D99594/f:Form1.cs" caret="37251" fromTop="10" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterHome.Master" caret="2278" fromTop="20" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/f:Web.config" caret="9135" fromTop="19" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/f:Web.config" caret="9135" fromTop="10" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx" caret="1745" fromTop="7" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx.cs" caret="1383" fromTop="15" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master.cs" caret="1127" fromTop="20" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterHome.Master" caret="1772" fromTop="17" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx.cs" caret="9135" fromTop="6" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master" caret="1081" fromTop="13" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master" caret="2101" fromTop="16" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterHome.Master" caret="754" fromTop="8" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterHome.Master" caret="1444" fromTop="15" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:cssscript/f:main.css" caret="10516" fromTop="27" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/d:usercontrol/f:ucnewsc.ascx" caret="276" fromTop="3" />
+      <File id="AFA073E1-4F2F-4470-984F-53333A2972C6/f:Info.cs" caret="54081" fromTop="25" />
+      <File id="AFA073E1-4F2F-4470-984F-53333A2972C6/f:Info.cs" caret="53902" fromTop="21" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news.aspx" caret="2228" fromTop="11" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news.aspx" caret="3228" fromTop="23" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx" caret="2006" fromTop="0" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master" caret="3069" fromTop="26" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master" caret="2431" fromTop="12" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master" caret="1823" fromTop="3" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx" caret="674" fromTop="7" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:MasterDefault.Master" caret="3328" fromTop="24" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx" caret="4284" fromTop="10" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx" caret="4316" fromTop="10" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx" caret="3508" fromTop="14" />
+      <File id="D74D3E34-6163-4FB8-8072-91294EFF738D/d:vn/f:news2.aspx" caret="3921" fromTop="19" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

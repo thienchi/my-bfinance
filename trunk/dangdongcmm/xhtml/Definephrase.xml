@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<phrase>
+    <!-- Vn -->
+    <vn_Require>Yêu cầu nhập thông tin, không được để trống</vn_Require>
+    <vn_Require_code>Yêu cầu nhập Mã</vn_Require_code>
+    <vn_Require_name>Yêu cầu nhập Tên / Tiêu đề</vn_Require_name>
+	<vn_Require_nick>Yêu cầu nhập nick</vn_Require_nick>
+    <vn_Require_namefl>Yêu cầu nhập Họ Tên</vn_Require_namefl>
+    <vn_Require_username>Yêu cầu nhập Tên truy cập</vn_Require_username>
+    <vn_Require_password>Yêu cầu nhập Mật khẩu</vn_Require_password>
+    <vn_Require_email>Yêu cầu nhập E-mail</vn_Require_email>
+    <vn_Require_title>Yêu cầu nhập Tiêu Đề</vn_Require_title>
+    <vn_Require_content>Yêu cầu nhập Nội Dung</vn_Require_content>
+    <vn_Require_catalogue>Yêu cầu chọn Danh mục</vn_Require_catalogue>
+    <vn_Require_keyword>Yêu cầu nhập từ khóa tìm kiếm</vn_Require_keyword>
+    <vn_Invalid>Dữ liệu không hợp lệ</vn_Invalid>
+    <vn_Invalid_email>E-mail không hợp lệ</vn_Invalid_email>
+    <vn_Invalid_username>Tên truy cập không hợp lệ</vn_Invalid_username>
+    <vn_Invalid_username_notexist>Tên truy cập không tồn tại trong hệ thống</vn_Invalid_username_notexist>
+    <vn_Invalid_username_email>Tên truy cập và e-mail không trùng khớp</vn_Invalid_username_email>
+    <vn_Invalid_password>Mật khẩu không được để trống</vn_Invalid_password>
+    <vn_Invalid_passwordretype>Xác nhận mật khẩu không đúng</vn_Invalid_passwordretype>
+    <vn_Invalid_filesize>Dung lượng tối đa cho phép là 2MB</vn_Invalid_filesize>
+    <vn_Invalid_filepreviewsize>Dung lượng tối đa cho phép là 2MB</vn_Invalid_filepreviewsize>
+    <vn_Invalid_fileurl>Đường dẫn không hợp lệ, hãy kiểm tra lại (phải có http:// )</vn_Invalid_fileurl>
+    <vn_Invalid_file>Không có tập tin nào được chọn</vn_Invalid_file>
+    <vn_Invalid_filetype_image>Chỉ cho phép tải tập tin hình ảnh</vn_Invalid_filetype_image>
+    <vn_Notice_fileupload_duplicate>Tập tin đã được đổi tên vì bị trùng.</vn_Notice_fileupload_duplicate>
+    <vn_Notice_fileupload_done>Tải tập tin thành công!</vn_Notice_fileupload_done>
+    <vn_Notice_fileupload_error>Lỗi</vn_Notice_fileupload_error>
+
+    <vn_Exist_username>Tên truy cập đã tồn tại trong hệ thống. Hãy chọn tên khác.</vn_Exist_username>
+    <vn_Exist_email>E-mail đã đăng ký với hệ thống. Hãy dùng e-mail khác.</vn_Exist_email>
+    <vn_Comment_dupemail>E-mail đã được dùng bình chọn cho tin này.</vn_Comment_dupemail>
+    <vn_Comment_dupphone>Số điện thoại đã được dùng bình chọn cho tin này.</vn_Comment_dupphone>
+    <vn_Login_invalid>Đăng nhập không hợp lệ ...</vn_Login_invalid>
+    <vn_Login_restricted>Bạn cần phải đăng nhập để xem trang.</vn_Login_restricted>
+    <vn_Login_expired>Phiên làm việc đã hết hiệu lực... Hãy đăng nhập lại.</vn_Login_expired>
+    <vn_Getpassword_done>Hãy kiểm tra e-mail sau vài phút để nhận lại mật khẩu.</vn_Getpassword_done>
+    <vn_Getpassword_error>Lỗi yêu cầu mật khẩu, hãy thử lại</vn_Getpassword_error>
+    <vn_Changepassword_invalid_passwordold>Mật khẩu cũ không đúng</vn_Changepassword_invalid_passwordold>
+    <vn_Changepassword_invalid_passwordcon>Mật khẩu xác nhận không chính xác</vn_Changepassword_invalid_passwordcon>
+    <vn_Changepassword_done>Mật khẩu đã được thay đổi thành công</vn_Changepassword_done>
+    <vn_Changepassword_error>Lỗi đổi mật khẩu, hãy thử lại</vn_Changepassword_error>
+    <vn_Takeinfo_completed>Chuyển dữ liệu thành công</vn_Takeinfo_completed>
+    <vn_Takeinfo_error>Hệ thống không thể nhận được dữ liệu từ client, hãy thử lại...</vn_Takeinfo_error>
+    <vn_Save_completed>Dữ liệu đã được cập nhật thành công</vn_Save_completed>
+    <vn_Save_error>Lỗi cập nhật dữ liệu, hãy thử lại...</vn_Save_error>
+    <vn_Firstitem_ddl>Chọn ...</vn_Firstitem_ddl>
+    <vn_Confirm_error>Thông tin yêu cầu không tồn tại trong hệ thống, vui lòng kiểm tra lại</vn_Confirm_error>
+    <vn_Confirm_register_success>Chào mừng bạn tham gia với chúng tôi. &lt;br /&gt;Tài khoản của bạn đã được kích hoạt, hãy lưu giữ thông tin để &lt;a href="login.aspx"&gt;Đăng nhập&lt;/a&gt;</vn_Confirm_register_success>
+    <vn_Problem_restricted>Bạn không có quyền truy cập trang.</vn_Problem_restricted>
+    <vn_Problem_notfound>Thông tin yêu cầu không có trong hệ thống. &lt;a href="javascript:history.go(-1)"&gt;[ Quay lại ]&lt;/a&gt;</vn_Problem_notfound>
+    <vn_Feedback_done>Thông tin của bạn đã được gửi đi. Cảm ơn bạn đã tham gia. Chúng tôi sẽ xem xét thông tin trước khi hiển thị. </vn_Feedback_done>
+    <vn_Feedback_error>Lỗi! Hãy thử lại.</vn_Feedback_error>
+    <vn_Invalid_captcha>Mã bảo vệ không đúng</vn_Invalid_captcha>
+    <vn_Account_Update_done>Thông tin cá nhân đã được cập nhật thành công!</vn_Account_Update_done>
+
+    <vn_Cart_empty>Giỏ hàng rỗng</vn_Cart_empty>
+    <vn_Cart_checkout_done>Đơn hàng đã được gửi đi, chúng tôi sẽ phản hồi trong thời gian sớm nhất</vn_Cart_checkout_done>
+    <vn_Cart_checkout_error>Lỗi! Vui lòng thử lại.</vn_Cart_checkout_error>
+    <vn_Cart_Require_shipping_fullname>Yêu cầu nhập tên người mua hàng</vn_Cart_Require_shipping_fullname>
+    <vn_Cart_Require_shipping_address>Yêu cầu nhập địa chỉ</vn_Cart_Require_shipping_address>
+    <vn_Cart_Require_shipping_city>Yêu cầu nhập thành phố</vn_Cart_Require_shipping_city>
+    <vn_Cart_Require_shipping_district>Yêu cầu nhập quận/ huyện</vn_Cart_Require_shipping_district>
+    <vn_Cart_Require_shipping_national>Yêu cầu chọn quốc gia</vn_Cart_Require_shipping_national>
+    <vn_Cart_Require_shipping_phone>Yêu cầu nhập điện thoại liên hệ</vn_Cart_Require_shipping_phone>
+    <vn_Cart_listtemplate>&lt;br /&gt; Sản phẩm $VAR_PRODUCTNAME$ * $VAR_QUANTITY$ = $VAR_AMOUNT$</vn_Cart_listtemplate>
+    <!-- Vn -->
+
+    <!-- En -->
+    <en_Require>Require informations</en_Require>
+    <en_Require_code>Require 'Code'</en_Require_code>
+    <en_Require_name>Require 'Subject'</en_Require_name>
+    <en_Require_namefl>Require 'Name'</en_Require_namefl>
+    <en_Require_username>Require 'User ID'</en_Require_username>
+    <en_Require_password>Require 'Password'</en_Require_password>
+    <en_Require_email>Require 'E-mail'</en_Require_email>
+    <en_Require_title>Require 'Subject'</en_Require_title>
+    <en_Require_content>Require 'Content'</en_Require_content>
+    <en_Require_catalogue>Select one from catalogue</en_Require_catalogue>
+    <en_Require_keyword>Enter keywords to start search</en_Require_keyword>
+    <en_Invalid>Invalid data</en_Invalid>
+    <en_Invalid_email>Invalid E-mail</en_Invalid_email>
+    <en_Invalid_username>Invalid username</en_Invalid_username>
+    <en_Invalid_username_notexist>Username does not exist in the system</en_Invalid_username_notexist>
+    <en_Invalid_username_email>Username and e-mail does not match</en_Invalid_username_email>
+    <en_Invalid_password>Password is invalid, must be at least 1 characters</en_Invalid_password>
+    <en_Invalid_passwordretype>Confirm password is incorrect</en_Invalid_passwordretype>
+    <en_Exist_username>Username already exists in the system. Please choose another username.</en_Exist_username>
+    <en_Exist_email>This e-mail registered with the system. Please choose another e-mail</en_Exist_email>
+    <en_Login_invalid>Invalid login ...</en_Login_invalid>
+    <en_Login_restricted>You need to login to view page</en_Login_restricted>
+    <en_Login_expired>Session has expired ... Please login again</en_Login_expired>
+    <en_Getpassword_done>Let check your e-mail in few minutes to get password.</en_Getpassword_done>
+    <en_Getpassword_error>Error while request password, please try again</en_Getpassword_error>
+    <en_Changepassword_invalid_passwordold>Old password doesn't match</en_Changepassword_invalid_passwordold>
+    <en_Changepassword_invalid_passwordcon>Confirm password isn't exactly</en_Changepassword_invalid_passwordcon>
+    <en_Changepassword_done>Password has been changed</en_Changepassword_done>
+    <en_Changepassword_error>Error while change password, please try again</en_Changepassword_error>
+    <en_Takeinfo_completed>Transfer data success</en_Takeinfo_completed>
+    <en_Takeinfo_error>The system can not receive data from client, please try again ...</en_Takeinfo_error>
+    <en_Save_completed>Data has been updated successfully</en_Save_completed>
+    <en_Save_error>Error updating data, try again ...</en_Save_error>
+    <en_Firstitem_ddl>Select ...</en_Firstitem_ddl>
+    <en_Confirm_error>Information requested does not exist in the system, please check again</en_Confirm_error>
+    <en_Confirm_register_success>Welcome &lt;br /&gt;Your account has been activated, please save information to &lt;a href="login.aspx"&gt;Login&lt;/a&gt;</en_Confirm_register_success>
+    <en_Problem_restricted>No permit to access</en_Problem_restricted>
+    <en_Problem_notfound>The requested information was not found. &lt;a href="javascript:history.go(-1)"&gt;[ Back ]&lt;/a&gt;</en_Problem_notfound>
+
+    <en_Invalid_captcha>Mã bảo vệ không đúng</en_Invalid_captcha>
+    <en_Account_Update_done>Thông tin cá nhân đã được cập nhật thành công!</en_Account_Update_done>
+    <en_Cart_empty>Giỏ hàng rỗng</en_Cart_empty>
+    <en_Cart_checkout_done>Đơn hàng đã được gửi đi, chúng tôi sẽ phản hồi trong thời gian sớm nhất</en_Cart_checkout_done>
+    <en_Cart_checkout_error>Lỗi! Vui lòng thử lại.</en_Cart_checkout_error>
+    <!-- En -->
+
+
+</phrase>

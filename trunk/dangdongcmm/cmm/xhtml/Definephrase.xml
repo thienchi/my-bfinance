@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<phrase>
+	<!-- Vn -->
+	<vn_Require>Yêu cầu nhập thông tin, không được để trống</vn_Require>
+	<vn_Require_code>Yêu cầu nhập Mã</vn_Require_code>
+    <vn_Require_name>Yêu cầu nhập Tên / Tiêu đề</vn_Require_name>
+	<vn_Require_nick>Yêu cầu nhập nick</vn_Require_nick>
+    <vn_Require_namefl>Yêu cầu nhập Họ Tên</vn_Require_namefl>
+    <vn_Require_username>Yêu cầu nhập Tên truy cập</vn_Require_username>
+    <vn_Require_password>Yêu cầu nhập Mật khẩu</vn_Require_password>
+    <vn_Require_email>Yêu cầu nhập E-mail</vn_Require_email>
+    <vn_Require_title>Yêu cầu nhập Tiêu Đề</vn_Require_title>
+    <vn_Require_content>Yêu cầu nhập Nội Dung</vn_Require_content>
+    <vn_Require_catalogue>Yêu cầu chọn Danh mục</vn_Require_catalogue>
+    <vn_Require_catalogueinfo>Yêu cầu chọn Thông tin kết hợp</vn_Require_catalogueinfo>
+    <vn_Require_keyword>Yêu cầu nhập từ khóa tìm kiếm</vn_Require_keyword>
+    <vn_Require_menu>Yêu cầu chọn loại bảng chọn</vn_Require_menu>
+
+    <vn_Invalid>Dữ liệu không hợp lệ</vn_Invalid>
+    <vn_Invalid_right>Bạn không có quyền truy cập trang hay thực hiện thao tác này...</vn_Invalid_right>
+    <vn_Invalid_data>Dữ liệu không hợp lệ, yêu cầu nhập lại</vn_Invalid_data>
+    <vn_Invalid_int>Dữ liệu không hợp lệ, phải là một số tự nhiên</vn_Invalid_int>
+    <vn_Invalid_datetime>Dữ liệu ngày tháng không hợp lệ, định dạnh: dd/MM/yyyy</vn_Invalid_datetime>
+    <vn_Invalid_filesize>Tập tin kèm theo dung lượng tối đa là 2MB</vn_Invalid_filesize>
+    <vn_Invalid_filepreviewsize>Tập tin kèm theo dung lượng tối đa là 2MB</vn_Invalid_filepreviewsize>
+    <vn_Invalid_fileurl>Đường dẫn file không hợp lệ, hãy kiểm tra lại (bao gồm: http:// )</vn_Invalid_fileurl>
+    <vn_Invalid_file>Chưa chọn file</vn_Invalid_file>
+    <vn_Invalid_username>Tên truy cập không hợp lệ</vn_Invalid_username>
+    <vn_Invalid_username_notexist>Tên truy cập không tồn tại trong hệ thống</vn_Invalid_username_notexist>
+    <vn_Invalid_username_email>Tên truy cập và e-mail không trùng khớp</vn_Invalid_username_email>
+    <vn_Invalid_password>Mật khẩu không hợp lệ, không được bỏ trống</vn_Invalid_password>
+    <vn_Invalid_email>E-mail không hợp lệ</vn_Invalid_email>
+
+    <vn_Exist_username>Tên truy cập đã tồn tại trong hệ thống. Hãy chọn tên khác.</vn_Exist_username>
+    <vn_Exist_email>E-mail đã đăng ký với hệ thống. Hãy dùng e-mail khác.</vn_Exist_email>
+
+    <vn_Remove_confirm>Bạn có chắc chắn muốn xóa các thông tin đã chọn &amp; các thông tin liên quan?</vn_Remove_confirm>
+    <vn_Remove_denied>Bạn không có quyền xóa dữ liệu</vn_Remove_denied>
+    <vn_Remove_completed>Các thông tin đã chọn đã được xác nhận xóa</vn_Remove_completed>
+    <vn_Remove_error>Lỗi trong khi xóa dữ liệu, hãy thử lại...</vn_Remove_error>
+
+    <vn_Takeinfo_completed>Chuyển dữ liệu thành công</vn_Takeinfo_completed>
+    <vn_Takeinfo_error>Hệ thống không thể nhận được dữ liệu từ client, hãy thử lại...</vn_Takeinfo_error>
+    <vn_Save_notice>Chỉnh sửa dữ liệu: </vn_Save_notice>
+    <vn_Save_completed>Dữ liệu đã được cập nhật thành công</vn_Save_completed>
+    <vn_Save_error>Lỗi cập nhật dữ liệu, hãy thử lại...</vn_Save_error>
+    <vn_Savemultilang_completed>Dữ liệu tương ứng cho các ngôn ngữ khác cũng đã được cập nhật thành công</vn_Savemultilang_completed>
+    <vn_Savemultilang_error>Lỗi cập nhật dữ liệu tương ứng cho các ngôn ngữ khác, hãy thử lại...</vn_Savemultilang_error>
+    <vn_Copy_completed>Dữ liệu đã được sao chép thành công</vn_Copy_completed>
+    <vn_Copy_error>Lỗi sao chép dữ liệu, hãy thử lại...</vn_Copy_error>
+    <vn_Move_completed>Dữ liệu đã được di chuyển thành công</vn_Move_completed>
+    <vn_Move_error>Lỗi di chuyển dữ liệu, hãy thử lại...</vn_Move_error>
+    <vn_Saveorderd_completed>Thứ tự sắp xếp đã được cập nhật thành công</vn_Saveorderd_completed>
+    <vn_Saveorderd_error>Lỗi cập nhật thứ tự, hãy thử lại...</vn_Saveorderd_error>
+    <vn_Removefilepreview_confirm>Bạn có chắc chắn muốn xóa tập tin xem trước kèm theo?</vn_Removefilepreview_confirm>
+    <vn_Removefilepreview_completed>Tập tin xem trước kèm theo đã được xóa bỏ</vn_Removefilepreview_completed>
+    <vn_Removefilepreview_error>Lỗi xóa tập tin xem trước kèm theo, hãy thử lại...</vn_Removefilepreview_error>
+    <vn_Savemenu_completed>Bảng chọn đã được cập nhật thành công</vn_Savemenu_completed>
+    <vn_Savemenu_error>Lỗi cập nhật bảng chọn, hãy thử lại...</vn_Savemenu_error>
+
+    <vn_Firstitem_ddl>Chọn ...</vn_Firstitem_ddl>
+
+    <vn_Notice_file_loaded>Tập tin đã được đọc ... </vn_Notice_file_loaded>
+    <vn_Notice_file_notexist>Không tìm thấy tập tin</vn_Notice_file_notexist>
+    <vn_Notice_file_notexistcontinue>Không tìm thấy tập tin, nhưng hãy tiếp tục, tập tin sẽ được tạo</vn_Notice_file_notexistcontinue>
+    <vn_Notice_noselecteditem>Không có thông tin nào được chọn</vn_Notice_noselecteditem>
+    <vn_Notice_gotoUrldelay>Sẽ tự động chuyển trang sau &lt;label id='secCountdown'&gt;5&lt;/label&gt; giây ... </vn_Notice_gotoUrldelay>
+    <vn_Notice_gotoUrldelayl>Sẽ tự động chuyển trang về danh sách sau &lt;label id='secCountdown'&gt;5&lt;/label&gt; giây ... </vn_Notice_gotoUrldelayl>
+    <vn_Display_pis>Có phân cấp chi tiết cấp $VAR_DEPTH$</vn_Display_pis>
+    <vn_Display_havesub>Phân cấp chi tiết cấp $VAR_DEPTH$ của $VAR_PATH$</vn_Display_havesub>
+    <vn_Display_havesub_news>Danh sách $VAR_PATH$</vn_Display_havesub_news>
+    <vn_Display_havesub_product>Sản phẩm của $VAR_PATH$</vn_Display_havesub_product>
+    <vn_Display_havesub_video>Danh sách $VAR_PATH$</vn_Display_havesub_video>
+    <vn_Display_havesub_poll>Ý kiến bình chọn của $VAR_PATH$</vn_Display_havesub_poll>
+    <vn_Display_havesub_feedback>Thư mục cấp $VAR_DEPTH$ của $VAR_PATH$</vn_Display_havesub_feedback>
+    <vn_Display_havesub_attr>Thuộc tính mở rộng của $VAR_PATH$</vn_Display_havesub_attr>
+
+    <vn_Interface_login_title>Đăng nhập quản trị Website</vn_Interface_login_title>
+    <vn_Interface_login_username>Tên truy cập</vn_Interface_login_username>
+    <vn_Interface_login_password>Mật khẩu</vn_Interface_login_password>
+    <vn_Interface_login_submit>Đăng nhập</vn_Interface_login_submit>
+    <vn_Interface_login_remember>Ghi nhớ đăng nhập?</vn_Interface_login_remember>
+    <vn_Interface_login_getpassword>Quên mật khẩu</vn_Interface_login_getpassword>
+    <vn_Interface_login_invalid>Đăng nhập không hợp lệ ...</vn_Interface_login_invalid>
+    <vn_Interface_login_copyright>
+        &lt;img src="http://dangdong.vn/pub/vncopyrightcmm.gif" /&gt;
+    </vn_Interface_login_copyright>
+    <vn_Changepassword_invalid_passwordold>Mật khẩu cũ không đúng</vn_Changepassword_invalid_passwordold>
+    <vn_Changepassword_invalid_passwordcon>Mật khẩu xác nhận không chính xác</vn_Changepassword_invalid_passwordcon>
+    <vn_Changepassword_done>Mật khẩu đã được thay đổi thành công</vn_Changepassword_done>
+    <vn_Changepassword_error>Lỗi đổi mật khẩu, hãy thử lại</vn_Changepassword_error>
+    <vn_Getpassword_done>Hãy kiểm tra e-mail sau vài phút để nhận lại mật khẩu. &lt;br /&gt; &lt;a href="login.aspx"&gt;Đăng nhập quản trị Website&lt;/a&gt;</vn_Getpassword_done>
+    <vn_Getpassword_error>Lỗi yêu cầu mật khẩu, hãy thử lại</vn_Getpassword_error>
+    <vn_Login_invalid>Đăng nhập không hợp lệ ...</vn_Login_invalid>
+    <vn_Login_restricted>Bạn cần phải đăng nhập để xem trang.</vn_Login_restricted>
+    <vn_Login_expired>Phiên làm việc đã hết hiệu lực... Hãy đăng nhập lại.</vn_Login_expired>
+    <!-- Vn -->
+
+    <!-- En -->
+    <en_Require>Request information, not empty</en_Require>
+    <en_Require_code>Require Code</en_Require_code>
+    <en_Require_name>Require Name / Title</en_Require_name>
+    <en_Require_namefl>Require Name</en_Require_namefl>
+    <en_Require_username>Require User ID</en_Require_username>
+    <en_Require_password>Require Password</en_Require_password>
+    <en_Require_email>Require E-mail</en_Require_email>
+    <en_Require_title>Require Title</en_Require_title>
+    <en_Require_content>Require Content</en_Require_content>
+    <en_Require_catalogue>Require select category</en_Require_catalogue>
+    <en_Require_keyword>Require enter keywords to search</en_Require_keyword>
+    <en_Require_menu>Require select type of menu</en_Require_menu>
+
+    <en_Invalid>Invalid data</en_Invalid>
+    <en_Invalid_right>You have no right to access or do this...</en_Invalid_right>
+    <en_Invalid_data>Invalid data, request re-enter</en_Invalid_data>
+    <en_Invalid_int>Invalid data, is a integer</en_Invalid_int>
+    <en_Invalid_datetime>Date is invalid, format: dd/mm/yyyy</en_Invalid_datetime>
+    <en_Invalid_filesize>Attached files the maximum size is 2MB</en_Invalid_filesize>
+    <en_Invalid_filepreviewsize>Attached files the maximum size is 2MB</en_Invalid_filepreviewsize>
+    <en_Invalid_fileurl>Invalid file's url, please check again (include: http:// )</en_Invalid_fileurl>
+    <en_Invalid_file>No file selected</en_Invalid_file>
+    <en_Invalid_filetype_image>Only image allow</en_Invalid_filetype_image>
+    <en_Notice_fileupload_duplicate>File has been changed the name because it's duplicated. </en_Notice_fileupload_duplicate>
+    <en_Notice_fileupload_done>File uploaded!</en_Notice_fileupload_done>
+    <en_Notice_fileupload_error>Upload error</en_Notice_fileupload_error>
+    <en_Invalid_username>Invalid Username</en_Invalid_username>
+    <en_Invalid_username_notexist>Username does not exist in the system</en_Invalid_username_notexist>
+    <en_Invalid_username_email>Username and e-mail does not match</en_Invalid_username_email>
+    <en_Invalid_password>Password is invalid, must be at least 1 characters</en_Invalid_password>
+    <en_Invalid_email>E-mail is not valid</en_Invalid_email>
+
+    <en_Exist_username>Username already exists in the system. Please choose another username.</en_Exist_username>
+    <en_Exist_email>This e-mail registered with the system. Please choose another e-mail</en_Exist_email>
+
+    <en_Remove_confirm>Are you sure you want to delete the information and related information?</en_Remove_confirm>
+    <en_Remove_denied>You have no right to delete data</en_Remove_denied>
+    <en_Remove_completed>The selected information has been verified to remove</en_Remove_completed>
+    <en_Remove_error>Error deleting data, try again ...</en_Remove_error>
+
+    <en_Takeinfo_completed>Transfer data success</en_Takeinfo_completed>
+    <en_Takeinfo_error>The system can not receive data from client, please try again ...</en_Takeinfo_error>
+    <en_Save_notice>Edit data: </en_Save_notice>
+    <en_Save_completed>Data has been updated successfully</en_Save_completed>
+    <en_Save_error>Error updating data, try again ...</en_Save_error>
+    <en_Savemultilang_completed>Similar data for other languages have also been updated successfully</en_Savemultilang_completed>
+    <en_Savemultilang_error>Error updating similar data to other languages, please try again ...</en_Savemultilang_error>
+    <en_Copy_completed>Data have been copied successfully</en_Copy_completed>
+    <en_Copy_error>Error copying data, try again ...</en_Copy_error>
+    <en_Move_completed>Data have been movied successfully</en_Move_completed>
+    <en_Move_error>Error moving data, try again ...</en_Move_error>
+    <en_Saveorderd_completed>Order has been updated successfully</en_Saveorderd_completed>
+    <en_Saveorderd_error>Error update order, please try again ...</en_Saveorderd_error>
+    <en_Removefilepreview_confirm>Are you sure you want to delete the file preview attached?</en_Removefilepreview_confirm>
+    <en_Removefilepreview_completed>File preview has been removed</en_Removefilepreview_completed>
+    <en_Removefilepreview_error>Error deleting file preview, please try again ...</en_Removefilepreview_error>
+    <en_Savemenu_completed>Menu have been updated successfully</en_Savemenu_completed>
+    <en_Savemenu_error>Error update menu, try again ...</en_Savemenu_error>
+
+    <en_Firstitem_ddl>Select ...</en_Firstitem_ddl>
+
+    <en_Notice_file_loaded>File has been read ... </en_Notice_file_loaded>
+    <en_Notice_file_notexist>Could not find file</en_Notice_file_notexist>
+    <en_Notice_file_notexistcontinue>Could not find file, but continue, the file will be created</en_Notice_file_notexistcontinue>
+    <en_Notice_noselecteditem>No information is selected</en_Notice_noselecteditem>
+    <en_Notice_gotoUrldelay>Will automatically redirect to page after &lt;label id='secCountdown'&gt;5&lt;/label&gt; seconds ... </en_Notice_gotoUrldelay>
+    <en_Notice_gotoUrldelayl>Will automatically redirect to list page after &lt;label id='secCountdown'&gt;5&lt;/label&gt; seconds ... </en_Notice_gotoUrldelayl>
+    <en_Display_pis>Have sub items at level $VAR_DEPTH$?</en_Display_pis>
+    <en_Display_havesub>Sub items at level $VAR_DEPTH$ of $VAR_PATH$</en_Display_havesub>
+    <en_Display_havesub_news>Article List of $VAR_PATH$</en_Display_havesub_news>
+    <en_Display_havesub_product>Product List of $VAR_PATH$</en_Display_havesub_product>
+    <en_Display_havesub_video>Article List of $VAR_PATH$</en_Display_havesub_video>
+    <en_Display_havesub_poll>Votes of $VAR_PATH$</en_Display_havesub_poll>
+    <en_Display_havesub_feedback>Folder level $VAR_DEPTH$ của $VAR_PATH$</en_Display_havesub_feedback>
+    <en_Display_havesub_attr>Attributes of $VAR_PATH$</en_Display_havesub_attr>
+
+    <en_Interface_login_title>Admin login</en_Interface_login_title>
+    <en_Interface_login_username>User ID</en_Interface_login_username>
+    <en_Interface_login_password>Password</en_Interface_login_password>
+    <en_Interface_login_submit>Login</en_Interface_login_submit>
+    <en_Interface_login_remember>Remember login?</en_Interface_login_remember>
+    <en_Interface_login_getpassword>Forgot password</en_Interface_login_getpassword>
+    <en_Interface_login_invalid>Invalid login ...</en_Interface_login_invalid>
+    <en_Interface_login_copyright>
+        &lt;img src="http://dangdong.vn/pub/encopyrightcmm.gif" /&gt;
+    </en_Interface_login_copyright>
+    <en_Changepassword_invalid_passwordold>Old password doesn't match</en_Changepassword_invalid_passwordold>
+    <en_Changepassword_invalid_passwordcon>Confirm password isn't exactly</en_Changepassword_invalid_passwordcon>
+    <en_Changepassword_done>Password has been changed</en_Changepassword_done>
+    <en_Changepassword_error>Error while change password, please try again</en_Changepassword_error>
+    <en_Getpassword_done>Let check your e-mail in few minutes to get password. &lt;br /&gt; &lt;a href="login.aspx"&gt;Login Administrator&lt;/a&gt;</en_Getpassword_done>
+    <en_Getpassword_error>Error while request password, please try again</en_Getpassword_error>
+    <en_Login_invalid>Invalid login ...</en_Login_invalid>
+    <en_Login_restricted>You need to login to view page</en_Login_restricted>
+    <en_Login_expired>Session has expired ... Please login again</en_Login_expired>
+
+    <en_Task_Require_Assigned>Require select a Member to assign</en_Task_Require_Assigned>
+    <en_Task_Texttaskstatus_Posted>&lt;b&gt;Posted&lt;/b&gt; by &lt;a href="taskrunner.aspx?iid=$VAR_MEMBERID$"&gt;$VAR_MEMBERNAME$&lt;/a&gt; and needs to be assigned by &lt;u&gt;$VAR_DEADLINEDATE$&lt;/u&gt;</en_Task_Texttaskstatus_Posted>
+    <en_Task_Texttaskstatus_Assigned>&lt;b&gt;Assigned&lt;/b&gt; to &lt;a href="taskrunner.aspx?iid=$VAR_MEMBERID$"&gt;$VAR_MEMBERNAME$&lt;/a&gt; and needs to be completed by &lt;u&gt;$VAR_DEADLINEDATE$&lt;/u&gt;</en_Task_Texttaskstatus_Assigned>
+    <en_Task_Texttaskstatus_Completed>&lt;b&gt;Completed&lt;/b&gt; by &lt;a href="taskrunner.aspx?iid=$VAR_MEMBERID$"&gt;$VAR_MEMBERNAME$&lt;/a&gt; at &lt;u&gt;$VAR_DEADLINEDATE$&lt;/u&gt;</en_Task_Texttaskstatus_Completed>
+    <en_Task_Texttaskstatus_Closed>&lt;b&gt;Closed&lt;/b&gt; at &lt;u&gt;$VAR_DEADLINEDATE$&lt;/u&gt;</en_Task_Texttaskstatus_Closed>
+
+    <!-- En -->
+
+
+</phrase>

@@ -1,0 +1,283 @@
+
+/* for form */
+.tformin {
+    position:relative; float:left; width:100%;
+}
+.tforminleft {
+    position:relative; float:left; width:45%;
+}
+.tforminrigh {
+    position:relative; float:left; width:45%;
+}
+.tforminbrea {
+    position:relative; float:left; width:9%;
+}
+.tformin .require {
+    color:#f26522;
+}
+
+.rowcmd {
+    position:relative; float:left; width:100%;
+    margin-top:20px; padding-top:20px; 
+    border-top:1px solid #cecdcb;
+}
+.rowcmd .button {
+    font:normal 16px Arial, Tahoma, Verdana; color:#111;
+    border: 1px solid #CCCCCC; background-color:#f0f0f0;
+    padding:6px 4px; min-width:100px;
+    cursor:pointer;
+}
+.rowcmd .left {
+    position:relative; float:left; width:45%;
+}
+.rowcmd .righ {
+    position:relative; float:left; width:45%;
+}
+.rowcmd .brea {
+    position:relative; float:left; width:9%;
+}
+
+.row {
+    position:relative; float:left; width:100%;
+    margin-top:5px;
+}
+.row input[type='text'], .row input[type='password'] {
+    font:normal 12px Arial, Tahoma, Verdana; color:#111;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee inset;
+    padding:7px 4px;
+    width:100%;
+}
+.row textarea {
+    font:normal 12px Arial, Tahoma, Verdana; color:#111;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee inset;
+    padding:7px 4px;
+    width:100%;
+}
+.row select {
+    font:normal 12px Arial, Tahoma, Verdana; color:#111;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee inset;
+    padding:6px 4px 6px 1px;
+    width:100%;
+}
+
+.row .title {
+    position:relative; float:left; width:100%;
+    margin:5px 0 1px 0; color:#fff; 
+}
+.row .note {
+    margin:5px 0;
+    color:#777; font-size:12px; font-style:italic; line-height:normal;
+}
+
+.row .boxctrll {
+    position:relative; float:left; width:97%;
+}
+.row .boxctrlm {
+    position:relative; float:left; width:75%;
+}
+.row .boxctrlc {
+    position:relative; float:left; width:45%;
+}
+.row .boxctrlcs {
+    position:relative; float:left; width:50%;
+}
+.row .boxctrls {
+    position:relative; float:left; width:25%;
+}
+
+.fright {
+    float:right;
+}
+
+.buttonwbgm {
+    border:0; cursor:pointer;
+    color:#fff; font-size:14px; font-weight:bold;
+    background:url(../images/buttonwbgm.png) no-repeat;
+    width:150px; height:30px;
+}
+.buttonwbgm-dis {
+    border:0; cursor:pointer;
+    color:#fff; font-size:14px; font-weight:bold;
+    background:url(../images/buttonwbgm-dis.png) no-repeat;
+    width:150px; height:30px;
+}
+.buttonwbgs {
+    border:0; cursor:pointer;
+    color:#fff; font-size:12px; font-weight:bold; text-transform:uppercase;
+    background:url(../images/buttonwbgs.png) no-repeat;
+    width:102px; height:32px;
+}
+.buttonwbgt {
+    border:0; cursor:pointer;
+    color:#fff; font-size:12px; font-weight:bold;
+    background:url(../images/buttonwbgt.png) no-repeat;
+    width:88px; height:26px;
+}
+
+.rowhor {
+    position:relative; float:left; width:100%;
+    margin-top:10px; text-align:left;
+    font-size:12px;
+}
+.rowhor a {
+    cursor:pointer;
+}
+.rowhor a.small {
+    font-size:10px; white-space:nowrap;
+}
+.rowhor td {
+    font:normal 12px Arial, Tahoma, Verdana;
+    padding:5px 0;
+}
+.rowhor td:hover {
+    text-decoration:underline;
+}
+.rowhor input[type='text'], input[type='password'] {
+    font:normal 12px Arial, Tahoma, Verdana; color:#333;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee inset;
+    padding:7px 4px;
+    width:97%;
+}
+.rowhor input[type='file'] {
+    font:normal 12px Arial, Tahoma, Verdana; color:#333;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee inset;
+    padding:7px 4px; height:28px;
+    width:97%;
+}
+.rowhor textarea {
+    font:normal 12px Arial, Tahoma, Verdana; color:#333;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee inset;
+    padding:7px 4px;
+    width:97%;
+}
+.rowhor select {
+    font:normal 12px Arial, Tahoma, Verdana; color:#333;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee inset;
+    padding:7px 4px;
+    width:100%;
+}
+.rowhor .title {
+    position:relative; float:left; width:20%; text-align:right; padding-right:15px;
+    margin:5px 0; 
+}
+.rowhor .titlel {
+    position:relative; float:left; width:25%; text-align:left; padding-right:15px;
+    margin:5px 0;
+}
+.rowhor .titleext {
+    position:relative; float:left; width:15%; text-align:right; padding-right:15px;
+    margin:5px 0;
+}
+.rowhor .note {
+    position:relative; float:left;
+    margin:5px 0;
+    color:#777; font-size:11px; line-height:normal; font-style:italic;
+}
+
+.rowhor .boxctrlnotit {
+    position:relative; float:left; width:97%;
+}
+.rowhor .boxctrll {
+    position:relative; float:left; width:70%;
+}
+.rowhor .boxctrlm {
+    position:relative; float:left; width:55%;
+}
+.rowhor .boxctrlms {
+    position:relative; float:left; width:45%;
+}
+.rowhor .boxctrlmext {
+    position:relative; float:left; width:65%;
+}
+.rowhor .boxctrlc {
+    position:relative; float:left; width:35%;
+}
+.rowhor .boxctrls {
+    position:relative; float:left; width:15%;
+}
+.rowhor .boxctrlext {
+    position:relative; float:left; width:80px;
+    font:bold 16px Arial; margin-top:5px;
+}
+.rowhor .boxctrl50 {
+    position:relative; float:left; width:50px;
+}
+.ctrlrad td {
+    width:90px;
+}
+.ctrlradwi td {
+    width:200px;
+}
+.ctrlradra td {
+    width:50px;
+}
+
+.buttoncmd {
+    background: url("../images/btn_bg.gif") repeat-x scroll 0 100% #FFAC47;
+    border-color: #ED6502 #A04300 #A04300 #ED6502;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: bold 12px arial,helvetica,sans-serif;
+    padding: 0 7px 1px;
+    text-align: center !important;
+    white-space: nowrap;
+}
+.buttoncmd:hover {
+     background: url("../images/btn_over_bg.gif") repeat-x scroll 0 0 #F77C16;
+}
+.buttoncmd:active {
+     background: url("../images/btn_on_bg.gif") repeat-x scroll 0 0 #F77C16;
+}
+
+.buttoncmd_big {
+    background: url("../images/btn_bg.gif") repeat-x scroll 0 100% #FFAC47;
+    border-color: #ED6502 #A04300 #A04300 #ED6502;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: bold 18px arial,helvetica,sans-serif;
+    padding:7px 20px 7px 20px;
+    text-align: center !important;
+    white-space: nowrap;
+}
+.buttoncmd_big:hover {
+     background: url("../images/btn_over_bg.gif") repeat-x scroll 0 0 #F77C16;
+}
+.buttoncmd_big:active {
+     background: url("../images/btn_on_bg.gif") repeat-x scroll 0 0 #F77C16;
+}
+
+.rowhor input.captcha {
+    width:90px; font-size:12px; font-weight:bold;
+}
+/* for form */
+
+.FLOUTNOTICE {
+    font-size: 11px; font-weight: normal; 
+    width: 100%;color: #dd3409;
+}
+.FLOUTNOTICE .default {
+    color: #000;
+}
+.FLOUTNOTICE .completed {
+    color: #0059aa;
+}
+.FLOUTNOTICE .warning {
+    color: #d98a02;
+}
+.FLOUTNOTICE .error {
+    color: #dd3409;
+}
+.error {
+    color: #dd3409;
+}

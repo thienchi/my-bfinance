@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bfinanceModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="bfinanceEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="vndd_category" EntityType="bfinanceModel1.vndd_category" />
+  </EntityContainer>
+  <EntityType Name="vndd_category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="cid" Type="Int32" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="pis" Type="Int32" />
+    <Property Name="pid" Type="Int32" />
+    <Property Name="depth" Type="Int32" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="customizeid" Type="Int32" />
+    <Property Name="alias" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

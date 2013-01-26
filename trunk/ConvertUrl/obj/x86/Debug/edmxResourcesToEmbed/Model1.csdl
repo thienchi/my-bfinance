@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bfinanceModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="bfinanceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="dd_feedback" EntityType="bfinanceModel.dd_feedback" />
+    <EntitySet Name="dd_member" EntityType="bfinanceModel.dd_member" />
+    <EntitySet Name="dd_meprofile" EntityType="bfinanceModel.dd_meprofile" />
+    <EntitySet Name="dd_settingsite_restrictedpages" EntityType="bfinanceModel.dd_settingsite_restrictedpages" />
+    <EntitySet Name="dd_user" EntityType="bfinanceModel.dd_user" />
+    <EntitySet Name="vndd_category" EntityType="bfinanceModel.vndd_category" />
+    <EntitySet Name="vndd_categoryattr" EntityType="bfinanceModel.vndd_categoryattr" />
+    <EntitySet Name="vndd_categorytypeof" EntityType="bfinanceModel.vndd_categorytypeof" />
+    <EntitySet Name="vndd_fileattach" EntityType="bfinanceModel.vndd_fileattach" />
+    <EntitySet Name="vndd_menu" EntityType="bfinanceModel.vndd_menu" />
+    <EntitySet Name="vndd_menutypeof" EntityType="bfinanceModel.vndd_menutypeof" />
+    <EntitySet Name="vndd_news" EntityType="bfinanceModel.vndd_news" />
+    <EntitySet Name="vndd_product" EntityType="bfinanceModel.vndd_product" />
+    <EntitySet Name="vndd_staticcontent" EntityType="bfinanceModel.vndd_staticcontent" />
+    <EntitySet Name="vndd_supportonline" EntityType="bfinanceModel.vndd_supportonline" />
+    <EntitySet Name="vndd_symbol" EntityType="bfinanceModel.vndd_symbol" />
+  </EntityContainer>
+  <EntityType Name="dd_feedback">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="sender_name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="sender_address" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="sender_email" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="sender_phone" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="pis" Type="Int32" />
+    <Property Name="pid" Type="Int32" />
+    <Property Name="depth" Type="Int32" />
+    <Property Name="viewcounter" Type="Int32" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dd_member">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="password" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="firstname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="lastname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="phone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="pin" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="logincache" Type="Int32" />
+    <Property Name="loginfirst" Type="Int32" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="autosave" Type="Int32" />
+    <Property Name="temporarycode" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="filepreview" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="grouptype" Type="Int32" />
+    <Property Name="ranking" Type="Int32" />
+    <Property Name="vote" Type="Int32" />
+    <Property Name="ratingweight" Type="Int32" />
+    <Property Name="messagesunread" Type="Int32" />
+    <Property Name="messages" Type="Int32" />
+  </EntityType>
+  <EntityType Name="dd_meprofile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="phone" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="state" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="zipcode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="nationalid" Type="Int32" />
+    <Property Name="cityid" Type="Int32" />
+    <Property Name="districtid" Type="Int32" />
+    <Property Name="about" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="blog" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="homepage" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="facebook" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="twitter" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="youtube" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="flickr" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="skype" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="yahoo" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="birthday" Type="DateTime" />
+    <Property Name="profession" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dd_settingsite_restrictedpages">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="query" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="pathandquery" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dd_user">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="password" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="email" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="pis" Type="Int32" />
+    <Property Name="pid" Type="Int32" />
+    <Property Name="depth" Type="Int32" />
+    <Property Name="logincache" Type="Int32" />
+    <Property Name="loginfirst" Type="Int32" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vndd_category">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="cid" Type="Int32" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="pis" Type="Int32" />
+    <Property Name="pid" Type="Int32" />
+    <Property Name="depth" Type="Int32" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="customizeid" Type="Int32" />
+    <Property Type="String" Name="alias" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vndd_categoryattr">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="cid" Type="Int32" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="pis" Type="Int32" />
+    <Property Name="pid" Type="Int32" />
+    <Property Name="depth" Type="Int32" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vndd_categorytypeof">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vndd_fileattach">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="path" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="note" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="sized" Type="Int64" />
+    <Property Name="typed" Type="Int32" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="belongto" Type="Int32" />
+    <Property Name="iid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vndd_menu">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="note" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="navigateurl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="tooltip" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="attributes" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="visible" Type="Int32" />
+    <Property Name="cid" Type="Int32" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="pis" Type="Int32" />
+    <Property Name="pid" Type="Int32" />
+    <Property Name="depth" Type="Int32" />
+    <Property Name="cataloguetypeofid" Type="Int32" />
+    <Property Name="catalogueid" Type="Int32" />
+    <Property Name="insertcatalogue" Type="Int32" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="noroot" Type="Int32" />
+    <Property Name="applyattributeschild" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vndd_menutypeof">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="note" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="path" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="insertbreak" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vndd_news">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="introduce" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="cid" Type="Int32" />
+    <Property Name="cname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="timecreate" Type="DateTime" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="allowcomment" Type="Int32" />
+    <Property Name="author" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="timeexpire" Type="DateTime" />
+    <Property Name="viewcounter" Type="Int32" />
+    <Property Name="tid" Type="Int32" />
+    <Property Name="tname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="relateditem" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="tag" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="alias" Type="String" MaxLength="600" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vndd_product">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="introduce" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="features" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="filepreview" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="cid" Type="Int32" />
+    <Property Name="cname" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="markas" Type="Int32" />
+    <Property Name="iconex" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="timecreate" Type="DateTime" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="viewcounter" Type="Int32" />
+    <Property Name="provider" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="advertise" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="price" Type="Single" />
+    <Property Name="pricealter" Type="Single" />
+    <Property Name="allowcomment" Type="Int32" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="album" Type="Int32" />
+    <Property Name="relateditem" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vndd_staticcontent">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="filepath" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="code" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="separatepage" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vndd_supportonline">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="type" Type="Int32" />
+    <Property Name="note" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vndd_symbol">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="path" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="note" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="sized" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="orderd" Type="Int32" />
+    <Property Name="timeupdate" Type="DateTime" />
+    <Property Name="username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="forsearch" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

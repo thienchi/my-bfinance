@@ -1,0 +1,1050 @@
+
+body {
+    margin:0; width:auto; height:auto; 
+    background:url(../images/bg.gif); background-color:#fff;
+}
+
+body {
+	font:normal 12px Arial, Tahoma, Verdana, "Lucida Sans Unicode", Georgia, Impact; color:#111;
+	line-height:16px;
+}
+
+form {
+    margin:0;
+}
+
+a {
+    color: #005288; text-decoration:none; outline:0;
+}
+a:hover {
+    color: #d40707; text-decoration:underline;
+}
+
+
+.drag-handle{ /*Overwrite default drag handle bar background color with below*/
+background-color: #fff;
+}
+
+#interVeil{ /*CSS for veil that covers entire page while modal window is visible*/
+position: absolute;
+background: black url(../images/progress.gif) no-repeat center; background-attachment:fixed;
+width: 10px;
+left: 0;
+top: 0;
+z-index: 100;
+visibility: hidden;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=75);
+opacity: 0.75;
+text-align:center; cursor:wait;
+}
+
+
+.FLOUT0 {
+	position:relative; float:left; width:100%; 
+	background:url(../images/bgbody.png) repeat-y center center;
+}
+.FLOUT0B {
+	position:relative; width:960px;
+}
+.FLOUT1 {
+	position:relative; float:left; text-align:left; width:100%;
+}
+.FLOUT1H {
+	position:relative; float:left; width:100%; 
+	padding-top:30px; margin-bottom:20px;
+}
+.FLOUT1B {
+	position:relative; float:left; width:100%; min-height:400px;
+}
+.FLOUT1F {
+	position:relative; float:left; width:100%; margin-top:15px;
+	text-align:left; 
+	border-top:1px solid #ccc;
+}
+.FLOUT1F a {
+	text-decoration:none;
+}
+
+
+#logo {
+    position:relative; float:left; width:275px; margin-right:33px;
+    height:54px; cursor:pointer;
+    background:url(../images/logo.png) no-repeat left;
+}
+#logo img {
+    border:0;
+}
+.menubar {
+	position:relative; float:left; width:960px; height:30px;
+	margin:10px 0 0 0; padding:0;
+	border-top:1px solid #ccc; border-bottom:1px solid #ccc; 
+}
+.iconhome {
+    position:relative; float:left; width:30px; text-align:center; padding-top:4px;
+    border-right:1px solid #ccc; height:26px;
+}
+.searchbar {
+    position:relative; float:left; width:430px; top:5px;
+    text-align:right;
+}
+.loginfo {
+    position:relative; float:right; width:220px; top:15px;
+    text-align:right;
+}
+.loginfo a {
+    font-size:11px; font-weight:bold; color:#005288;
+    text-transform:uppercase; text-decoration:none;
+}
+
+.SEARCHPANEL {
+    position:relative; float:left; margin-top:10px;
+}
+.SEARCHPANEL div {
+    position:relative; float:left;
+}
+.SEARCHPANEL .belongto {
+    display:none;
+}
+.SEARCHPANEL .categories {
+    display:none;
+    width:20px; height:24px;
+}
+.SEARCHPANEL .keywords {
+    width:338px; 
+}
+.SEARCHPANEL .keywords input {
+    width:100%; height:28px; padding:0 4px;
+    border:1px solid #ccc; background-color:#fff;
+    font:12px Arial; color:#777;
+}
+.SEARCHPANEL .command {
+    width:70px; height:28px;
+    border:1px solid #ccc; border-left:0;
+    text-align:right;
+}
+
+
+.SEARCHDIC {
+    position:relative; float:left;
+}
+.SEARCHDIC div {
+    position:relative; float:left;
+}
+.SEARCHDIC .keywords {
+    width:220px; 
+}
+.SEARCHDIC .keywords input {
+    width:100%; height:24px; padding:0 2px;
+    border:1px solid #ccc; background-color:#fff;
+    font:12px Arial; color:#777;
+}
+.SEARCHDIC .command {
+    width:70px; height:24px;
+    border:0px;
+    text-align:right;
+}
+.SEARCHDIC .categories {
+    display:none;
+}
+
+.Body1 {
+    position:relative;float:left; width:100%;
+    min-height:440px;
+}
+
+.Body2 {
+    position:relative;float:left; width:630px;
+}
+.Righ2 {
+    position:relative;float:right; width:310px;
+}
+
+.Left3 {
+    position:relative;float:left; width:275px;
+}
+.Body3 {
+    position:relative;float:left; width:275px;
+    margin-left:40px;
+}
+
+.title1bound {
+    position:relative; float:left; width:100%;
+    margin:5px 0; padding:15px 0 5px 0;
+    
+    font-size:13px; font-weight:bold; color:#333;
+    border-bottom:1px solid #ccc;
+}
+.title2bound {
+    position:relative; float:left; width:98%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:11px;
+    background:url(../images/bullet1.png) no-repeat top left; padding-left:15px;
+    border-bottom:1px solid #e7e7e7;
+}
+
+.title3bound {
+    font:bold 15px Arial,Tahoma; color:#015fbe;
+    padding:5px 0; margin-bottom:5px;
+}
+
+.barthome1 {
+    position:relative; float:left;
+    width:650px; 
+}
+.barthome2 {
+    position:relative; float:right;
+    width:310px;
+}
+.barthome3 {
+    position:relative; float:left; width:630px; margin-top:15px; padding-top:15px;
+    border-top:1px solid #ccc;
+}
+.barthome3 .col1 {
+    position:relative; float:left; width:49%;
+}
+.barthome3 .col2 {
+    position:relative; float:right; width:49%;
+}
+.barthome4 {
+    position:relative; float:right; width:310px; margin-top:5px;
+}
+.barthome4 .ttit {
+    position:relative; float:left; 
+    background-color:#fff;
+    font-size:13px; font-weight:bold; color:#999; text-transform:uppercase;
+    margin:0 15px; padding:0; height:10px;
+}
+
+.barthome5 {
+    position:relative; float:left; width:100%; margin-top:15px;
+    border-top:1px solid #ccc;
+}
+.barthome5 .barhead {
+    position:relative; float:left; width:100%; margin:15px 0 25px 0;
+}
+.barthome5 .barhead .title {
+    position:relative; float:left; padding:5px 10px;
+    background-color:#00529c; color:#fff; font-weight:bold;
+    text-transform:uppercase;
+}
+.barthome5 .barhead .title a {
+    color:#fff; 
+}
+.barthome5 .barhead .listoption {
+    position:relative; float:left; padding:5px 10px;
+}
+.barsearchdic {
+    position:relative; float:right; width:300px; padding:0 10px;
+}
+
+.barthome5 .subject {
+    position:relative; float:left; width:95%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:11px;
+    border-bottom:1px solid #e7e7e7;
+}
+.barthome5 .col1 {
+    position:relative; float:left; width:630px;
+}
+.barthome5 .col2 {
+    position:relative; float:right; width:310px;
+}
+
+div.fieldseti {
+    position:relative; float:left;
+    border:1px solid #ccc; background-color:#e1e1e1;
+    padding:5px 10px;
+}
+div.fieldseti b {
+    position:relative; float:left; width:100%; margin-bottom:10px;
+    border-bottom:1px solid #e7e7e7;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:11px; letter-spacing:1px;
+}
+div.fieldseti .cname {
+    position:relative; float:left; width:95%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:11px;
+    background:url(../images/bullet1.png) no-repeat top left; padding-left:15px;
+    border-bottom:1px solid #ccc;
+}
+
+div.fieldsetf {
+    position:relative; float:left;
+    border:1px solid #ccc; 
+    padding:5px 10px; margin-top:10px;
+}
+div.fieldsetf b {
+    position:relative; float:left; width:100%; margin-bottom:10px;
+    border-bottom:1px solid #e7e7e7;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:11px; letter-spacing:1px;
+}
+div.fieldsetf .cname {
+    position:relative; float:left; width:95%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:11px;
+    background:url(../images/bullet1.png) no-repeat top left; padding-left:15px;
+    border-bottom:1px solid #ccc;
+}
+
+fieldset.fieldseth {
+    position:relative; float:left;
+    border:0; border-top:1px solid #d40707; padding:10px 0 10px 0;
+}
+fieldset.fieldseth legend {
+    margin-left:10px; padding:0 5px;
+    font-weight:bold; text-transform:uppercase; color:#d40707; font-size:10px;
+    border-bottom:1px solid #d40707; 
+}
+fieldset.fieldseth legend a {
+    text-decoration:none; color:#d40707;
+}
+
+.invitation {
+    position:relative; float:left; width:100%;
+}
+.invitation .newsa {
+    position:relative; float:left; width:100%;
+    border-bottom:1px dotted #aaa;
+    padding-bottom:5px; margin-bottom:5px;
+}
+.invitation .newsa .inlist {
+    position:relative; float:left;
+    padding-left:15px;
+    background:url(../images/bullet.gif) no-repeat top left; background-position:0 1px;
+}
+.invitation .newsa .inlist a {
+    line-height:normal; 
+}
+
+.newsf {
+    position:relative; float:left; 
+}
+.newsf .cname {
+    position:relative; float:left; width:300px; margin-bottom:10px;
+    font:normal 11px Tahoma, Verdana, Arial; color:#777; text-transform:uppercase;
+}
+.newsf .intr {
+    position:relative; float:left; width:300px;
+    font-size:12px; 
+}
+.newsf .lname {
+    position:relative; float:left; width:300px;
+    font-weight:bold; font-size:16px; line-height:22px;
+    margin-bottom:5px; 
+}
+.newsf .blockimg {
+	position:relative; float:left;
+	width: 300px; height:210px;
+	padding: 0px;
+	margin:0 20px 0 0;
+}
+.newsf .blockimg .imgpreview {
+    width:300px; border: 0px; min-height:210px;
+    position: absolute; clip: rect(0px 300px 210px 0px); 
+}
+.newsf a.more {
+    font-size:13px; font-weight:normal;
+}
+
+.newsquote {
+    position:relative; float:left; padding:10px 10px 10px 30px;
+    background:url(../images/quote.png) no-repeat top left; background-position:0 5px;
+}
+.newsquote .lname {
+    position:relative; float:left; width:100%;
+}
+.newsquote .lname a {
+    font-weight:normal; font-size:16px; line-height:normal; font-style:italic; color:#555; text-decoration:none;
+}
+.newsquote .author {
+    position:relative; float:right; margin-right:10px;
+    font-size:10px; color:#555; text-decoration:none;
+}
+.newsquote .quote {
+    font-weight:bold; font-size:40px; color:#d40707; font-family:Tahoma;
+}
+
+.dicnewsest {
+    position:relative; float:left; width:100%;
+}
+.dicnewsest .newsdich {
+    position:relative; float:left; width:50%;
+}
+.dicnewsest .newsdich .inlist {
+    position:relative; float:left;
+    padding-left:15px; margin-bottom:8px;
+    background:url(../images/bullet.gif) no-repeat top left; background-position:0 1px;
+}
+.inlist a {
+    color:#333;
+}
+.inlist a:hover {
+    color: #d40707; 
+}
+
+.dicviewest {
+    position:relative; float:left; width:100%;
+}
+.dicviewest .newsdich {
+    position:relative; float:left; width:100%;
+}
+.dicviewest .newsdich .inlist {
+    position:relative; float:left;
+    padding-left:15px; margin-bottom:8px;
+    background:url(../images/bullet.gif) no-repeat top left; background-position:0 1px;
+}
+
+.newsadesc {
+    position:relative; float:left; width:100%;
+    background:url(../images/divide1.png) no-repeat bottom left;
+    padding:5px 0 8px 0; margin-bottom:3px;
+}
+.newsadesc .lname {
+    margin-bottom:3px; font-weight:bold; line-height:normal;
+}
+.newsadesc .intr {
+    
+}
+.newsadesc .blockimg {
+	position:relative; float:left;
+	width: 80px; height:55px;
+	padding: 0px;
+	border: 1px solid #ccc; background-color:#fff;
+	margin-right:10px; margin-top:2px;
+}
+.newsadesc .blockimg .imgpreview {
+    width:80px; border: 0px; min-height:55px;
+    position: absolute; clip: rect(0px 80px 55px 0px); 
+}
+
+table.tbartselhome {
+    margin-bottom:20px; padding-top:10px;
+}
+table.tbartselhome tr {
+    
+}
+table.tbartselhome td {
+    border-top:1px solid #ccc;
+    padding-top:10px;
+}
+table.tbartselhome .cname {
+    position:relative; float:left; width:100%; margin-bottom:10px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:12px;
+    background:url(../images/bullet1.png) no-repeat top left; padding-left:15px;
+}
+table.tbartselhome .cname a {
+    color:#005288; text-decoration:none;
+}
+
+.newsselhome {
+    position:relative; float:left; clear:left; 
+}
+.newsselhome .lname {
+    width:100%; margin-bottom:5px;
+}
+.newsselhome .lname a {
+    font-weight:bold; 
+}
+.newsselhome .inlist {
+    position:relative; float:left; 
+    margin-top:8px; padding-left:15px;
+    background:url(../images/bullet.gif) no-repeat top left; background-position:0 1px;
+}
+.newsselhome .intr {
+    
+}
+.newsselhome .blockimg {
+	position:relative; float:left;
+	width: 100px; height:70px;
+	padding: 0px;
+	border: 1px solid #ccc; background-color:#fff;
+	margin-right:10px; margin-top:2px;
+}
+.newsselhome .blockimg .imgpreview {
+    width:100px; border: 0px; min-height:70px;
+    position: absolute; clip: rect(0px 100px 70px 0px); 
+}
+
+
+#pscroller1{
+width: 260px;
+height: 200px;
+}
+.someclass{
+}
+.slidenewsf {
+	border:1px solid #ccc;
+	position:relative;float:left; width:260px; padding:10px 20px;
+    background-color:#fff;
+}
+
+/* single slide */
+
+.article {
+    position:relative; float:left; width:100%;
+}
+.article .lname {
+    font-weight:bold; margin-bottom:3px; font-size:14px;
+}
+.article .inlist {
+    margin-top:8px; padding-left:15px;
+    background:url(../images/bullet.gif) no-repeat top left; background-position:0 1px;
+}
+.article .inlist a {
+    
+}
+.article a.more {
+    font-size:13px; font-weight:normal;
+}
+.article .intr {
+    margin-bottom:10px; margin-top:3px; 
+    font-size:14px; line-height:22px;
+}
+.article .intrinfo {
+    position:relative; float:left; width:100%; margin-bottom:10px; margin-top:10px; color:#555;
+    font-weight:bold;
+}
+
+.article .blockimg {
+	position:relative; float:left;
+	width: 150px; height:105px;
+	padding: 0px;
+	border: 1px solid #ccc; background-color:#fff;
+	margin-right:10px; margin-top:2px;
+}
+.article .blockimg .imgpreview {
+    width:150px; border: 0px; min-height:105px;
+    position: absolute; clip: rect(0px 150px 105px 0px); 
+}
+
+.article .intrinfo .imgpreview {
+    width:200px; border:1px solid #ccc; 
+    position:relative; float:left; 
+    margin-right:10px; margin-top:3px;
+    
+}
+.article .desc {
+    position:relative; float:left; width:100%; margin:10px 0;  
+    font-size:14px; line-height:22px;
+    border-top:2px solid #ccc; padding-top:10px;
+}
+.article .desc .imgpreview {
+    width:250px; border:1px solid #ccc; 
+    position:relative; float:right;
+    margin-left:10px; margin-top:3px;
+    
+}
+.article .desc img {
+    max-width: 620px;
+}
+.article .name {
+    font: bold 22px Times New Roman, Arial; line-height:normal; color:#333;
+    position:relative; float:left; width:100%; margin-top:10px;
+}
+.article .note {
+    position:relative; float:left; width:100%;
+    font-weight:normal;
+    font-size:12px; font-style:italic; color:#777;
+}
+.article .note a {
+    color:#777;
+}
+.article .date {
+    position:relative; float:left; width:100%; margin-top:5px;
+    font-weight:normal;
+    font:normal 10px Tahoma, Verdana, Arial; color:#777;
+}
+
+.sharebar {
+    position:relative; float:left; margin-top:10px;
+}
+.sharebar div {
+    position:relative; float:left; 
+}
+.sharebar div.g {
+    margin-right:10px;
+}
+.sharebarhome {
+    position:relative; float:left; width:97%;
+    background-color:#f2f2f2; padding:5px 5px;
+    border-radius:3px;
+    margin-top:15px;
+}
+.sharebarhome div {
+    position:relative; float:left; 
+}
+.sharebarhome div.g {
+    margin-right:10px;
+}
+
+.commentbox {
+    position:relative;float:left; width:622px; padding:5px;
+    background-color:#f2f2f2;
+}
+.commentboxin {
+    position:relative;float:left; width:600px; padding:10px;
+    border:1px solid #ccc; background-color:#fff;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.comment {
+    position:relative; float:left; width:97%; 
+    font-size:12px;
+    padding:5px 10px;
+}
+.comment .name {
+    font-weight: bold; text-decoration: none;
+}
+.comment .note {
+    font-weight: normal; color: #555; font-size:11px;
+    font-style:italic;
+}
+.comment .intr {
+    font-weight: normal; 
+}
+
+.commentf {
+    margin-bottom:15px;
+}
+.commentf .introduce {
+    text-align:justify;
+}
+.commentf .note {
+    font-size:11px; text-align:right;
+}
+
+.catname {
+    font-size:19px; font-weight:bold; color:#111; line-height:normal;
+    
+}
+
+
+.catbrowser {
+    font:bold 18px Century Gothic, sans-serif, Arial,Tahoma; color:#333; 
+    padding:5px 0; margin-bottom:5px;
+    background:url(../images/line1bg.gif) repeat-x bottom; 
+}
+.catbrowser .name {
+    color:#fff;
+}
+.catbrowser .note {
+    
+}
+.catbrowser .linkname {
+    font-size:14px; font-weight:bold; color:#d55815;
+}
+.catbrowser div {
+    position:relative;
+}
+.cattitle {
+    border:1px solid #cdcdcd; background-color:#eee; padding:5px; font-weight:bold; text-transform:uppercase; margin-bottom:10px;
+}
+
+.catbrowseronh {
+    position:relative; float:left; width:49%; margin-bottom:15px;
+}
+.catbrowseronhfot {
+    position:relative; float:left; width:49%; height:18px; margin-bottom:5px;
+    background:url(../images/horbg1.png) no-repeat top center;
+}
+
+.articlemenu {
+    position:relative; float:left; width:100%; padding-top:2px;
+    border:1px solid #ccc; border-bottom:0; 
+    background:url(../images/tabs_ul_bg.gif) repeat-x bottom; background-color:#f8f8f8;
+}
+.articlemenu .first {
+    position:relative; float:left;
+    z-index:2; 
+	color:#333;
+	border: 0;
+    padding:7px 10px 0 10px; 
+    font-size:13px; font-weight:bold; text-transform:uppercase;
+    
+}
+.articlemenu .first a {
+    color:#d40707; text-decoration:none; 
+    display:block; padding-bottom:5px;
+    border-bottom: 3px solid #d40707;
+}
+.articlemenu .group {
+    position:relative; float:right; margin-right:50px;
+}
+.articlemenu ul {
+    position:relative; float:left; top:10px;
+    margin:0; padding:0; 
+}
+.articlemenu ul li {
+    position:relative; float:right;
+    display:inline; 
+    color:#999;
+}
+.articlemenu ul li.break {
+    margin:0 15px;
+}
+.articlemenu ul li a {
+    font-size:11px; font-weight:bold; color:#555;
+}
+.articlemenu ul li a:hover {
+    font-size:11px; font-weight:bold; color:#d40707;
+}
+
+.articlecont {
+    position:relative; float:left; width:423px; z-index:1;
+    padding:10px 10px;
+    border-left:1px solid #ccc;border-right:1px solid #ccc; border-bottom:1px solid #ccc;  
+}
+.articlecont .left {
+    position:relative; float:left; width:100%; padding-right:5px;
+}
+.articlecont .righ {
+    position:relative; float:left; width:276px; margin-left:10px;
+}
+
+div.separator1 {
+    position:relative;float:left; width:22px; min-height:170px;
+    background:url(../images/separator1.png) repeat-y top center;
+}
+div.separator2 {
+    position:relative;float:left; width:10px; min-height:170px;
+}
+
+.relatedl {
+    position:relative;float:left;
+}
+.relatedr {
+    position:relative;float:right;
+}
+.width100 {
+    width:100%;
+}
+.width50 {
+    width:49%;
+}
+
+.articleinmenu {
+    position:relative; float:left; width:100%; height:15px; 
+    margin:5px 0 15px 0; padding-bottom:5px;
+    border-bottom:1px solid #ccc;
+}
+.articleinmenu .first {
+    position:relative; float:left;
+    z-index:2; 
+	color:#777;
+	padding:0 20px 0 0; margin-left:0;
+    font-size:11px; font-weight:bold; text-transform:uppercase;
+}
+.articleinmenu .first a {
+    color:#777; text-decoration:none; 
+}
+.articleinmenu .group {
+    position:relative;float:right;
+}
+.articleinmenu ul {
+    position:relative; float:left; top:0;
+    margin:0; padding:0; 
+}
+.articleinmenu ul li {
+    position:relative; float:right;
+    display:inline; 
+    margin:0; padding:0; 
+    color:#999;
+}
+.articleinmenu ul li.break {
+    margin:0 15px;
+}
+.articleinmenu ul li a {
+    font-size:11px; font-weight:bold; color:#777;
+}
+.articleinmenu ul li a:hover {
+    font-size:11px; font-weight:bold; color:#d40707;
+}
+
+.dbreakh {
+    margin:10px 0 10px 0;
+    position:relative; float: left; width:100%; min-width:100px;
+    clear: both;
+    height: .1em;
+    border: 0; border-bottom:1px solid #ccc;
+}
+
+.dbreakv {
+    position:relative; float: left; height:100%; min-height:100px;
+    margin:0 1px;
+    clear: both;
+    width: .1em;
+    border: 0; border-left:1px solid #ccc;
+}
+
+#skypedetectionswf {
+    display:none;
+}
+
+.search {
+    position:relative; float:left; margin-bottom:20px;
+}
+.search .note {
+    font:normal 11px Arial; color:#555;
+}
+.search .introduce {
+    text-align:justify; margin-top:5px;
+}
+.search .introduce .imgpreview {
+    width:180px; border:1px solid #e7e7e7; float:left; margin-right:10px;
+    max-height:120px;
+}
+
+
+.pagercontainer {
+    position:relative; float:left; width: 100%; text-align: right;
+    margin-top:15px; padding:2px 0;
+    background-color:#f7f7f7;
+}
+.pagercontrol {
+    font: 13px Arial, Tahoma, Verdana; font-weight: normal;
+    margin: 1px 3px 1px 0px;
+}
+.pagercontrol a {
+	padding:3px;
+	
+}
+.pagercontrol a[disabled="disabled"] {
+	color:#e7e7e7; text-decoration:none;
+	border:0; background:transparent;
+}
+
+
+.thematic {
+    position:relative; float:left; width:100%;
+}
+.thematic .thematicinfo {
+    position:relative; float:left; width:100%;
+    margin:5px 0 5px 0;
+    border-bottom:1px dotted #ccc;
+}
+.thematic .thematicinfo .lname {
+    position:relative; float:left; width:100%;
+    padding-bottom:10px; vertical-align:middle;
+    color: #005288; 
+}
+.thematic .thematicinfo .lname a {
+    text-decoration:none;
+    font-weight:normal; text-transform:uppercase; font-size:11px;
+}
+.thematic .thematicinfo .stt {
+    position:relative; float:right; margin-left:10px; vertical-align:middle;
+    font-weight:bold; font-size:22px; 
+}
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+	position:relative; float:left; overflow:hidden;
+	width:310px; height:300px;
+}
+.scrollable .items {
+	/* this cannot be too large */
+	height:20000em; 
+	position:relative;
+	clear:both;
+}
+.scrollable .items .item {
+	float:left; height:85px;
+}
+
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	background:url(../images/prevnext.png) no-repeat;
+	display:block;
+	width:14px; height:18px;
+	position:relative; float:left; top:7px; left:5px;
+	margin:0;
+	cursor:pointer;
+	font-size:1px;
+}
+
+/* right */
+a.right 				{ background-position: -13px -1px; clear:right; margin-right: 0px;}
+a.right:hover 		{ background-position: -13px -21px; }
+a.right:active 	{  } 
+
+
+/* left */
+a.left				{ background-position: 0 -1px; } 
+a.left:hover  		{ background-position: 0 -21px; }
+a.left:active  	{ background-position: 0 -21px; }
+
+/* disabled navigational button */
+a.disabled {
+	
+} 	
+
+
+
+.bannerbar {
+    position:relative; float:left; width:630px; height:260px;
+}
+#flowtabs {
+    position: absolute; float:right; top:240px; right:0; z-index:2;
+    text-align:left; background-color:#fff;
+}
+#flowtabs a {
+    display:block; float:left; padding-top:2px;
+    width:35px; height:18px; 
+    font-size:12px; text-align:center; color:#aaa;
+    background:url(../images/aflowtab.png) no-repeat center;
+}
+#flowtabs a:hover, #flowtabs a.current {
+	color:#fff; 
+	background:url(../images/aflowtabh.png) no-repeat center;
+}
+#flowtabs a.first {
+	border:0;
+}
+
+#flowpanes {
+	position: relative; clear: both; overflow: hidden;
+	width:100%; height:100%;
+}
+#flowpanes div.newsf {
+	display:block; float: left;		
+	width:630px; height:230px;
+}
+#flowpanes .items {
+	POSITION: absolute; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 20000em; PADDING-RIGHT: 0px; CLEAR: both; PADDING-TOP: 0px
+}
+#flowpanes div.newsfupnext {
+	position:relative; float: left; left:58px;
+	width:100%; top:35px;
+}
+
+.flowupnext {
+    position: absolute; float:left; top:245px; left:0; z-index:2;
+    text-align:left; background-color:#fff;
+    padding-right:0;
+}
+
+
+/*Tabs*/
+/* root element for tabs  */
+ul.tabs { 
+    position:relative;float:left; width:100%;
+	list-style:none; 
+	margin:0 0 20px 0!important; 
+	padding:0;
+	height:36px;
+	background:url(../images/tabs_ul_bg.gif) repeat-x bottom; background-color:#f8f8f8;
+}
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:8px 10px 0 0;
+	list-style-image:none !important; 
+}
+ul.tabs li.first { 
+	margin-left:0;
+}
+ul.tabs a { 
+	font:normal 11px Arial, Verdana, Tahoma; color:#999; line-height:20px; text-transform:uppercase; font-weight:bold;
+	line-height:26px; 
+	position:relative; display:block;
+	text-align:center; text-decoration:none; white-space:nowrap;
+	height: 26px; 
+	padding:0px 10px; margin:0px;
+	background-color:#e2e2e2; border:1px solid #ccc;
+}
+ul.tabs a:active {
+	outline:none;		
+}
+ul.tabs a:hover {
+}
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	cursor:default !important; 
+	color:#005288 !important;
+	background-color:#fff; border:1px solid #ccc; border-bottom:1px solid #fff;
+	font-weight:bold;
+}
+.panes {
+	position:relative;float:left; width:100%;
+	margin-bottom:25px;
+}
+.panes .viewoption {
+	display:none;
+	position:relative;float:left; width:100%;
+}
+.tbabc {
+	position:relative;float:left; width:100%;
+	border:1px solid #ccc; border-collapse:collapse;
+}
+.tbabc td {
+	width:7%; text-align:center; color: #005288; cursor:pointer;
+	border:1px solid #ccc;
+}
+.tbabc td:hover {
+	background-color:#00529c; color:#fff; font-weight:bold;
+}
+.menudiccat {
+	position:relative;float:left; width:100%;
+}
+.menudiccat ul {
+    padding:0;margin:0;list-style:none; 
+}
+.menudiccat ul li {
+    position:relative; float:left; display:inline; 
+    padding:0 10px;
+}
+
+
+.menudiccatright {
+	position:relative;float:left; width:280px;
+}
+.menudiccatright ul {
+    padding:0;margin:0;list-style:none;  width:100%;
+}
+.menudiccatright ul li {
+    position:relative; float:left; display:inline; width:100%;
+    padding:0 0 10px 15px; 
+}
+.menudiccatright ul li.break {
+    display:none;
+}
+
+ul.langoption {
+    position:absolute; width:30%; right:20px; top:50px;
+	list-style:none; 
+	margin:0 0 10px 0!important; 
+	padding:0;
+	height:36px;
+}
+ul.langoption li { 
+	float:right; text-indent:0;
+	padding:0; margin:8px 0 0 0;
+	list-style-image:none !important; 
+}
+/*Tabs*/
+.contentframe {
+    border:1px solid #ccc; padding:10px; width:610px;
+}
+
+.dictionaryl {
+    position:relative; float:left; width:100%;
+    margin-bottom:10px; padding-bottom:10px; 
+    background:url(../images/divide1.png) no-repeat bottom left;
+}
+.dictionaryl .lname {
+    margin-bottom:3px; font-size:12px;
+}
+.dictionaryl .inlist {
+    margin-top:8px; padding-left:15px;
+    background:url(../images/bullet.gif) no-repeat top left; background-position:0 1px;
+}
+.dictionaryl .inlist a {
+    
+}
+.dictionaryl .intr {
+    margin-top:3px; 
+    font-size:12px;
+}
+.dictionaryl .intrinfo {
+    position:relative; float:left; width:100%; margin-bottom:10px; margin-top:10px; color:#555;
+    font-weight:bold;
+}
