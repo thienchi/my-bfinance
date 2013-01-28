@@ -53,7 +53,8 @@ namespace dangdongcmm
                 HtmlMeta Description = (HtmlMeta)this.Head.FindControl("meta_description");
                 if (Description != null)
                 {
-                    Description.Content = CFunctions.install_metatag(content);
+                    //Description.Content = CFunctions.install_metatag(content);
+                    Description.Content = content;
                 }
             }
             catch(Exception ex)
