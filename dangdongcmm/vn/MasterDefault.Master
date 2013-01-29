@@ -81,7 +81,7 @@
                         </div>
                         <div class="Righ2">  
                             <div class="fieldseti">
-                                <div class="cname">Tiêu điểm</div>
+                                <div class="cname2">Tiêu điểm</div>
                                 <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
                             </div>
                             <br />&nbsp;
