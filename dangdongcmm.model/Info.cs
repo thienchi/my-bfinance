@@ -2470,9 +2470,9 @@ namespace dangdongcmm.model
             get
             {
                 string kq = Name;
-                if (kq != null && kq.Length > 70)
+                if (kq != null && kq.Length > 75)
                 {
-                    kq = kq.Substring(0, 70) + " ...";
+                    kq = kq.Substring(0, 75) + " ...";
                 }
                 return kq;
             }
