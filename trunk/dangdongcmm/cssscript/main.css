@@ -264,7 +264,12 @@ div.fieldseti .cname {
     background:url(../images/bullet1.png) no-repeat top left; padding-left:15px;
     border-bottom:1px solid #ccc;
 }
-
+div.fieldseti .cname2 {
+    position:relative; float:left; width:95%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:Black; font-size:22px;
+    padding-left:10px;
+    padding-top:inherit;
+}
 div.fieldsetf {
     position:relative; float:left;
     border:1px solid #ccc; 
@@ -281,7 +286,12 @@ div.fieldsetf .cname {
     background:url(../images/bullet1.png) no-repeat top left; padding-left:15px;
     border-bottom:1px solid #ccc;
 }
-
+div.fieldsetf .cname2 {
+    position:relative; float:left; width:95%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:Black; font-size:22px;
+    padding-left:10px;
+    padding-top:inherit;
+}
 fieldset.fieldseth {
     position:relative; float:left;
     border:0; border-top:1px solid #d40707; padding:10px 0 10px 0;
