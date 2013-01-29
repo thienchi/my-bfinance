@@ -142,8 +142,13 @@ namespace dangdongcmm.cmm
                 if (info == null) return false;
                 int iid = info.Id;
                 if ((new CCategory(CCommon.LANG)).Save(info))
+                {
+                    (new CCategory(CCommon.LANG)).UpdateAliasInfo(info);
                     if (PARENT != null && iid == 0)
                         (new CCategory(CCommon.LANG)).Updatenum(PARENT.Id.ToString(), Queryparam.Sqlcolumn.Pis, CConstants.NUM_INCREASE);
+                }
+
+                
                 return true;
             }
             catch
