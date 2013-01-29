@@ -568,6 +568,27 @@ namespace dangdongcmm.dal
                 throw ex;
             }
         }
+        public bool UpdateAliasInfo(CategoryInfo info)
+        {
+            bool kq = false;
+            try
+            {
+                using (iSqlConnection iConn = HELPER.getConnect(HELPER.SQL_SYSTEM))
+                {
+                    string SQL = "UPDATE vndd_category SET alias = '";
+                    SQL += CFunctions.install_urlname(info.Name).Replace(".aspx", "") + "'";
+                    SQL += " Where id = " + info.Id;
+                    HELPER.executeNonQuery(iConn, SQL);
+                    iConn.Close();
+                }
+                kq = true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return kq;
+        }
         public CategoryInfo Getinfo(int id)
         {
             if (id == -1) return null;
