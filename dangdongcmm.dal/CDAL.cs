@@ -6709,7 +6709,9 @@ namespace dangdongcmm.dal
             {
                 if (string.IsNullOrEmpty(keywords)) return "";
 
-                string[] arr_keyword = CFunctions.analys_keyword(keywords);
+               // string[] arr_keyword = CFunctions.analys_keyword(keywords);
+                string[] arr_keyword = new string[1];
+                arr_keyword[0] = keywords;
                 string template = "(A.forsearch LIKE '%$VAR_KEYWORD$%')";
                 string vlreturn = "";
                 SqlHelper helper = new SqlHelper();
