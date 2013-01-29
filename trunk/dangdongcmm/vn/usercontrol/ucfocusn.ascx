@@ -3,7 +3,7 @@
 <ASP:PANEL ID="pnlList" runat="server" CssClass="thematic">
 
     <div class="fieldsetf">
-        <div class="cname">Chuyên đề</div>
+        <div class="cname2">Chuyên đề</div>
         <ASP:REPEATER ID="rptList" runat="server">
             <ITEMTEMPLATE>
                 <div class="thematicinfo">
