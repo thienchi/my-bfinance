@@ -27,8 +27,13 @@ function EndRequestHandler(sender, args) {
                             <ASP:HIDDENFIELD ID="Id" runat="server" Value='<%#Eval("Id") %>' />
                             <div class="article contentframe">
 	                            <div class="DBRCCONTAINER">
-                                    <div id="breadcrumbs"></div>
+                                    <div id="breadcrumbs">
+                                        
+                                    </div>
+                                    <a href="/">Trang Chủ</a> <b>&nbsp;>>&nbsp;</b> <a href="/<%#Eval("CNameLink")%>"><%#Eval("CName")%></a> <b>&nbsp;>>&nbsp;</b> <a href="/<%#Eval("eUrl2")%>"><%#Eval("NameTrimmed")%></a>
+                                    
                                 </div>
+                               
                                 <div class="name"><%#Eval("Name")%> <%#Eval("eIconex")%></div>
 	                            <div class="date">Đăng bởi: <%#Eval("Username").ToString() == "admin" ? "bFinance" : Eval("Username")%> | Ngày: <%#((DateTime)Eval("Timecreate")).ToString("dd.MM.yyyy, hh:mm tt")%></div>
                                 <%--<div class="sharebar">
