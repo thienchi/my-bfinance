@@ -920,6 +920,7 @@ a.disabled {
 #flowpanes div.newsf {
 	display:block; float: left;		
 	width:630px; height:230px;
+	width:632px;
 }
 #flowpanes .items {
 	POSITION: absolute; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 20000em; PADDING-RIGHT: 0px; CLEAR: both; PADDING-TOP: 0px
