@@ -53,7 +53,9 @@ function EndRequestHandler(sender, args) {
                                     <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://bfinance.vn/<%#Eval("eUrl2")%>" layout="button_count" action="like" />
                                     
                                 </div>--%>
+                                
                                 <div class="sharebar">
+                                    <span><b>Chia sẻ</b></span>
 			                        <span class='st_sharethis_hcount' displayText='ShareThis'></span>
 			                        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
 			                        <span class='st_twitter_hcount' displayText='Tweet'></span>

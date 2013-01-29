@@ -12,7 +12,7 @@
     <div class="barthome1"><UC:NEWSAHOME ID="Newsahome" runat="server" Acode="'homeslide'" /></div>
     <div class="barthome2">
         <div class="fieldseti">
-            <div class="cname">Tiêu điểm</div>
+            <div class="cname2">Tiêu điểm</div>
             <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
         </div>
                    
