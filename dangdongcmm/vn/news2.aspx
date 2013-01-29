@@ -30,7 +30,7 @@ function EndRequestHandler(sender, args) {
                                     <div id="breadcrumbs">
                                         
                                     </div>
-                                    <a href="/">Trang Chủ</a> <b>&nbsp;>>&nbsp;</b> <a href="/<%#Eval("CNameLink")%>"><%#Eval("CName")%></a> <b>&nbsp;>>&nbsp;</b> <a href="/<%#Eval("eUrl2")%>" title="<%#Eval("Name") %>"><%#Eval("NameTrimmed")%></a>
+                                    <a href="/">Trang Chủ</a> <b>&nbsp;>>&nbsp;</b> <%#Eval("CNameLink")%> <b>&nbsp;>>&nbsp;</b> <a href="/<%#Eval("eUrl2")%>" title="<%#Eval("Name") %>"><%#Eval("NameTrimmed")%></a>
                                     
                                 </div>
                                
