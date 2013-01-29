@@ -2456,8 +2456,23 @@ namespace dangdongcmm.model
         {
             get
             {
-                string kq = "";
-                kq = CFunctions.install_urlname(Cname);
+                //<a href="/<%#Eval("CNameLink")%>"><%#Eval("CName")%></a>
+                string kq = "<a href=\"/";
+                kq += CFunctions.install_urlname(Cname);
+                kq += "\">";
+                kq += Cname;
+                kq += "</a>";
+                foreach (var item in lCategory)
+                {
+                    if (!item.Name.Equals(Cname))
+                    {
+                        kq += "<b>&nbsp;>>&nbsp;</b><a href=\"/";
+                        kq += CFunctions.install_urlname(item.Name);
+                        kq += "\">";
+                        kq += item.Name;
+                        kq += "</a>";
+                    }                    
+                }
                 return kq;
             }
             set
@@ -2470,9 +2485,9 @@ namespace dangdongcmm.model
             get
             {
                 string kq = Name;
-                if (kq != null && kq.Length > 75)
+                if (kq != null && kq.Length > 200)
                 {
-                    kq = kq.Substring(0, 75) + " ...";
+                    kq = kq.Substring(0, 200) + " ...";
                 }
                 return kq;
             }
