@@ -2452,6 +2452,35 @@ namespace dangdongcmm.model
             get;
             set;
         }
+        public string CNameLink
+        {
+            get
+            {
+                string kq = "";
+                kq = CFunctions.install_urlname(Cname);
+                return kq;
+            }
+            set
+            {
+                CNameLink = value;
+            }
+        }
+        public string NameTrimmed
+        {
+            get
+            {
+                string kq = Name;
+                if (kq != null && kq.Length > 70)
+                {
+                    kq = kq.Substring(0, 70) + " ...";
+                }
+                return kq;
+            }
+            set
+            {
+                NameTrimmed = value;
+            }
+        }
         public string Categoryid
         {
             get
