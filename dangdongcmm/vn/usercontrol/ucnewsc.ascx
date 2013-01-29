@@ -1,8 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucnewsc.ascx.cs" Inherits="dangdongcmm.ucnewsc" %>
 <%@ REGISTER TagPrefix="UC" TagName="Pager" Src="ucpager.ascx" %>
 
-<ASP:PANEL ID="pnlList" runat="server" CssClass="fieldsetf" Style="margin-top:15px;">
-    <h4>TRÍCH DẪN</h4>
+<ASP:PANEL ID="pnlList" runat="server" CssClass="fieldsetf" Style="margin-top:15px;">    
+    <div class="cname2">TRÍCH DẪN</div>
     <ASP:REPEATER ID="rptList" runat="server">
         <ITEMTEMPLATE>
             <div class="newsquote">
