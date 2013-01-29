@@ -27,6 +27,7 @@ namespace dangdongcmm
                 this.Cid = CCommon.Get_QueryString(Queryparam.Cid);
                 this.Keywords = CCommon.Get_QueryString(Queryparam.Keywords);
                 this.SearchIn = CCommon.Get_QueryString("searchin");
+                //this.SearchIn = "12,0";
                 int pageindex = CCommon.Get_QueryNumber(Queryparam.Pageindex);
                 this.Bind_rptList(pageindex);
             }
