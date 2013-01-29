@@ -87,7 +87,9 @@ function EndRequestHandler(sender, args) {
                     <ASP:REPEATER ID="rptListfollow" runat="server" >
                         <ITEMTEMPLATE>
                             <div class="article">
-                                <div class="inlist"><a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>"><%# this.Langview == "en" ? Eval("Url") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%></a> <%#Eval("eIconex")%></div>
+                                <div class="inlist"><a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>">                                
+                                <%# this.Langview == "en" ?( Eval("Url") + "  ("+ Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%>
+                                </a> <%#Eval("eIconex")%></div>
                             </div>
                         </ITEMTEMPLATE>
                     </ASP:REPEATER>
@@ -100,7 +102,8 @@ function EndRequestHandler(sender, args) {
                     <ASP:REPEATER ID="rptList" runat="server">      
                         <ITEMTEMPLATE>
                             <div class="dictionaryl">
-                                <div class="lname"><a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>"><%# this.Langview == "en" ? Eval("Url") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%></a> <%#Eval("eIconex") %></div>
+                                <div class="lname"><a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>">
+                                <%# this.Langview == "en" ? (Eval("Url") + "  (" + Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%></a> <%#Eval("eIconex") %></div>
                                 <div class="intr"><%#Eval("Introduce") %></div>
                             </div>
                         </ITEMTEMPLATE>
