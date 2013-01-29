@@ -266,7 +266,7 @@ div.fieldseti .cname {
 }
 div.fieldseti .cname2 {
     position:relative; float:left; width:95%; margin-bottom:15px;
-    font-weight:bold; text-transform:uppercase; color:Black; font-size:18px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:18px;
     padding-left:2px;
     padding-top:inherit;
 }
@@ -288,7 +288,7 @@ div.fieldsetf .cname {
 }
 div.fieldsetf .cname2 {
     position:relative; float:left; width:95%; margin-bottom:15px;
-    font-weight:bold; text-transform:uppercase; color:Black; font-size:18px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:18px;
     padding-left:2px;
     padding-top:inherit;
 }
