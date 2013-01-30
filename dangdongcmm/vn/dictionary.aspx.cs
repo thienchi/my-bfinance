@@ -26,7 +26,20 @@ namespace dangdongcmm
             {
                 int cid = CCommon.Get_QueryNumber(Queryparam.Cid);
                 int iid = CCommon.Get_QueryNumber(Queryparam.Iid);
-                this.Load_Info(iid);
+                string cate = HttpContext.Current.Request.QueryString["cate"];
+                string alias = HttpContext.Current.Request.QueryString[Queryparam.Iid];
+                this.Load_Info(alias);
+                //this.Load_Info(iid);
+                if (cate != null && cate != "index")
+                {
+                    cate = cate.Replace(".aspx", "");
+                    CCategory DAL = new CCategory();
+                    CategoryInfo cat = DAL.GetCategoryInfo(cate);
+                    if (cat != null)
+                    {
+                        cid = cat.Id;
+                    }
+                }
                 this.Bind_Categoryinfo();
 
                 if (pnlInfo.Visible)
@@ -69,6 +82,39 @@ namespace dangdongcmm
         #endregion
 
         #region private methods
+        private void Load_Info(string iid)
+        {
+            CNews DAL = new CNews(CCommon.LANG);
+            NewsInfo info = DAL.Getinfo(iid);
+            if (info != null)
+            {
+                if (info.Allowcomment > 0)
+                {
+                    CommentInfo comment = new CComment(CCommon.LANG).Getinforating(Webcmm.Id.News, info.Id);
+                    if (comment != null)
+                    {
+                        if ((comment.Viewcounter + 1) != info.Allowcomment)
+                        {
+                            info.Allowcomment = comment.Viewcounter + 1;
+                            DAL.Updatenum(info.Id.ToString(), Queryparam.Sqlcolumn.Allowcomment, info.Allowcomment);
+                        }
+                        info.Rating = comment.Rating / (comment.Viewcounter == 0 ? 1 : comment.Viewcounter);
+                    }
+                }
+                iid = info.Id.ToString();
+                List<NewsInfo> list = new List<NewsInfo>();
+                list.Add(info);
+                (new GenericList<NewsInfo>()).Bind_DataList(rptInfo, null, list, 0);
+                DAL.Updatenum(iid.ToString(), Queryparam.Sqlcolumn.Viewcounter, CConstants.NUM_INCREASE);
+
+                Master.AddMeta_Title(info.Name);
+                Master.AddMeta_Description(info.Introduce);
+                Master.AddMeta_Keywords(info.Tag);
+            }
+
+            pnlListfollow.Visible = pnlInfo.Visible = info != null;
+        }
+        
         private void Load_Info(int iid)
         {
             CNews DAL = new CNews(CCommon.LANG);
