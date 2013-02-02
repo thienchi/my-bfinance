@@ -30,7 +30,7 @@ function EndRequestHandler(sender, args) {
                                     <div id="breadcrumbs">
                                         
                                     </div>
-                                    <a href="/">Trang Chủ</a> <b>&nbsp;>>&nbsp;</b> <%#Eval("CNameLink")%> <b>&nbsp;>>&nbsp;</b> <a href="/<%#Eval("eUrl2")%>" title="<%#Eval("Name") %>"><%#Eval("NameTrimmed")%></a>
+                                    <a href="/">bFinance</a> <b>&nbsp;>>&nbsp;</b> <%#Eval("CNameLink")%> <b>&nbsp;>>&nbsp;</b> <a href="/<%#Eval("eUrl2")%>" title="<%#Eval("Name") %>"><%#Eval("NameTrimmed")%></a>
                                     
                                 </div>
                                
@@ -55,7 +55,7 @@ function EndRequestHandler(sender, args) {
                                 </div>--%>
                                 
                                 <div class="sharebar">
-                                    <span><b>Chia sẻ</b></span>
+                                    
 			                        <span class='st_sharethis_hcount' displayText='ShareThis'></span>
 			                        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
 			                        <span class='st_twitter_hcount' displayText='Tweet'></span>
@@ -65,7 +65,13 @@ function EndRequestHandler(sender, args) {
                                  <div class="desc"><%#Eval("eFilepreview")%> <%#Eval("Description")%></div>
                                 <div align="right"><b><i><%#Eval("Author")%></i></b></div>
                                 <div class="note"><%#CFunctions.IsNullOrEmpty(Eval("Tag").ToString()) ? "" : ("<b>Tag</b>: " + Eval("eTag2"))%></div>
-                                
+                                <div class="sharebar">
+                                    
+			                        <span class='st_sharethis_hcount' displayText='ShareThis'></span>
+			                        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
+			                        <span class='st_twitter_hcount' displayText='Tweet'></span>
+			                        <span class='st_googleplus_hcount' displayText='Google +'></span>
+	                             </div>
                             </div>
                             <br />&nbsp;
                             <UC:COMMENT ID="Comment" runat="server" Allowcomment='<%#Eval("Allowcomment") %>' Belongto="12" Pid='<%#Eval("Id") %>' Pname='<%#Eval("Name") %>' />
