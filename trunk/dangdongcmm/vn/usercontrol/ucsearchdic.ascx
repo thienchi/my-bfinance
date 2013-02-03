@@ -17,7 +17,7 @@
         }
         //$('#<%=txtKeywords.ClientID %>').val('"' + $('#<%=txtKeywords.ClientID %>').val() + '"');
         prompt_processing();
-        location.href = 'dictionary-search-vn-at-' + $('#<%=txtKeywords.ClientID %>').val() + '.aspx';
+        location.href = '/dictionary-search-vn-at-' + $('#<%=txtKeywords.ClientID %>').val() + '.aspx';
         return false;
     }
     
