@@ -30,8 +30,10 @@
     
     <div class="barthome5">
         <div class="barhead">
-            <div class="title"><a href="dictionary-abc-vn-at-.aspx">Từ điển thuật ngữ</a></div>
-            <div class="listoption">Xem theo:&nbsp;&nbsp;&nbsp; <a href="dictionary-abc-vn-at-.aspx">ABC</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="dictionary-cat-vn-at-.aspx">Danh mục</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="dictionary-abc-en-at-.aspx">Tiếng Anh</a></div>
+            <div class="title"><a href="/tu-dien-thuat-ngu-abc-vn-at-.aspx">Từ điển thuật ngữ</a></div>
+            <div class="listoption">Xem theo:&nbsp;&nbsp;&nbsp; <a href="/tu-dien-thuat-ngu-abc-vn-at-.aspx">ABC</a>
+             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="/tu-dien-thuat-ngu-cat-vn-at-.aspx">Danh mục</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              <a href="tu-dien-thuat-ngu-abc-en-at-.aspx">Tiếng Anh</a></div>
             <div class="barsearchdic"><UC:SEARCHDIC ID="Searchdic" runat="server" /></div>
         </div>
         <div class="col1">
