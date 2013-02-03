@@ -27,9 +27,9 @@ function EndRequestHandler(sender, args) {
                             <ASP:HIDDENFIELD ID="Id" runat="server" Value='<%#Eval("Id") %>' />
                             <div class="article contentframe">
 	                            <div class="DBRCCONTAINER">
-                                    <div id="breadcrumbs">
+                                    <%--<div id="breadcrumbs">
                                         
-                                    </div>
+                                    </div>--%>
                                     <a href="/">bFinance</a> <b>&nbsp;>>&nbsp;</b> <%#Eval("CNameLink")%> <b>&nbsp;>>&nbsp;</b> <a href="/<%#Eval("eUrl2")%>" title="<%#Eval("Name") %>"><%#Eval("NameTrimmed")%></a>
                                     
                                 </div>
