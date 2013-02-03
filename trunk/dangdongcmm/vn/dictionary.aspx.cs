@@ -28,7 +28,15 @@ namespace dangdongcmm
                 int iid = CCommon.Get_QueryNumber(Queryparam.Iid);
                 string cate = HttpContext.Current.Request.QueryString["cate"];
                 string alias = HttpContext.Current.Request.QueryString[Queryparam.Iid];
-                this.Load_Info(alias);
+                if(iid > 0 )
+                {
+                    Load_Info(iid);
+                }
+                else
+                {
+                    Load_Info(alias);    
+                }
+                
                 //this.Load_Info(iid);
                 if (cate != null && cate != "index")
                 {

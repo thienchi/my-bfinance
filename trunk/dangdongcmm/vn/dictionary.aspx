@@ -43,7 +43,7 @@ function EndRequestHandler(sender, args) {
         function initabs() {
 	        $('ul.tabs').tabs('div.panes > div.viewoption');
 	        var tabsForm = $('ul.tabs').data('tabs');
-	        tabsForm.click(<%=this.Typeview=="abc" ? 0 : 1 %>);
+	        tabsForm.click(<%=this.Typeview == "abc" ? 0 : 1 %>);
         }
         $(function() { 
             initabs(); 
@@ -52,12 +52,13 @@ function EndRequestHandler(sender, args) {
                 tb.eq(itd).click(function(){
                     location.href = 'dictionary-abc-<%=this.Langview %>-at-'+tb.eq(itd).html().toLowerCase()+'.aspx';
                 });
-            });
+            });            
             $('#chkviewdicen').change(function() {
                 if(location.href.indexOf('-<%=this.Langview %>-') != -1) location.href = location.href.replace('-<%=this.Langview %>-', $(this).is(':checked') ? '-en-' : '-vn-');
-                else location.href = location.href.replace('ll=<%=this.Langview %>', $(this).is(':checked') ? 'll=en' : 'll=vn');
+                else location.href = location.href.replace('<%=this.Langview %>', $(this).is(':checked') ? 'en' : 'vn');
             });
-        });
+          
+        });        
         </script>
                 
                 <ASP:PANEL ID="pnlInfo" runat="server" CssClass="relatedl width100">
@@ -87,9 +88,14 @@ function EndRequestHandler(sender, args) {
                     <ASP:REPEATER ID="rptListfollow" runat="server" >
                         <ITEMTEMPLATE>
                             <div class="article">
-                                <div class="inlist"><a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>">                                
+                                <div class="inlist">
+                                 <a href="/tu-dien-thuat-ngu-vn/<%#Eval("eUrl2") %>"><%# this.Langview == "en" ?( Eval("Url") + "  ("+ Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%>
+                                </a></a>
+
+                                <%--<a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>">                                
                                 <%# this.Langview == "en" ?( Eval("Url") + "  ("+ Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%>
-                                </a> <%#Eval("eIconex")%></div>
+                                </a> <%#Eval("eIconex")%>--%>
+                                </div>
                             </div>
                         </ITEMTEMPLATE>
                     </ASP:REPEATER>
