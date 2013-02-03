@@ -296,6 +296,13 @@ namespace dangdongcmm.model
                 return CFunctions.install_urlname(Name)+".aspx";// ((Cid == Webcmm.Id.News ? "n" : "")) + Id.ToString() + "d0d=" + eName;
             }
         }
+        public string eUrlDictionary
+        {
+            get
+            {
+                return "tu-dien-thuat-ngu-vn/" + CFunctions.install_urlname(Name);
+            }
+        }
         #region methods
         public CategoryInfo copy()
         {
