@@ -550,7 +550,11 @@ height: 200px;
 .article .note {
     position:relative; float:left; width:100%;
     font-weight:normal;
-    font-size:12px; font-style:italic; color:#777;
+    font-size:12px; font-style:normal; color:#777;
+    padding-bottom:5px;
+    padding-top:5px;
+    border-bottom:2px solid #CCCCCC;
+    border-top:1px solid #CCCCCC;
 }
 .article .note a {
     color:#777;
