@@ -50,12 +50,12 @@ function EndRequestHandler(sender, args) {
             var tb = $('.tbabc').find('td');
             tb.each(function(itd){
                 tb.eq(itd).click(function(){
-                    location.href = 'dictionary-abc-<%=this.Langview %>-at-'+tb.eq(itd).html().toLowerCase()+'.aspx';
+                    location.href = '/tu-dien-thuat-ngu-abc-<%=this.Langview %>-at-'+tb.eq(itd).html().toLowerCase()+'.aspx';
                 });
             });            
             $('#chkviewdicen').change(function() {
                 if(location.href.indexOf('-<%=this.Langview %>-') != -1) location.href = location.href.replace('-<%=this.Langview %>-', $(this).is(':checked') ? '-en-' : '-vn-');
-                else location.href = location.href.replace('<%=this.Langview %>', $(this).is(':checked') ? 'en' : 'vn');
+                else location.href = location.href.replace('tu-dien-thuat-ngu-<%=this.Langview %>', $(this).is(':checked') ? 'tu-dien-thuat-ngu-en' : 'tu-dien-thuat-ngu-vn');
             });
           
         });        
@@ -90,7 +90,7 @@ function EndRequestHandler(sender, args) {
                             <div class="article">
                                 <div class="inlist">
                                  <a href="/tu-dien-thuat-ngu-vn/<%#Eval("eUrl2") %>"><%# this.Langview == "en" ?( Eval("Url") + "  ("+ Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%>
-                                </a></a>
+                                </a>
 
                                 <%--<a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>">                                
                                 <%# this.Langview == "en" ?( Eval("Url") + "  ("+ Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%>
@@ -108,9 +108,16 @@ function EndRequestHandler(sender, args) {
                     <ASP:REPEATER ID="rptList" runat="server">      
                         <ITEMTEMPLATE>
                             <div class="dictionaryl">
-                                <div class="lname"><a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>">
-                                <%# this.Langview == "en" ? (Eval("Url") + "  (" + Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%></a> <%#Eval("eIconex") %></div>
-                                <div class="intr"><%#Eval("Introduce") %></div>
+                                <div class="lname">
+                                <a href="/tu-dien-thuat-ngu-vn/<%#Eval("eUrl2") %>"><%# this.Langview == "en" ?( Eval("Url") + "  ("+ Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%>
+                                </a>
+                               <%-- <a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?pag=<%=PageIndex %>&ll=<%=Langview %>">
+                                <%# this.Langview == "en" ? (Eval("Url") + "  (" + Eval("Name").ToString() + ")") : (Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%></a>
+--%>                                
+                                <%#Eval("eIconex") %>                                
+                                </div>                                
+                                <div class="intr"><%#Eval("Introduce") %>
+                                </div>
                             </div>
                         </ITEMTEMPLATE>
                     </ASP:REPEATER>
