@@ -25,10 +25,10 @@
 	<link type="text/css" rel="stylesheet" href="../cssscript/menu.css" />
 	<link type="text/css" rel="stylesheet" href="../cssscript/form.css" />
     <link rel="SHORTCUT ICON" href="/images/favicon.png">
-    <script type="text/javascript" src="../cssscript/jquery-1.6.1.min.js" ></script>
-    <script type="text/javascript" src="../cssscript/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="../cssscript/common.js" ></script>
-    <script type="text/javascript" src="../cssscript/dhtmlwindow.js" ></script>
+    <script type="text/javascript" src="../../cssscript/jquery-1.6.1.min.js" ></script>
+    <script type="text/javascript" src="../../cssscript/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="../../cssscript/common.js" ></script>
+    <script type="text/javascript" src="../../cssscript/dhtmlwindow.js" ></script>
         <script type="text/javascript">            var switchTo5x = true;</script>
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 	<script type="text/javascript">	    stLight.options({ publisher: "0640c82c-8ce4-434a-b19b-f3d589918c41" });</script>

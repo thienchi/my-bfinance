@@ -24,9 +24,9 @@
     <link rel="SHORTCUT ICON" href="/images/favicon.png">
 
 
-    <script type="text/javascript" src="../cssscript/jquery.tools.min.js"></script>
-    <script type="text/javascript" src="../cssscript/dhtmlwindow.js" ></script>
-	<script type="text/javascript" src="../cssscript/common.js" ></script>
+    <script type="text/javascript" src="../../cssscript/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="../../cssscript/dhtmlwindow.js" ></script>
+	<script type="text/javascript" src="../../cssscript/common.js" ></script>
     <script type="text/javascript">
     function onLoad() {
        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
