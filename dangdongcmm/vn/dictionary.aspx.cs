@@ -20,6 +20,7 @@ namespace dangdongcmm
 {
     public partial class dictionary : BasePage
     {
+        public string lk = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
@@ -46,9 +47,14 @@ namespace dangdongcmm
                     if (cat != null)
                     {
                         cid = cat.Id;
+                        lk = cat.Id.ToString();
+                    }else
+                    {
+                        //lk = cate;
                     }
+
                 }
-                this.Bind_Categoryinfo();
+                Bind_Categoryinfo();
 
                 if (pnlInfo.Visible)
                 {
@@ -173,7 +179,8 @@ namespace dangdongcmm
         private void Bind_rptList()
         {
             string listby = CCommon.Get_QueryString("lb"); // abc, category
-            string listkey = CCommon.Get_QueryString("lk"); // a/b/c..., category
+            //string listkey = CCommon.Get_QueryString("lk"); // a/b/c..., category
+            string listkey = lk ; // a/b/c..., category
             string listlang = CCommon.Get_QueryString("ll"); // vn, en
             
             int numResults = 0;
