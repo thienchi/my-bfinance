@@ -52,6 +52,7 @@ namespace dangdongcmm
                 write.Append("<ul class=\"horizontal\">");
                 this.Build_Menunode(write, cid, 0, info_typeof.Insertbreak == 1, 0);
                 write.Append("</ul>");
+                write = write.Replace("Tu-dien-thuat-ngu.aspx", "tu-dien-thuat-ngu-abc-vn-at-.aspx");
                 return write.ToString();
             }
             catch (Exception ex)
