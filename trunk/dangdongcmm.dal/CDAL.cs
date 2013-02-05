@@ -729,6 +729,39 @@ namespace dangdongcmm.dal
                 throw ex;
             }
         }
+        public CategoryInfo GetCategoryInfo(string alias,int pid)
+        {
+            if (alias == "") return null;
+            try
+            {
+                CategoryInfo info = null;
+                using (iSqlConnection iConn = HELPER.getConnect(HELPER.SQL_SYSTEM))
+                {
+                    string SQL = SQL_GETIFO2 + " and A.alias='" + alias + "'" + " and A.pid = " + pid;
+                    SQL += " AND A.status<>" + (int)CConstants.State.Status.Waitactive;
+                    SQL += " AND A.status<>" + (int)CConstants.State.Status.Disabled;
+                    iSqlParameter[] parms = new iSqlParameter[]{
+                        new iSqlParameter(PARM_ID, iSqlType.Field_tInterger),
+                    };
+                    int i = -1;
+                    parms[++i].Value = 1;
+                    using (iSqlDataReader dar = HELPER.executeReader(iConn, iCommandType.Text, SQL, parms))
+                    {
+                        if (dar.Read())
+                        {
+                            info = this.getDataReader(dar);
+                        }
+                        dar.Close();
+                    }
+                    iConn.Close();
+                }
+                return info;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public CategoryInfo GetCategoryInfo(string alias)
         {
             if (alias == "") return null;
