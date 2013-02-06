@@ -4,7 +4,7 @@
     <ul>
     <ASP:REPEATER ID="rptList" runat="server">
         <ITEMTEMPLATE>
-             <li class="break"><%#Container.ItemIndex == 0 ? "" : "|"%></li><li><a href="/<%#Eval("eUrl2").ToString().Replace(".aspx","") + ".aspx" %>"><%#Eval("Name")%></a> <%#Eval("eIconex") %></li>
+             <li class="break"><%#Container.ItemIndex == 0 ? "" : "|"%></li><li><a href="/<%#Eval("eUrl2").ToString()%>"><%#Eval("Name")%></a> <%#Eval("eIconex") %></li>
         </ITEMTEMPLATE>
     </ASP:REPEATER>
     </ul>
