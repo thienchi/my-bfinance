@@ -16,7 +16,14 @@ function EndRequestHandler(sender, args) {
 </script>
     <div class="relatedl contentframe">
         <ASP:HIDDENFIELD ID="hidCidroot" runat="server" Value="61" />
-        <div class="articleinmenu"><div class="first"><ASP:LABEL ID="lblCidrootname" runat="server"></ASP:LABEL></div></div>
+               
+                <div class="DBRCCONTAINER">
+                <a href="/">bFinance</a>
+              <%-- <ASP:LABEL Visible="true" ID="lblCidrootname" runat="server">
+               </ASP:LABEL> --%>  
+                <%=this.breadcrums%>        
+            </div>
+       
         <ul class="tabs">
 	        <li class="first"><a href="#">Xem theo ABC</a></li>
 	        <li><a href="#">Xem theo danh mục</a></li>

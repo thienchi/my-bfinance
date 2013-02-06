@@ -22,15 +22,6 @@ namespace dangdongcmm {
         protected global::System.Web.UI.WebControls.HiddenField hidCidroot;
         
         /// <summary>
-        /// lblCidrootname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCidrootname;
-        
-        /// <summary>
         /// Cataloguemenu control.
         /// </summary>
         /// <remarks>

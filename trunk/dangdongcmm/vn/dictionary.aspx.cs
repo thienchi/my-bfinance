@@ -21,24 +21,16 @@ namespace dangdongcmm
     public partial class dictionary : BasePage
     {
         public string lk = "";
+        public string tach = "&nbsp;<b>>></b>&nbsp;";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
-            {
+            {               
+                breadcrums = tach;
                 int cid = CCommon.Get_QueryNumber(Queryparam.Cid);
                 int iid = CCommon.Get_QueryNumber(Queryparam.Iid);
                 string cate = HttpContext.Current.Request.QueryString["cate"];
                 string alias = HttpContext.Current.Request.QueryString[Queryparam.Iid];
-                if(iid > 0 )
-                {
-                    Load_Info(iid);
-                }
-                else
-                {
-                    Load_Info(alias);    
-                }
-                
-                //this.Load_Info(iid);
                 if (cate != null && cate != "index")
                 {
                     cate = cate.Replace(".aspx", "");
@@ -48,14 +40,21 @@ namespace dangdongcmm
                     {
                         cid = cat.Id;
                         lk = cat.Id.ToString();
-                    }else
-                    {
-                        //lk = cate;
+                        breadcrums += "<a href=\"/tu-dien-thuat-ngu-abc-vn-at-.aspx\">Từ điển thuật ngữ</a>";
+                        breadcrums += tach;
+                        string linkCat = "<a href=\"/tu-dien-thuat-ngu-" + Langview + "/" + CFunctions.install_urlname(cat.Name) + "\">" + cat.Name + "</a>";
+                        breadcrums += linkCat;
                     }
-
                 }
-                Bind_Categoryinfo();
-
+                if (iid > 0)
+                {
+                    Load_Info(iid);
+                }
+                else
+                {
+                    Load_Info(alias);
+                }
+                Bind_Categoryinfo();               
                 if (pnlInfo.Visible)
                 {
                     if (CFunctions.GetViewSetting(Webcmm.Id.News, ViewSetting.ListFollowed))
@@ -67,11 +66,15 @@ namespace dangdongcmm
                 {
                     this.Bind_rptList();
                 }
-
+                if (breadcrums.Equals(tach))
+                {
+                    breadcrums += "<a href=\"/tu-dien-thuat-ngu-abc-vn-at-.aspx\">Từ điển thuật ngữ</a>";
+                }
             }
         }
 
         #region properties
+        public string breadcrums = "";
         public int Cidroot
         {
             get
@@ -120,7 +123,16 @@ namespace dangdongcmm
                 list.Add(info);
                 (new GenericList<NewsInfo>()).Bind_DataList(rptInfo, null, list, 0);
                 DAL.Updatenum(iid.ToString(), Queryparam.Sqlcolumn.Viewcounter, CConstants.NUM_INCREASE);
-
+                breadcrums = tach;
+                breadcrums += "<a href=\"/tu-dien-thuat-ngu-abc-vn-at-.aspx\">Từ điển thuật ngữ</a>";
+                if(!info.Cname.Equals("Từ điển thuật ngữ")){
+                    breadcrums += tach;
+                    string linkCat = "<a href=\"/tu-dien-thuat-ngu-" + Langview + "/" + CFunctions.install_urlname(info.Cname) + "\">" + info.Cname + "</a>";
+                    breadcrums += linkCat;
+                }
+                breadcrums += tach;
+                string linkPress = "<a href=\"/tu-dien-thuat-ngu-" + Langview + "/" + info.eUrl2 + "\">" + info.Name + "</a>";
+                breadcrums += linkPress;
                 Master.AddMeta_Title(info.Name);
                 Master.AddMeta_Description(info.Introduce);
                 Master.AddMeta_Keywords(info.Tag);
@@ -152,7 +164,9 @@ namespace dangdongcmm
                 list.Add(info);
                 (new GenericList<NewsInfo>()).Bind_DataList(rptInfo, null, list, 0);
                 DAL.Updatenum(iid.ToString(), Queryparam.Sqlcolumn.Viewcounter, CConstants.NUM_INCREASE);
-
+                breadcrums += tach;
+                string linkCat = "<a href=\"/tu-dien-thuat-ngu-" + Langview + "/" + info.eUrl2 + "\">" + info.Name + "</a>";
+                breadcrums += linkCat;
                 Master.AddMeta_Title(info.Name);
                 Master.AddMeta_Description(info.Introduce);
                 Master.AddMeta_Keywords(info.Tag);
@@ -201,7 +215,7 @@ namespace dangdongcmm
                 Master.AddMeta_Description(CFunctions.IsNullOrEmpty(cinfo.Note) ? cinfo.Name : cinfo.Note);
                 Master.AddMeta_Keywords(CFunctions.IsNullOrEmpty(cinfo.Note) ? cinfo.Name : cinfo.Note);
             }
-            lblCidrootname.Text = cinfo == null ? "" : cinfo.Name;
+            //lblCidrootname.Text = cinfo == null ? "" : cinfo.Name;
                     
             return;
         }
