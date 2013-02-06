@@ -43,7 +43,7 @@ namespace dangdongcmm
                 {
                     cate = cate.Replace(".aspx", "");
                     CCategory DAL = new CCategory();
-                    CategoryInfo cat = DAL.GetCategoryInfo(cate);
+                    CategoryInfo cat = DAL.GetCategoryInfo(cate,61);
                     if (cat != null)
                     {
                         cid = cat.Id;
