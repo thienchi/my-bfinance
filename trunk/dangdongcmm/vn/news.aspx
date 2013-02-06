@@ -86,8 +86,8 @@ function EndRequestHandler(sender, args) {
                             <ASP:HIDDENFIELD ID="Id" runat="server" Value='<%#Eval("Id") %>' />
                             <div class="articleinmenu">
                                 <div class="DBRCCONTAINER">
-                                    <a href="/">bFinance</a> <b>&nbsp;>>&nbsp;</b><a href="/<%#Eval("eUrl2").ToString().Replace(".aspx","") + ".aspx" %>"><%#Eval("Name") %></a>
-                                </div>
+                                <a href="/">bFinance</a> <b>&nbsp;>>&nbsp;</b> 
+                                <a href="/<%#Eval("eUrl2").ToString().Replace(".aspx","") + ".aspx" %>"><%#Eval("Name") %></a></div>
                                 <UC:CATALOGUEMENU ID="Cataloguemenu" runat="server" Belongto="12" Cid='<%#Eval("Id") %>' />
                             </div>
                             <UC:NEWSL ID="Newsl" runat="server" />
