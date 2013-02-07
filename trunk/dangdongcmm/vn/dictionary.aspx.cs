@@ -195,6 +195,10 @@ namespace dangdongcmm
             string listby = CCommon.Get_QueryString("lb"); // abc, category
             //string listkey = CCommon.Get_QueryString("lk"); // a/b/c..., category
             string listkey = lk ; // a/b/c..., category
+            if(listkey == null || (listkey != null && listkey.Equals("")))
+            {
+                listkey = CCommon.Get_QueryString("lk"); // a/b/c..., category
+            }
             string listlang = CCommon.Get_QueryString("ll"); // vn, en
             
             int numResults = 0;
