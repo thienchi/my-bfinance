@@ -100,7 +100,7 @@
                                 <div class="cname2">Tiêu điểm</div>
                                 <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
                             </div>
-                            <br />&nbsp;
+                            <%--<br />&nbsp;--%>
                             <div class="fieldseti2">
                                 <div class="cname">Nổi bật</div>
                                 <UC:NEWSADESC ID="Newsdesc1" runat="server" Acode="'homeslide'" />
