@@ -64,6 +64,9 @@
         })();
 
 </script>
+<script type="text/javascript">    var switchTo5x = true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">    stLight.options({ publisher: "4dbee9b0-ed48-4419-bd48-1acb1785a4b9", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
 </head>
 <body onload="onLoad()">
     <form id="form1" runat="server">
@@ -93,12 +96,12 @@
                             <ASP:CONTENTPLACEHOLDER id="ContentPlaceHolder1" runat="server"></ASP:CONTENTPLACEHOLDER>
                         </div>
                         <div class="Righ2">  
-                            <div class="fieldseti">
+                            <div class="fieldseti2">
                                 <div class="cname2">Tiêu điểm</div>
                                 <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
                             </div>
                             <br />&nbsp;
-                            <div class="fieldseti">
+                            <div class="fieldseti2">
                                 <div class="cname">Nổi bật</div>
                                 <UC:NEWSADESC ID="Newsdesc1" runat="server" Acode="'homeslide'" />
                                 <UC:NEWSADESC ID="Newsdesc2" runat="server" Acode="'home1'" />
