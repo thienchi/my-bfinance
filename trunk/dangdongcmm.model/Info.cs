@@ -2487,6 +2487,24 @@ namespace dangdongcmm.model
                 CNameLink = value;
             }
         }
+        public string UrlQuoute
+        {
+            get
+            {
+                string cateLink = CFunctions.install_urlname(Cname).Replace(".aspx", "");
+                string link = Url;
+                if(link != null && !link.Trim().Equals(""))
+                {
+                    int i = link.IndexOf("=");
+                    link = link.Substring(i + 1);
+                }
+                return cateLink + "/" + link;
+            }
+            set
+            {
+                UrlQuoute = value;
+            }
+        }
         public string NameTrimmed
         {
             get
