@@ -205,7 +205,7 @@ text-align:center; cursor:wait;
     position:relative; float:right; width:49%;
 }
 .barthome4 {
-    position:relative; float:right; width:310px; margin-top:5px;
+    position:relative; float:right; width:310px; margin-top:-11px;
 }
 .barthome4 .ttit {
     position:relative; float:left; 
@@ -255,7 +255,10 @@ div.fieldseti {
 }
 div.fieldseti2 {
     position:relative; float:left;
-    border:1px solid #ccc; background-color:transparent;
+    background-color:transparent;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
     padding:5px 10px;
 }
 div.fieldseti b {
@@ -280,6 +283,12 @@ div.fieldseti2 .cname2 {
     font-weight:bold; text-transform:uppercase; color:#005288; font-size:16px;
     padding-left:0px;
     padding-top:inherit;
+}
+div.fieldseti2 .cname {
+    position:relative; float:left; width:95%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:11px;
+    background:url(../images/bullet1.png) no-repeat top left; padding-left:15px;
+    border-bottom:1px solid #ccc;
 }
 div.fieldsetf {
     position:relative; float:left;
@@ -1054,7 +1063,7 @@ ul.langoption li {
 .contentframe {
     border:1px solid #ccc; padding:10px; 
     width:610px;
-    width:628px;
+    width:629px;
 }
 
 .dictionaryl {
