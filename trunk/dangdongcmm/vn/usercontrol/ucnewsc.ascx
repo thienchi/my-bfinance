@@ -6,7 +6,7 @@
     <ASP:REPEATER ID="rptList" runat="server">
         <ITEMTEMPLATE>
             <div class="newsquote">
-                <div class="lname"><a href="/<%#Eval("eUrl2") %>"><%#Eval("Name")%></a></div>
+                <div class="lname"><a href="/<%#Eval("UrlQuoute") %>"><%#Eval("Name")%></a></div>
                 <div class="author"><%#Eval("Author")%></div>
             </div>
         </ITEMTEMPLATE>
