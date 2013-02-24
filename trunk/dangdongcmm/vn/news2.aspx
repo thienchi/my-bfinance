@@ -55,22 +55,24 @@ function EndRequestHandler(sender, args) {
                                 </div>--%>
                                 
                                 <div class="sharebar">
-                                    
-			                        <span class='st_sharethis_hcount' displayText='ShareThis'></span>
-			                        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
-			                        <span class='st_twitter_hcount' displayText='Tweet'></span>
-			                        <span class='st_googleplus_hcount' displayText='Google +'></span>
+                                    <span class='st_sharethis_large' displayText='ShareThis'></span>
+                                    <span class='st_facebook_large' displayText='Facebook'></span>
+                                    <span class='st_twitter_large' displayText='Tweet'></span>
+                                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                                    <span class='st_pinterest_large' displayText='Pinterest'></span>
+                                    <span class='st_email_large' displayText='Email'></span>
 	                             </div>
                                  <meta property="og:image"content="<%#Eval("eFilepreviewurl") %>" />
                                  <div class="desc"><%#Eval("eFilepreview")%> <%#Eval("Description")%></div>
                                 <div align="right"><b><i><%#Eval("Author")%></i></b></div>
                                 <div class="note"><%#CFunctions.IsNullOrEmpty(Eval("Tag").ToString()) ? "" : ("<b>Tag</b>: " + Eval("eTag2"))%></div>
                                 <div class="sharebar">
-                                    
-			                        <span class='st_sharethis_hcount' displayText='ShareThis'></span>
-			                        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
-			                        <span class='st_twitter_hcount' displayText='Tweet'></span>
-			                        <span class='st_googleplus_hcount' displayText='Google +'></span>
+                                    <span class='st_sharethis_large' displayText='ShareThis'></span>
+                                    <span class='st_facebook_large' displayText='Facebook'></span>
+                                    <span class='st_twitter_large' displayText='Tweet'></span>
+                                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                                    <span class='st_pinterest_large' displayText='Pinterest'></span>
+                                    <span class='st_email_large' displayText='Email'></span>
 	                             </div>
                             </div>
                             <br />&nbsp;
