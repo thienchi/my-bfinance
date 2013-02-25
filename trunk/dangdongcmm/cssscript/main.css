@@ -158,7 +158,9 @@ text-align:center; cursor:wait;
 .Righ2 {
     position:relative;float:right; width:310px;
 }
-
+.Righ22 {
+    position:relative;float:right; width:309px;
+}
 .Left3 {
     position:relative;float:left; width:275px;
 }
@@ -233,7 +235,8 @@ text-align:center; cursor:wait;
     position:relative; float:left; padding:5px 10px;
 }
 .barsearchdic {
-    position:relative; float:right; width:300px; padding:0 10px;
+    float:left; width:292px; padding:8px;
+    border-right:1px solid #ccc;
 }
 
 .barthome5 .subject {
@@ -260,6 +263,32 @@ div.fieldseti2 {
     border-right:1px solid #ccc;
     border-left:1px solid #ccc;
     padding:5px 10px;
+}
+div.fieldsetitracuu {
+    position:relative; float:left;
+    background-color:transparent;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    padding:5px 10px;
+}
+div.fieldsetitracuu .cname2 {
+    position:relative; float:left; width:95%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:16px;
+    padding-left:0px;
+    padding-top:inherit;
+}
+div.fieldsetidanhmuc {
+    position:relative; float:left;
+    background-color:transparent;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    padding:5px 10px;
+}
+div.fieldsetidanhmuc .cname2 {
+    position:relative; float:left; width:95%; margin-bottom:15px;
+    font-weight:bold; text-transform:uppercase; color:#005288; font-size:16px;
+    padding-left:0px;
+    padding-top:inherit;
 }
 div.fieldseti b {
     position:relative; float:left; width:100%; margin-bottom:10px;
@@ -428,6 +457,9 @@ fieldset.fieldseth legend a {
 }
 .newsadesc .lname {
     margin-bottom:3px; font-weight:bold; line-height:normal;
+}
+.newsadesc .lname2 {
+    margin-bottom:3px; font-weight:normal; line-height:normal;
 }
 .newsadesc .intr {
     
@@ -1061,9 +1093,9 @@ ul.langoption li {
 }
 /*Tabs*/
 .contentframe {
-    border:1px solid #ccc; padding:10px; 
-    width:610px;
-    width:628px;
+    padding:10px;
+    border:1px solid #ccc;    
+    width:629px;
 }
 
 .dictionaryl {
