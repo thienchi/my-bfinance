@@ -6,7 +6,7 @@
         <ITEMTEMPLATE>
             <div class="newsadesc" id="newsadesc<%#Eval("Id")%>">
                 <%#Eval("eFilepreview").ToString() == "" ? "" : ("<div class=\"blockimg\"><a href=\"/" + Eval("eUrl2") + "\">" + Eval("eFilepreview") + "</a></div>")%>
-                <div class="lname"><a href="/<%#Eval("eUrl2") %>"><%#Eval("Name")%></a> <%#Eval("eIconex")%></div>
+                <div class="lname2"><a href="/<%#Eval("eUrl2") %>"><%#Eval("Name")%></a> <%#Eval("eIconex")%></div>
             </div>
         </ITEMTEMPLATE>
     </ASP:REPEATER>
