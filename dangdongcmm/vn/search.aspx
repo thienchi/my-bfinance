@@ -6,7 +6,7 @@
 
     <ASP:UPDATEPANEL ID="UpdatePanel1" runat="server">
         <CONTENTTEMPLATE>
-            <ASP:PANEL ID="pnlList" runat="server" CssClass="relatedl width100" Style="border:1px solid #ccc; padding:10px; padding-top:0; width:610px">
+            <ASP:PANEL ID="pnlList" runat="server" CssClass="relatedl width100" Style="border:1px solid #ccc; padding:10px; padding-top:0; width:629px">
                 <div class="title1bound" style="margin-top:0;"><ASP:LABEL ID="lblCname" runat="server" Text="Kết quả tìm kiếm "></ASP:LABEL> bài viết</div>
                 <div align="right" class="pagercontainer">
                     <UC:PAGER ID="pagBuilderT" runat="server" CssClass="pagBuilder" Infotemplate="<b>$RECORDCOUNT$</b> bài viết" />
