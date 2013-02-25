@@ -2491,14 +2491,15 @@ namespace dangdongcmm.model
         {
             get
             {
-                string cateLink = CFunctions.install_urlname(Cname).Replace(".aspx", "");
+                //string cateLink = CFunctions.install_urlname(Cname).Replace(".aspx", "");
                 string link = Url;
                 if(link != null && !link.Trim().Equals(""))
                 {
                     int i = link.IndexOf("=");
                     link = link.Substring(i + 1);
+                    link = link.Replace("http://bfinance.vn/", "");
                 }
-                return cateLink + "/" + link;
+                return link;
             }
             set
             {
