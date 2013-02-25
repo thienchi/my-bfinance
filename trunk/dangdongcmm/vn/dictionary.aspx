@@ -67,7 +67,6 @@ function EndRequestHandler(sender, args) {
           
         });        
         </script>
-                
                 <ASP:PANEL ID="pnlInfo" runat="server" CssClass="relatedl width100">
                     <ASP:REPEATER ID="rptInfo" runat="server">
                         <ITEMTEMPLATE>
@@ -143,16 +142,16 @@ function EndRequestHandler(sender, args) {
     });
     </script>    
     
-    <div class="Righ2">
-        <div class="fieldseti">
-            <div class="cname">Danh mục</div>
+    <div class="Righ22">
+        <div class="fieldsetidanhmuc">
+            <div class="cname2">Danh mục</div>
             <div class="menudiccatright"><UC:CATALOGUEMENU ID="Cataloguemenu1" runat="server" Belongto="12" Cid='61' /></div>
         </div>
-        <br />&nbsp;<br />&nbsp;
+        <%--<br />&nbsp;<br />&nbsp;--%>
         <div class="barsearchdic"><UC:SEARCHDIC ID="Searchdic" runat="server" /></div>
         
-        <div class="fieldsetf">
-            <div class="cname">Tra cứu nhiều nhất</div>
+        <div class="fieldsetitracuu">
+            <div class="cname2">Tra cứu nhiều nhất</div>
             <div class="dicviewest"><UC:DICTIONARYC ID="Dictionaryc2" runat="server" Categorycode="'dictionary'" SortExp="Viewcounter" PageSize="10" /></div>
         </div>
     </div>
