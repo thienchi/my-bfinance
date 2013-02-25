@@ -102,7 +102,7 @@
                             </div>
                             <%--<br />&nbsp;--%>
                             <div class="fieldseti2">
-                                <div class="cname">Nổi bật</div>
+                                <div class="cname2">Nổi bật</div>
                                 <UC:NEWSADESC ID="Newsdesc1" runat="server" Acode="'homeslide'" />
                                 <UC:NEWSADESC ID="Newsdesc2" runat="server" Acode="'home1'" />
                                 <UC:NEWSADESC ID="Newsdesc3" runat="server" Acode="'home2'" />
