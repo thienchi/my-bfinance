@@ -34,7 +34,7 @@
             <div class="listoption">Xem theo:&nbsp;&nbsp;&nbsp; <a href="/tu-dien-thuat-ngu-abc-vn-at-.aspx">ABC</a>
              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="/tu-dien-thuat-ngu-cat-vn-at-.aspx">Danh mục</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
               <a href="tu-dien-thuat-ngu-abc-en-at-.aspx">Tiếng Anh</a></div>
-            <div class="barsearchdic"><UC:SEARCHDIC ID="Searchdic" runat="server" /></div>
+            <div class="barsearchdic2"><UC:SEARCHDIC ID="Searchdic" runat="server" /></div>
         </div>
         <div class="col1">
             <div class="subject">Mới nhất</div>
