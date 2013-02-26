@@ -238,7 +238,9 @@ text-align:center; cursor:wait;
     float:left; width:292px; padding:8px;
     border-right:1px solid #ccc;
 }
-
+.barsearchdic2 {
+    position:relative; float:right; width:300px; padding:0 10px;
+}
 .barthome5 .subject {
     position:relative; float:left; width:95%; margin-bottom:15px;
     font-weight:bold; text-transform:uppercase; color:#005288; font-size:11px;
