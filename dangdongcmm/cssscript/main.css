@@ -792,7 +792,7 @@ div.separator2 {
     /*height:15px; */
     height:35px; 
     margin:5px 0 15px 0; padding-bottom:5px;
-    border-bottom:1px solid #ccc;
+   /* border-bottom:1px solid #ccc;*/
 }
 .articleinmenu .first {
     position:relative; float:left;
