@@ -88,7 +88,7 @@ function EndRequestHandler(sender, args) {
                                 <div class="DBRCCONTAINER">
                                 <a href="/">bFinance</a> <b>&nbsp;>>&nbsp;</b> 
                                 <a href="/<%#Eval("eUrl2")%>"><%#Eval("Name") %></a></div>
-                                <UC:CATALOGUEMENU ID="Cataloguemenu" runat="server" Belongto="12" Cid='<%#Eval("Id") %>' />
+                                <%--<UC:CATALOGUEMENU ID="Cataloguemenu" runat="server" Belongto="12" Cid='<%#Eval("Id") %>' />--%>
                             </div>
                             <UC:NEWSL ID="Newsl" runat="server" />
                         </ITEMTEMPLATE>
