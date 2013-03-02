@@ -56,11 +56,9 @@ function EndRequestHandler(sender, args) {
                                 
                                 <div class="sharebar">
                                     <span class='st_sharethis_hcount' displayText='ShareThis'></span>
-                                    <span class='st_facebook_hcount' displayText='Facebook'></span>
-                                    <span class='st_googleplus_hcount' displayText='Google +'></span>
-                                    <span class='st_twitter_hcount' displayText='Tweet'></span>
-                                    <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
-                                    <span class='st_email_hcount' displayText='Email'></span>
+			                        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
+			                        <span class='st_twitter_hcount' displayText='Tweet'></span>
+			                        <span class='st_googleplus_hcount' displayText='Google +'></span>
 	                             </div>
                                  <meta property="og:image"content="<%#Eval("eFilepreviewurl") %>" />
                                  <div class="desc"><%#Eval("eFilepreview")%> <%#Eval("Description")%></div>
@@ -68,11 +66,9 @@ function EndRequestHandler(sender, args) {
                                 <div class="note"><%#CFunctions.IsNullOrEmpty(Eval("Tag").ToString()) ? "" : ("<b>Tag</b>: " + Eval("eTag2"))%></div>
                                 <div class="sharebar">
                                     <span class='st_sharethis_hcount' displayText='ShareThis'></span>
-                                    <span class='st_facebook_hcount' displayText='Facebook'></span>
-                                    <span class='st_googleplus_hcount' displayText='Google +'></span>
-                                    <span class='st_twitter_hcount' displayText='Tweet'></span>
-                                    <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
-                                    <span class='st_email_hcount' displayText='Email'></span>
+			                        <span class='st_fblike_hcount' displayText='Facebook Like'></span>
+			                        <span class='st_twitter_hcount' displayText='Tweet'></span>
+			                        <span class='st_googleplus_hcount' displayText='Google +'></span>
 	                             </div>
                             </div>
                             <br />&nbsp;
