@@ -25,7 +25,9 @@
     
     <div class="barthome4">
         <UC:FOCUSN ID="Focusn" runat="server" />
+        <div class="fieldsetf" style="margin-top:10px;">
         <UC:NEWSC ID="Newsc" runat="server" Categorycode="'quote'" />
+        </div>
     </div>
     
     <div class="barthome5">
