@@ -8,9 +8,7 @@
                 <div class="inlist">
                     <a href="/tu-dien-thuat-ngu-vn/<%#Eval("eUrl2") %>">
                     <%#(Eval("Name") + (Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")))%>
-                   <%-- <a href="/tu-dien-thuat-ngu-vn/<%#Eval("eUrl2") %>"><%#Eval("Name")%></a>--%>
-                    <%--<a href="d<%#Eval("Cid")%>d<%#Eval("Id")%>d=<%#Eval("eName")%>?ll=vn"><%#Eval("Name")%><%#Eval("Url").ToString() == "" ? "" : (" (" + Eval("Url") + ")")%>
-                    </a>--%>
+                    </a>
                 </div>
             </div>
         </ITEMTEMPLATE>

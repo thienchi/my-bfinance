@@ -7,7 +7,7 @@
     <ASP:REPEATER ID="rptList" runat="server">
         <ITEMTEMPLATE>
         <td width="50%" valign="top" style="padding-bottom:15px; <%#(Container.ItemIndex % 2 == 0) ? "padding-right:15px;" : "border-left:1px solid #ccc; padding-left:15px" %>">
-            <div class="cname"><a href="/<%#Eval("eUrl2").ToString()%>"><%#Eval("Name") %></a></div>
+            <div class="cname"><a href="/<%#Eval("eUrl2").ToString().Replace(".aspx","") + ".aspx"%>"><%#Eval("Name") %></a></div>
             <UC:NEWSH ID="Newsh" runat="server" Categoryid='<%#Eval("Id") %>' />
         </td>
         <%#((Container.ItemIndex + 1) % 2 == 0) ? "</tr><tr>" : ""%>

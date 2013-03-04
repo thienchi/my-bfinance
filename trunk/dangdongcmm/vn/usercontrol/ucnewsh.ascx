@@ -4,7 +4,15 @@
 <ASP:PANEL ID="pnlList" runat="server" CssClass="relatedl width100">
     <ASP:REPEATER ID="rptList" runat="server">
         <ITEMTEMPLATE>
-            <%#Container.ItemIndex == 0 ? "<div class=\"newsselhome\" style=\"margin-bottom:20px;\">" + (Eval("eFilepreview").ToString() == "" ? "" : ("<div class=\"blockimg\"><a href=\"/" + Eval("eUrl2") + "\">" + Eval("eFilepreview") + "</a></div>")) + "<div class=\"lname\"><a href=\"/" + Eval("eUrl2") + "\">" + Eval("Name") + "</a> " + Eval("eIconex") + "</div><div class=\"intr\">" + Eval("Introduce") + "</div></div>" : "<div class=\"newsselhome\"><div class=\"inlist\"><a href=\"/" + Eval("eUrl2") + "\">" + Eval("Name") + "</a> " + Eval("eIconex") + "</div></div>"%>
+            <%#Container.ItemIndex == 0 ? "<div class=\"newsselhome\" style=\"margin-bottom:20px;\">" 
+                + (Eval("eFilepreview").ToString() == "" ? "" : ("<div class=\"blockimg\"><a href=\"/"
+                            + Eval("eUrl2") + "\">" + Eval("eFilepreview") + "</a></div>")) 
+                                        + "<div class=\"lname\"><a href=\"/" + Eval("eUrl2") 
+                                                    + "\">" + Eval("Name") + "</a> " + Eval("eIconex")
+                                                                + "</div><div class=\"intr\">" + Eval("Introduce") 
+                                                                            + "</div></div>" : "<div class=\"newsselhome\"><div class=\"inlist\"><a href=\"/" 
+                                                                                        + Eval("eUrl2") + "\">" + Eval("Name") + "</a> " 
+                                                                                                    + Eval("eIconex") + "</div></div>"%>
         </ITEMTEMPLATE>
     </ASP:REPEATER>
 
