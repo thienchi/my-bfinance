@@ -10,25 +10,30 @@
 
 <ASP:CONTENT ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="barthome1"><UC:NEWSAHOME ID="Newsahome" runat="server" Acode="'homeslide'" /></div>
-    <div class="barthome2">
-        <div class="fieldseti">
-            <div class="cname2">Tiêu điểm</div>
-            <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
-        </div>
+        <div class="barthome2">
+            <div class="fieldseti">
+                <div class="cname2">Tiêu điểm</div>
+                <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
+            </div>
                    
-    </div>
-    
-    <div class="barthome3">
-        <div class="col1"><UC:NEWSADESC ID="Newsdesc1" runat="server" Acode="'home1'" /></div>
-        <div class="col2"><UC:NEWSADESC ID="Newsdesc2" runat="server" Acode="'home2'" /></div>
-    </div>
-    
-    <div class="barthome4">
-        <UC:FOCUSN ID="Focusn" runat="server" />
-        <div class="fieldsetf" style="margin-top:10px;">
-        <UC:NEWSC ID="Newsc" runat="server" Categorycode="'quote'" />
         </div>
-    </div>
+        
+        <div class="barthome3">
+        
+            <div class="col1"><UC:NEWSADESC ID="Newsdesc1" runat="server" Acode="'home1'" /></div>
+            <div class="col2"><UC:NEWSADESC ID="Newsdesc2" runat="server" Acode="'home2'" /></div>
+             
+        </div>
+    
+        <div class="barthome4">
+        <div style="margin-top:10px;">
+            <UC:FOCUSN ID="Focusn" runat="server" />
+        </div>
+            <div class="fieldsetf" style="margin-top:10px;">
+            <UC:NEWSC ID="Newsc" runat="server" Categorycode="'quote'" />
+            </div>
+        </div>
+    
     
     <div class="barthome5">
         <div class="barhead">
