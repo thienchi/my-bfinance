@@ -613,6 +613,12 @@ namespace dangdongcmm.dal
                             info = this.getDataReader(dar);
                         }
                     }
+                    
+                   // if(info.Pid == 61)
+                  //  {
+                        CNews news = new CNews("vn");
+                        info.dictCount = news.GetDictCount(iConn,info.Id.ToString());
+                  //  }
                     iConn.Close();
                 }
                 return info;
@@ -720,6 +726,18 @@ namespace dangdongcmm.dal
                         dar.Close();
                     }
                     numResults = this.Getlistcount(iConn, cid, pid);
+                    if(arr != null)
+                    {
+                        foreach (var cate in arr)
+                        {
+                            if (cate.Pid == 61)
+                            {
+                                CNews news = new CNews("vn");
+                                cate.dictCount = news.GetDictCount(iConn, cate.Id.ToString());
+                            }
+                        } 
+                    }
+                    
                     iConn.Close();
                 }
                 return arr;
@@ -10758,6 +10776,29 @@ namespace dangdongcmm.dal
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+
+        public int GetDictCount(iSqlConnection iConn, string categoryid)
+        {
+            try
+            {
+                int numResults = 0;
+                string SQL = SQL_COUNT.Replace(Queryparam.Varstring.VAR_TABLENAME, TABLENAME);
+               // SQL += " AND A.status<>" + (int)CConstants.State.Status.Disabled;
+                SQL += " AND A.cid ='" + categoryid + "'";
+                using (iSqlDataReader dar = HELPER.executeReader(iConn, SQL))
+                {
+                    if (dar.Read())
+                    {
+                        numResults = dar.IsDBNull(0) ? 0 : dar.GetInt32(0);
+                    }
+                }
+                return numResults;
+            }
+            catch
+            {
+                return 0;
             }
         }
         private int Getlistcount(iSqlConnection iConn, string categoryid, ListOptions options)
