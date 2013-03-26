@@ -501,7 +501,9 @@ table.tbartselhome .cname a {
     position:relative; float:left; clear:left; 
 }
 .newsselhome .lname {
-    width:100%; margin-bottom:5px;
+    /*width:100%; */
+    margin-bottom:5px;
+    width:450px;
 }
 .newsselhome .lname a {
     font-weight:bold; 
