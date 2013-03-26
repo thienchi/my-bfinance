@@ -296,6 +296,18 @@ namespace dangdongcmm.model
                 return CFunctions.install_urlname(Name)+".aspx";// ((Cid == Webcmm.Id.News ? "n" : "")) + Id.ToString() + "d0d=" + eName;
             }
         }
+        public int dictCount
+        {
+            get; set;
+        }
+        public string dictCountStr
+        {
+            get
+            {
+                return dictCount.ToString();
+            }
+
+        }
         public string eUrlDictionary
         {
             get
