@@ -4,14 +4,13 @@
     <ul>
     <ASP:REPEATER ID="rptList" runat="server">
         <ITEMTEMPLATE>
-             <li>
-             
-             <a href="/<%#Eval("eUrlDictionary")%>"><%#Eval("Name")%></a> 
+             <li>              
+             <a href="/<%#Eval("eUrlDictionary")%>"><%#Eval("Name")%></a> (<%#Eval("dictCountStr")%>)
              <%#Eval("eIconex") %>
              </li><li class="break">|</li>
         </ITEMTEMPLATE>
     </ASP:REPEATER>
-    <li><a href="/tu-dien-thuat-ngu-vn/Tat-ca.aspx">Tất cả</a></li>
+    <li><a href="/tu-dien-thuat-ngu-vn/Tat-ca.aspx">Tất cả</a> (<%=CountDic %>)</li> 
     </ul>
     
     <script type="text/javascript">
