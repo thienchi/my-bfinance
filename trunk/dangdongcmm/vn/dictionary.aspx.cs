@@ -40,6 +40,7 @@ namespace dangdongcmm
                     {
                         cid = cat.Id;
                         lk = cat.Id.ToString();
+                        //Cidroot = cat.Id;
                         breadcrums += "<a href=\"/tu-dien-thuat-ngu-abc-vn-at-.aspx\">Từ điển thuật ngữ</a>";
                         breadcrums += tach;
                         string linkCat = "<a href=\"/tu-dien-thuat-ngu-" + Langview + "/" + CFunctions.install_urlname(cat.Name) + "\">" + cat.Name + "</a>";
@@ -205,7 +206,15 @@ namespace dangdongcmm
             ListOptions options = Get_ListOptions(pagBuilder);
             options.PageIndex = PageIndex;
             List<NewsInfo> list = (new CNews(CCommon.LANG)).Getlistdic(this.Cidroot, listby, listkey, listlang, options, out numResults);
-            (new GenericList<NewsInfo>(options)).Bind_DataList(rptList, pagBuilder, list, numResults);
+            List<NewsInfo> list2 = new List<NewsInfo>();
+            foreach (var newsInfo in list)
+            {
+                if(listkey == "" || newsInfo.Cid.ToString() == listkey)
+                {
+                    list2.Add(newsInfo);
+                }
+            }
+            (new GenericList<NewsInfo>(options)).Bind_DataList(rptList, pagBuilder, list2, numResults);
             pnlList.Visible = numResults > 0;
             return;
         }
