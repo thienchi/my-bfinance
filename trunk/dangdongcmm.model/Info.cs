@@ -1579,7 +1579,11 @@ namespace dangdongcmm.model
             get;
             set;
         }
-
+        public int isDictionary
+        {
+            get;
+            set;
+        }
         public int ePis
         {
             get
@@ -1620,7 +1624,10 @@ namespace dangdongcmm.model
             get
             {
                 string cateLink = CFunctions.install_urlname(Cname).Replace(".aspx","");
-                
+                if (isDictionary == 1)
+                {
+                    return "tu-dien-thuat-ngu-vn/" + cateLink + "/" + eName;
+                }
                 return cateLink + "/" + eName ;
             }
         }
