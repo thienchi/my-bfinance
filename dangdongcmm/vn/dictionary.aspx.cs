@@ -122,6 +122,7 @@ namespace dangdongcmm
                 iid = info.Id.ToString();
                 List<NewsInfo> list = new List<NewsInfo>();
                 list.Add(info);
+                list = list.OrderBy(m => m.Name).ToList();
                 (new GenericList<NewsInfo>()).Bind_DataList(rptInfo, null, list, 0);
                 DAL.Updatenum(iid.ToString(), Queryparam.Sqlcolumn.Viewcounter, CConstants.NUM_INCREASE);
                 breadcrums = tach;
@@ -163,6 +164,7 @@ namespace dangdongcmm
                 }
                 List<NewsInfo> list = new List<NewsInfo>();
                 list.Add(info);
+                list = list.OrderBy(m => m.Name).ToList();
                 (new GenericList<NewsInfo>()).Bind_DataList(rptInfo, null, list, 0);
                 DAL.Updatenum(iid.ToString(), Queryparam.Sqlcolumn.Viewcounter, CConstants.NUM_INCREASE);
                 breadcrums += tach;
@@ -181,6 +183,10 @@ namespace dangdongcmm
             ListOptions options = Get_ListOptions(pagBuilderfollow);
             options.PageIndex = PageIndex;
             List<NewsInfo> list = (new CNews(CCommon.LANG)).Getlist(cid.ToString(), options, out numResults);
+            if(list != null)
+            {
+                list = list.OrderBy(m => m.Name).ToList();
+            }
             (new GenericList<NewsInfo>(options)).Bind_DataList(rptListfollow, pagBuilderfollow, list, numResults);
             pnlListfollow.Visible = numResults > 0;
             if (numResults > 0)
@@ -207,12 +213,16 @@ namespace dangdongcmm
             options.PageIndex = PageIndex;
             List<NewsInfo> list = (new CNews(CCommon.LANG)).Getlistdic(this.Cidroot, listby, listkey, listlang, options, out numResults);
             List<NewsInfo> list2 = new List<NewsInfo>();
-            foreach (var newsInfo in list)
+            if(list != null)
             {
-                if(listkey == "" || newsInfo.Cid.ToString() == listkey)
+                foreach (var newsInfo in list)
                 {
-                    list2.Add(newsInfo);
+                    if (listby == "abc" || listkey == "" || newsInfo.Cid.ToString() == listkey)
+                    {
+                        list2.Add(newsInfo);
+                    }
                 }
+                list2 = list2.ToList().OrderBy(m => m.Name).ToList();
             }
             (new GenericList<NewsInfo>(options)).Bind_DataList(rptList, pagBuilder, list2, numResults);
             pnlList.Visible = numResults > 0;
