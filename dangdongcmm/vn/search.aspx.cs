@@ -102,8 +102,23 @@ namespace dangdongcmm
                 list.AddRange(listin);
                 numResults += numResult;
             }
-
-            return list;
+            List<GeneralInfo> listR = new List<GeneralInfo>();
+            foreach (var info in list)
+            {
+                if (info.Cid == 61 || info.Cid == 67 || info.Cid == 62 || info.Cid == 63)
+                {
+                    info.isDictionary = 1;
+                    listR.Add(info);
+                }
+            }
+            foreach (var info in list)
+            {
+                if (info.Cid != 61 && info.Cid != 67 && info.Cid != 62 && info.Cid != 63)
+                {
+                    listR.Add(info);
+                }
+            }
+            return listR;
         }
         private void Bind_rptList(int pageindex)
         {
@@ -113,7 +128,7 @@ namespace dangdongcmm
             ListOptions options = Get_ListOptions(pagBuilder);
             options.PageIndex = PageIndex = pageindex;
             List<GeneralInfo> list = this.Search(out numResults);
-            (new GenericList<GeneralInfo>(PageIndex, PageSize, SortExp, SortDir)).Bind_DataList(rptList, pagBuilder, list);
+            (new GenericList<GeneralInfo>(PageIndex, PageSize, SortExp, SortDir)).Bind_DataListNoSort(rptList, pagBuilder, list);
             
             pagBuilder.Visible = !(list == null || list.Count == 0);
             this.Synch_Pager(pagBuilder, pagBuilderT);
