@@ -10784,9 +10784,9 @@ namespace dangdongcmm.dal
             try
             {
                 int numResults = 0;
-                string SQL = SQL_COUNT.Replace(Queryparam.Varstring.VAR_TABLENAME, TABLENAME);
-               // SQL += " AND A.status<>" + (int)CConstants.State.Status.Disabled;
-                SQL += " AND A.cid ='" + categoryid + "'";
+                string SQL =
+                    @"select COUNT(*) as sl from vndd_itemcategory a left join 
+vndd_news b on a.iid = b.id where b.status <> 3 and a.categoryid = " + categoryid;
                 using (iSqlDataReader dar = HELPER.executeReader(iConn, SQL))
                 {
                     if (dar.Read())
