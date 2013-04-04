@@ -215,16 +215,16 @@ namespace dangdongcmm
             List<NewsInfo> list2 = new List<NewsInfo>();
             if(list != null)
             {
-                foreach (var newsInfo in list)
-                {
-                    if (listby == "abc" || listkey == "" || newsInfo.Cid.ToString() == listkey)
-                    {
-                        list2.Add(newsInfo);
-                    }
-                }
-                list2 = list2.ToList().OrderBy(m => m.Name).ToList();
+                //foreach (var newsInfo in list)
+                //{
+                //    if (listby == "abc" || listkey == "" || newsInfo.Cid.ToString() == listkey)
+                //    {
+                //        list2.Add(newsInfo);
+                //    }
+                //}
+                list = list.OrderBy(m => m.Name).ToList();
             }
-            (new GenericList<NewsInfo>(options)).Bind_DataList(rptList, pagBuilder, list2, numResults);
+            (new GenericList<NewsInfo>(options)).Bind_DataList(rptList, pagBuilder, list, numResults);
             pnlList.Visible = numResults > 0;
             return;
         }
