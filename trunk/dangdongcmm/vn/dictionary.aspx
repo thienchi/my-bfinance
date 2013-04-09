@@ -128,7 +128,7 @@ function EndRequestHandler(sender, args) {
                         </ITEMTEMPLATE>
                     </ASP:REPEATER>
                     <div align="right" class="pagercontainer">
-                        <UC:PAGER ID="pagBuilder" runat="server" CssClass="pagBuilder" Infotemplate="<b>$RECORDCOUNT$</b> thuật ngữ" />
+                        <UC:PAGER ID="pagBuilder" runat="server" CssClass="pagBuilder" Infotemplate="" />
                     </div>
                 </ASP:PANEL>
                 
