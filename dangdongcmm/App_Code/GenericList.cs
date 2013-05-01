@@ -143,7 +143,8 @@ namespace dangdongcmm
 
             if (pagerBuilder != null)
             {
-                pagerBuilder.Visible = pagerBuilder.Visible ? (numResults > PageSize) : false;
+               // pagerBuilder.Visible = pagerBuilder.Visible ? (numResults > PageSize) : false;
+                pagerBuilder.Visible = (numResults > PageSize) ? true: false;
                 pagerBuilder.PageSize = PageSize;
                 pagerBuilder.RecordCount = numResults;
                 pagerBuilder.PageIndex = PageIndex;
@@ -173,7 +174,26 @@ namespace dangdongcmm
 
             return;
         }
+        public void Bind_DataListNoSort(Repeater rptList, ucpager pagerBuilder, List<I> allList)
+        {
+            if (allList == null)
+                allList = new List<I>();
 
+            if (pagerBuilder != null)
+            {
+                pagerBuilder.Visible = pagerBuilder.Visible ? (allList.Count > PageSize) : false;
+                pagerBuilder.PageSize = PageSize;
+                pagerBuilder.RecordCount = allList.Count;
+                pagerBuilder.PageIndex = PageIndex;
+            }
+
+            //allList.Sort(new GenericComparer<I>(SortExp, SortDir));
+            List<I> pagList = this.FillInRange(allList, PageIndex, PageSize);
+            rptList.DataSource = pagList;
+            rptList.DataBind();
+
+            return;
+        }
         private SortDirection parseSortDir(string sortdir)
         {
             return sortdir == SortDirection.Ascending.ToString() ? SortDirection.Ascending : SortDirection.Descending;
