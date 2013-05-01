@@ -105,7 +105,7 @@ namespace dangdongcmm
             List<GeneralInfo> listR = new List<GeneralInfo>();
             foreach (var info in list)
             {
-                if (info.Cid == 61 || info.Cid == 67 || info.Cid == 62 || info.Cid == 63)
+                if (info.Cid == 61 || info.Cid == 67 || info.Cid == 62 || info.Cid == 63 || info.Cid == 72 || info.Cid == 74 || info.Cid == 76)
                 {
                     info.isDictionary = 1;
                     listR.Add(info);
@@ -113,7 +113,7 @@ namespace dangdongcmm
             }
             foreach (var info in list)
             {
-                if (info.Cid != 61 && info.Cid != 67 && info.Cid != 62 && info.Cid != 63)
+                if (info.Cid != 61 && info.Cid != 67 && info.Cid != 62 && info.Cid != 63 && info.Cid != 72 && info.Cid != 74 && info.Cid != 76)
                 {
                     listR.Add(info);
                 }
