@@ -4,6 +4,7 @@ using System.Text;
 using System.Globalization;
 using System.Security.Cryptography;
 using System.Configuration;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace dangdongcmm.utilities
@@ -871,7 +872,51 @@ namespace dangdongcmm.utilities
         {
             if (pattern==null || IsNullOrEmpty(pattern.ToString())) return "";
             string vlreturn = cleaner_urlname(to_nonunicode(pattern.ToString()));
-            return vlreturn;
+            return Convert_Chuoi_Khong_Dau(vlreturn);
+        }
+        public static string convertUnicodeToAscii(string unicodeString)
+        {
+            // Create two different encodings.
+            Encoding ascii = Encoding.ASCII;
+            Encoding unicode = Encoding.Unicode;
+            unicodeString = unicodeString.Replace('\u201d','?');
+            unicodeString = unicodeString.Replace('\u201c', '?');
+            unicodeString = unicodeString.Replace('\u005F', '?');
+            // Convert the string into a byte[].“
+            byte[] unicodeBytes = unicode.GetBytes(unicodeString);
+
+            // Perform the conversion from one encoding to the other.
+            byte[] asciiBytes = Encoding.Convert(unicode, ascii, unicodeBytes);
+
+            // Convert the new byte[] into a char[] and then into a string.
+            // This is a slightly different approach to converting to illustrate
+            // the use of GetCharCount/GetChars.
+            char[] asciiChars = new char[ascii.GetCharCount(asciiBytes, 0, asciiBytes.Length)];
+            ascii.GetChars(asciiBytes, 0, asciiBytes.Length, asciiChars, 0);
+            string asciiString = new string(asciiChars);
+            // Display the strings created before and after the conversio            
+            return asciiString;
+        }
+        public static string Convert_Chuoi_Khong_Dau(string s)
+        {
+            s = convertUnicodeToAscii(s);
+            s = s.Trim().Replace("  ", " ").Replace(",", "");
+            s = s.Replace(" ", "-");
+            s = s.Replace(":", "-");
+            s = s.Replace("&", "");
+            s = s.Replace("_", "");
+            s = s.Replace("'", "");
+            s = s.Replace("\"", "");
+            s = s.Replace("“", "");
+            s = s.Replace("”", "");
+            s = s.Replace("?", "");
+            s = s.Replace("`", "");
+            Regex regex = new Regex(@"\p{IsCombiningDiacriticalMarks}+");
+            string strFormD = s.Normalize(NormalizationForm.FormD);
+            string result = regex.Replace(strFormD, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
+            result = result.Replace(":", "").Replace("\"", "");
+            result = result.ToLower();
+            return result;
         }
         public static string install_metatag(object pattern)
         {
