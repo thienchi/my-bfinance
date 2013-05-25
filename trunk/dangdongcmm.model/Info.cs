@@ -2512,12 +2512,22 @@ namespace dangdongcmm.model
             {
                 //string cateLink = CFunctions.install_urlname(Cname).Replace(".aspx", "");
                 string link = Url;
+                //link = CFunctions.Convert_Chuoi_Khong_Dau(link);
                 if(link != null && !link.Trim().Equals(""))
                 {
                     int i = link.IndexOf("=");
                     link = link.Substring(i + 1);
                     link = link.Replace("http://bfinance.vn/", "");
                 }
+                link = link.Replace("“", "");
+                link = link.Replace("”", "").ToLower();
+                link = link.Replace('”', ' ');
+                link = link.Replace('“', ' ');
+                link = link.Replace("%e2%80%9c", "");
+                link = link.Replace("%e2%80%a6", "");
+                link = link.Replace("%e2%80%9d", "");
+                
+                link = link.Trim();
                 return link;
             }
             set
