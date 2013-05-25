@@ -42,6 +42,10 @@ namespace dangdongcmm
             get;
             set;
         }
+        public int CountDic
+        {
+            get; set;
+        }
         #endregion
 
         #region private methods
@@ -50,6 +54,10 @@ namespace dangdongcmm
             int numResults = 0;
             ListOptions options = Get_ListOptionsNoPaging();
             List<CategoryInfo> list = (new CCategory(CCommon.LANG)).Getlist(belongto, pid, options, out numResults);
+            foreach (var categoryInfo in list)
+            {
+                CountDic += categoryInfo.dictCount;
+            }
             (new GenericList<CategoryInfo>(PageIndex, PageSize, SortExp, SortDir)).Bind_DataList(rptList, null, list, 0);
             pnlList.Visible = list != null && list.Count > 0;
             return;

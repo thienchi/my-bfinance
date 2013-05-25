@@ -614,11 +614,11 @@ namespace dangdongcmm.dal
                         }
                     }
                     
-                   // if(info.Pid == 61)
-                  //  {
+                    if(info != null)
+                    {
                         CNews news = new CNews("vn");
                         info.dictCount = news.GetDictCount(iConn,info.Id.ToString());
-                  //  }
+                    }
                     iConn.Close();
                 }
                 return info;

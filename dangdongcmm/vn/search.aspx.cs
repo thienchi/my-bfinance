@@ -103,19 +103,22 @@ namespace dangdongcmm
                 numResults += numResult;
             }
             List<GeneralInfo> listR = new List<GeneralInfo>();
-            foreach (var info in list)
+            if(list != null && list.Count>0)
             {
-                if (info.Cid == 61 || info.Cid == 67 || info.Cid == 62 || info.Cid == 63 || info.Cid == 72 || info.Cid == 74 || info.Cid == 76)
+                foreach (var info in list)
                 {
-                    info.isDictionary = 1;
-                    listR.Add(info);
+                    if (info.Cid == 61 || info.Cid == 67 || info.Cid == 62 || info.Cid == 63 || info.Cid == 72 || info.Cid == 74 || info.Cid == 76)
+                    {
+                        info.isDictionary = 1;
+                        listR.Add(info);
+                    }
                 }
-            }
-            foreach (var info in list)
-            {
-                if (info.Cid != 61 && info.Cid != 67 && info.Cid != 62 && info.Cid != 63 && info.Cid != 72 && info.Cid != 74 && info.Cid != 76)
+                foreach (var info in list)
                 {
-                    listR.Add(info);
+                    if (info.Cid != 61 && info.Cid != 67 && info.Cid != 62 && info.Cid != 63 && info.Cid != 72 && info.Cid != 74 && info.Cid != 76)
+                    {
+                        listR.Add(info);
+                    }
                 }
             }
             return listR;
