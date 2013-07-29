@@ -22,15 +22,6 @@ namespace dangdongcmm {
         protected global::dangdongcmm.ucnewsa Newsahome;
         
         /// <summary>
-        /// Newsa control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::dangdongcmm.ucnewsa Newsa;
-        
-        /// <summary>
         /// Newsdesc1 control.
         /// </summary>
         /// <remarks>
@@ -47,24 +38,6 @@ namespace dangdongcmm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::dangdongcmm.ucnewsa Newsdesc2;
-        
-        /// <summary>
-        /// Focusn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::dangdongcmm.ucfocusn Focusn;
-        
-        /// <summary>
-        /// Newsc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::dangdongcmm.ucnewsc Newsc;
         
         /// <summary>
         /// Searchdic control.
@@ -92,6 +65,33 @@ namespace dangdongcmm {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::dangdongcmm.ucnewsc Dictionaryc2;
+        
+        /// <summary>
+        /// Focusn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::dangdongcmm.ucfocusn Focusn;
+        
+        /// <summary>
+        /// Newsc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::dangdongcmm.ucnewsc Newsc;
+        
+        /// <summary>
+        /// Newsa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::dangdongcmm.ucnewsa Newsa;
         
         /// <summary>
         /// Homen control.

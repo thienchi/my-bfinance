@@ -11,9 +11,10 @@
 <ASP:CONTENT ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="barthome1"><UC:NEWSAHOME ID="Newsahome" runat="server" Acode="'homeslide'" /></div>
         <div class="barthome2">
-            <div class="fieldseti">
-                <div class="cname2">Tiêu điểm</div>
-                <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
+            <div class="fieldsetf">
+                <img width="288" src="http://pagead2.googlesyndication.com/simgad/8236436292844734030" />
+                <%--<div class="cname2">Tiêu điểm</div>
+                <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>--%>
             </div>
                    
         </div>
@@ -22,20 +23,8 @@
         
             <div class="col1"><UC:NEWSADESC ID="Newsdesc1" runat="server" Acode="'home1'" /></div>
             <div class="col2"><UC:NEWSADESC ID="Newsdesc2" runat="server" Acode="'home2'" /></div>
-             
-        </div>
-    
-        <div class="barthome4">
-        <div style="margin-top:10px;">
-            <UC:FOCUSN ID="Focusn" runat="server" />
-        </div>
-            <div class="fieldsetf" style="margin-top:10px;">
-            <UC:NEWSC ID="Newsc" runat="server" Categorycode="'quote'" />
-            </div>
-        </div>
-    
-    
-    <div class="barthome5">
+            <img width="100%" src="http://admicro2.vcmedia.vn/adt/cpc/cpmad/2013/06/du-li-v11370051821.jpg" />
+            <div class="barthome5">
         <div class="barhead">
             <div class="title"><a href="/tu-dien-thuat-ngu-abc-vn-at-.aspx">Từ điển thuật ngữ</a></div>
             <div class="listoption">Xem theo:&nbsp;&nbsp;&nbsp; <a href="/tu-dien-thuat-ngu-abc-vn-at-.aspx">ABC</a>
@@ -52,6 +41,26 @@
             <div class="dicviewest"><UC:DICTIONARYC ID="Dictionaryc2" runat="server" Categorycode="'dictionary'" SortExp="Viewcounter" PageSize="5" /></div>
         </div>
     </div>
+        </div>
+    
+        <div class="barthome4">
+            <div style="margin-top:10px;">
+                <UC:FOCUSN ID="Focusn" runat="server" />
+            </div>
+            <div class="fieldsetf" style="margin-top:10px;">
+            <UC:NEWSC ID="Newsc" runat="server" Categorycode="'quote'" />
+            </div>        
+            <div class="fieldsetf" style="margin-top:10px;">
+                <img width="288" src="http://pagead2.googlesyndication.com/simgad/8236436292844734030" />
+            </div>
+            <div class="fieldsetf">           
+               <div class="cname2">Thông tin doanh nghiệp</div>
+               <div class="invitation"><UC:NEWSA ID="Newsa" runat="server" Acode="'invitation'" /></div>
+            </div>
+
+        </div>    
+    
+    
     
     <div class="relatedl width100" style="margin-top:15px;"><UC:HOMEN ID="Homen" runat="server" /></div>
     
