@@ -62,6 +62,11 @@
 		<div class="FLOUT0" align="center">
 		    <div class="FLOUT0B" align="center">
 		        <div class="FLOUT1">
+                    <div class="AD_FLOUT1H">
+                        <img src="http://cdn.tinhte.vn/attachments/tinhte-vn_offline_car_tuning-top-jpg.1234427/" width="33%" height="150" />
+                        <img src="http://cdn.tinhte.vn/attachments/tinhte-vn_offline_car_tuning-top-jpg.1234427/" width="33%" height="150" />
+                        <img src="http://cdn.tinhte.vn/attachments/tinhte-vn_offline_car_tuning-top-jpg.1234427/" width="33%" height="150" />
+				    </div>
 		            <div class="FLOUT1H">
                         <div id="logo" onclick="location.href='/index.aspx'"></div>
                         <div class="searchbar"><UC:SEARCH ID="Search" runat="server" /></div>
